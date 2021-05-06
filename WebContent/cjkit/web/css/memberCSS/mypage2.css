@@ -1,0 +1,49 @@
+@CHARSET "UTF-8";
+body, html {
+	width: 100%;
+	height: 100%;
+}
+
+td {
+	border: 1px solid black;
+	width: 200px;
+	height: 80px;
+}
+
+.div001 {		
+	text-align: center;
+	font-size: 50px;
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-top: 5%;
+	margin-bottom: 1%;
+}
+
+.div002 {	
+	text-align: center;
+	font-size: 20px;
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-top: 1%;
+}
+
+.div03 {
+	border: 1px solid black;
+	margin-left: 20%;
+	margin-right: 20%;
+	margin-top: 5%;
+	margin-bottom: 10%;	
+}
+
+.div02_lab01 {
+	
+}
+
+.tab001 {
+	border: 1px solid black;
+	text-align: left;
+}
+
+.tab001 tr td:HOVER {
+	background-color: gray;
+}

@@ -1,0 +1,123 @@
+@charset "utf-8";
+/************************************************************************
+* filename : gr.css
+* description : COOKIT 소개 css
+************************************************************************/
+body.intro_cookit #container {width:100%; min-width:1260px; margin:0 auto;}
+body.intro_cookit #content {padding:0 0; overflow:hidden;}
+body.intro_cookit .fix_intro_txt {position:absolute; z-index:888; left:50%; top:790px; width:44px; height:1px; margin-left:596px;}
+body.intro_cookit .fix_intro_txt .fix_txt {position:absolute; right:1px; top:0; width:17px;}
+body.intro_cookit .fix_intro_txt .fix_txt::before {content:''; position:absolute; left:1px; width:15px; height:54px; background:url('/cjkit/web/images/gr/ico_set.png') -210px 0 no-repeat; background-size:300px 300px;}
+body.intro_cookit .fix_intro_txt .txt_img {display:block;}
+body.intro_cookit .fix_intro_txt.fix {position:fixed; top:72px;}
+
+.intro_content .tit {margin-bottom:24px; color:#101010; font-weight:700; font-size:15px; line-height:23px;}
+.intro_content .major {color:#101010; font-weight:700; font-size:36px; line-height:50px;}
+.intro_content strong.major {display:block; margin-bottom:6px;}
+.intro_content .txt {padding-top:10px; font-size:17px; line-height:26px;}
+.intro_img_wrap img {width:100%;}
+.intro_content .top {min-width:1260px; background:url('/cjkit/web/images/gr/bg_intro_cookit_0.jpg'); background-size:400px 200px; margin:0 auto;}
+.intro_content .top .intro_img_wrap {position:relative; left:50%; width:2560px; height:640px; margin-left:-1280px;}
+.intro_content .bp {width:1180px; margin:0 auto; padding:70px 64px 40px; }
+.intro_content .type01 {position:relative;padding-top: 750px;height:auto;overflow:hidden;clear: both;}
+.intro_content .type01 .ck_img_wrap { position:absolute; left:0; top:0; width:100%; background:#fff; }
+.intro_content .type01 .ck_img_wrap img { position:relative; top:50%; width:100%; 
+    transform:scale(0.8,0.8) translateX(0px); -webkit-transform:scale(0.8,0.8) translateX(0px);
+    transform-origin:0 0; -webkit-transform-origin:0 0;
+}
+.intro_cookit_dimmed { position:absolute; left:0; top:0; width:100%; height:100%; background:#000; transform-origin:0 0; }
+.intro_content .type01 .ck_txt_wrap {position:relative; z-index:8; left:auto; top:auto; width:1180px; height:100vh; margin-left:-590px; margin:0 auto; padding-left:64px;}
+.intro_content .type01 .ck_txt_wrap .tit,
+.intro_content .type01 .ck_txt_wrap .major,
+.intro_content .type01 .ck_txt_wrap .txt {color:#fff;}
+
+.intro_content .type01 .list_tp {width:1096px; margin-top:64px;}
+.intro_content .type01 .list_tp:after{content:'';display:table;clear:both;}
+.intro_content .type01 .list_tp li {position:relative; float:left; width:250px; height:266px; margin-right:24px; background:#fff; border-radius:2px; padding:104px 24px 0; text-align:center;}
+.intro_content .type01 .list_tp .sub_txt {color:#101010; font-size:14px; line-height:22px;}
+.intro_content .type01 .list_tp strong {display:block; margin-top:2px; color:#101010; font-weight:500; font-size:17px; line-height:24px;}
+.intro_content .type01 .list_tp p {margin-top:8px; font-size:14px; line-height:22px}
+.intro_content .type01 .list_tp li::before {content:''; position:absolute; left:50%; top:44px; width:48px; height:48px; margin-left:-24px; background:url('/cjkit/web/images/gr/ico_set.png') no-repeat;background-size:300px 300px;}
+.intro_content .type01 .list_tp li.tp01::before {background-position:0 0 }
+.intro_content .type01 .list_tp li.tp02::before {background-position:-60px 0 }
+.intro_content .type01 .list_tp li.tp03::before {background-position:0 -60px }
+.intro_content .type01 .list_tp li.tp04::before {background-position:-60px -60px }
+
+.intro_content .type02 {position:relative; width:1180px; margin:0 auto; padding:120px 64px 450px;}
+.intro_content .type02 .intro_txt_wrap {padding-bottom:80px;}
+.intro_content .type02 .intro_img_wrap {position:absolute; left:0; bottom:0; width:1550px; height:450px;}
+
+.intro_content .type03 {position:relative; width:1180px; margin:0 auto 140px; padding:120px 64px 640px;}
+.intro_content .type03 .intro_txt_wrap {padding-bottom:72px;}
+.intro_content .type03 .intro_movie_wrap {position:absolute; left:0; bottom:0; width:1180px; height:640px;}
+.intro_content .type03 .intro_movie_wrap video {width:1180px; height:640px;}
+
+.intro_content .type04 {position:relative; width:100%; min-width:1260px; height:640px; margin:0 auto; padding-top:120px; overflow:hidden; background:url('/cjkit/web/images/gr/intro_cookit_4.jpg') center no-repeat; background-size:cover;}
+.intro_content .type04 .intro_txt_wrap {width:1180px; margin:0 auto; padding-left:64px;}
+.intro_content .type04 .tit,
+.intro_content .type04 .major,
+.intro_content .type04 .txt {color:#fff;}
+.intro_content .type04 .intro_img_wrap {position:relative; z-index:0; min-width:1920px; height:640px; margin:0 auto; overflow:hidden;}
+.intro_content .type04 .intro_img_wrap img {position:relative; width:100%; -ms-transform:translateY(-50%); -moz-transform:translateY(-50%); transform:translateY(-50%);}
+
+.intro_content .type05 {position:relative; width:1180px; margin:0 auto; padding:120px 64px 640px;}
+.intro_content .type05 .intro_txt_wrap {padding-bottom:72px;}
+.intro_content .type05 .intro_img_wrap {position:absolute; left:0; bottom:0; width:1180px; height:640px;}
+.intro_content .type05 .txt {padding-bottom:10px;}
+.intro_content .type05 .btn_link {color:#008A00; text-decoration:underline;}
+.intro_content .type05 .btn_link::after {border-bottom:1.5px solid #008A00; border-right:1.5px solid #008A00;}
+
+.intro_content .type06 {position:relative; width:100%; min-width:1260px; height:auto;margin:140px auto 0; overflow:hidden; background-color:#E6E1D7;}
+.intro_content .type06 .left {position:absolute; z-index:4; left:50%; top:0; bottom:50vh; width:1180px; height:2px; margin:-1px 0 0 -590px;}
+.intro_content .type06 .left_cont {position:absolute; left:64px; top:50%; height:198px; margin-top:120px;}
+.intro_content .type06 .right {position:relative; z-index:1; width:1180px; margin:0 auto;}
+.intro_content .type06 .right .r_img_wrap {width:756px; height:698px; margin-right:-35px; padding-left:471px; padding-bottom:100px;}
+.intro_content .type06 .right .r_img_wrap img {width:756px;}
+.intro_content .type06 .right .r_txt_wrap {margin-top:-64px; padding:0 0 140px 500px;} 
+.intro_content .type06 .left.fixed{position:fixed;top:120px;left:50%;margin:-1px 0 0 -590px;}
+.intro_content .type06 .left.fixed .left_cont{margin:0; left:64px;}
+.intro_content .type06 .right .r_txt_wrap .r_em {color:#101010; font-weight:500; font-size:20px; line-height:29px;}
+.intro_content .type06 .right .r_txt_wrap .r_em.snd {padding-top:18px;}
+.intro_content .type06 .right .r_txt_wrap .r_list {width:100%; margin-top:32px;}
+.intro_content .type06 .right .r_txt_wrap .r_list:after{content:'';display:table;clear:both;}
+.intro_content .type06 .right .r_txt_wrap .r_list li {float:left; width:100%; margin-bottom:30px;}
+.intro_content .type06 .right .r_txt_wrap .r_list .r_major {display:block; color:#101010; font-weight:500; font-size:15px; line-height:23px;}
+.intro_content .type06 .right .r_txt_wrap .r_list .r_txt {margin-top:4px; font-size:15px; line-height:23px;}
+/* 오픈공지 */
+.open_notice{margin-top:277px;text-align:center;}
+.open_notice .char{display:inline-block;width:108px;height:104px;background:url('/cjkit/web/images/common/ico_chara.png') 0 -115px no-repeat;background-size:500px auto;}
+.open_notice .txt{margin:0;padding-top:20px;font-size:32px;line-height:48px;color:#101010;font-weight:600;}
+/* 기프트카드 */
+.intro_giftcard .top {position:relative; width:100%; max-width:1920px; height:640px; margin:0 auto; overflow:hidden;}
+.intro_giftcard .top .intro_img_wrap {position:relative; left:50%; width:2560px; height:640px; margin-left:-1280px;}
+.giftcard_noti {background-color:#fafafa;}
+.giftcard_noti .gray_box {padding:32px 32px; background-color:#f7f7f7;}
+.giftcard_noti .gray_box dl {padding-top:20px;}
+.giftcard_noti .gray_box dl:first-child {padding-top:0;}
+.giftcard_noti .gray_box dt {color:#101010; font-size:17px; line-height:24px; font-weight:500;}
+.giftcard_noti .gray_box dd {padding-top:10px;}
+.giftcard_noti .gray_box dd .bul_list li {font-size:17px;line-height:30px;letter-spacing:-0.5px;}
+.giftcard_noti .gray_box dd .bul_list .bul_dot .bullet {margin:10px 4px 0 0;}
+.giftcard_noti .gray_box dd .bul_list .bul_dash {margin-top:6px; padding-left:9px; color:#606060; font-size:14px; line-height:22px;}
+.giftcard_noti .gray_box dd .bul_list .bul_dash:first-child {margin-top:0;}
+.giftcard_noti .gray_box dd .bul_list .bul_dash .bullet {float:left; margin-left:-8px;}
+.giftcard_noti .gray_box dd .bul_list.depth2 .bul_dash {margin-top:5px;}
+.giftcard_noti .gray_box dd .bul_list.depth2 .bul_dash .bullet {width:auto; height:auto; margin:-2px 0 0 -9px; background:none;}
+.giftcard_noti .gray_box p.txt {padding-top:20px; color:#000; font-size:14px; line-height:22px;}
+/* 링크프라이스 */
+.coupon-exchange {background:#fdbaab url('/cjkit/web/images/gr/bg_coupon_house.png') no-repeat 50% 0;}
+.coupon-exchange .coupon-input {width:720px;height:1071px;margin:0 auto;padding:440px 0 0;}
+.coupon-exchange fieldset {width:720px;margin:0 auto;}
+.coupon-exchange fieldset [class^=input-] {overflow:hidden;display:inline-block; vertical-align:top;width:calc(100% - 174px);position:relative;}
+.coupon-exchange .coupon-input input {vertical-align:middle;float:left; height:80px; width:100%; padding:0 30px 1px;border:0;line-height:77px; font-size:26px;color:#000;}
+.coupon-exchange .coupon-input input::placeholder{font-size:24px;color:#999;}
+.coupon-exchange .coupon-input input:-ms-input-placeholder{font-size:24px;color:#999;}
+.coupon-exchange .coupon-input input::-webkit-input-placeholder{font-size:24px;color:#999;}
+.coupon-exchange .coupon-input button.btn-entry {vertical-align:middle;float:right;width:174px;height:79px;line-height:78px;color:#fff;font-size:24px;border:0;background-color:#532900;}
+.coupon-exchange .coupon-input button:focus { outline: 0; } 
+.coupon-exchange .coupon-noti {padding:40px 0;background-color:#fff;}
+.coupon-exchange .coupon-noti dl {display:table;width:900px;margin:0 auto;color:#000;}
+.coupon-exchange .coupon-noti dl dt {display:table-cell;vertical-align:top;font-size:25px;width:230px;padding-left:42px;line-height:50px;background:url('/cjkit/web/images/gr/bul_coupon_noti.png') no-repeat 0 0;}
+.coupon-exchange .coupon-noti dl dd {display:table-cell;vertical-align:top;padding-top:10px;} 
+.coupon-exchange .coupon-noti dl dd ol {font-size:18px;}
+.coupon-exchange .coupon-noti dl dd ol li {margin-bottom:5px;}

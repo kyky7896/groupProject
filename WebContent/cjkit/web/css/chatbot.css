@@ -1,0 +1,45 @@
+@charset "utf-8";
+
+/* 챗봇 layer popup */
+.lay_chatbot_wrap_ok{display:none; position:fixed; bottom:28px;left:50%; overflow:hidden;  width:379px; margin-left:250px; padding:0; z-index:1000;}
+.lay_chatbot_frame {position:relative; top:668px; background-color:#fff; border:1px solid #ccc;}
+.lay_chatbot_wrap_ok header{position:static;width:auto;height:auto;padding:20px 0 22px; margin:0 24px;}
+.lay_chatbot_wrap_ok header h1{font-size:20px;line-height:30px;color:#101010;font-weight:700;}
+.lay_chatbot_wrap_ok .chatbot_conts{line-height:0;}
+.lay_chatbot_wrap_ok .chatbot_conts iframe {width:100%;  height:640px; border:0 none;}
+
+/* 챗봇 추가 */
+.lay_chatbot_wrap_ok .dimmed { top:37px; width:379px; height:650px; }
+.lay_chatbot_wrap_ok .dimmed{position:absolute;top:0;bottom:0;width:100%;height:100%;background-color:#000;opacity:0.6;z-index:50;}
+.modal_chatbot{position:absolute;top:50%;left:50%;width:84%;margin-top:-25%;margin-left:-42%;padding-bottom:0;background-color:#fff;z-index:9000;border-radius:6px;overflow:hidden;}
+.modal_chatbot.full{border:none;top:0;left:0;width:100%;height:100%;margin:0;border-radius:0;overflow-y:scroll;} /* 전체 레이어팝업 일때 */
+.modal_chatbot .lay_conts{padding:0 24px;}
+.modal_chatbot .lay_conts.hcont {padding:0 20px;}
+.modal_chatbot>header{position:static;width:auto;height:auto;padding:32px 0;}
+.modal_chatbot>header h1{font-size:21px;line-height:28px;color:#303030;font-weight:normal}
+.modal_chatbot>header .msg{margin-top:12px;font-size:13px;line-height:19px;text-align:center}
+.modal_chatbot>header{position:static;width:auto;height:auto;padding:0;}
+.modal_chatbot h1.large_tit{padding:23px 0 0 28px;font-size:23px;line-height:30px;color:#303030;font-weight:bold;text-align:left;}
+.modal_chatbot .laypop_cont {padding:24px 0 0; min-height:88px;font-size:15px;line-height:20px;color:#606060;text-align:"center"}
+.modal_chatbot .laypop_cont strong{display:block;margin-bottom:4px;font-size:20px;line-height:26px;color:#303030;}
+.modal_chatbot .laypop_cont strong + P{font-size:13px;line-height:18px;}
+.modal_chatbot .laypop_cont strong em{color:#008A00;}
+.modal_chatbot .laypop_cont p {text-align:center;}
+
+.btn_lay_chatbot{display:inline-block;width:50%;color:#606060;font-size:14px;line-height:50px;vertical-align:middle;border-left:1px solid #e0e0e0;}
+.btn_lay_chatbot:first-child {border-left:0;}
+.btn_lay_chatbot.green{color:#008a00;}
+.lay_wrap_chatbot .btn_wrap {border-top:1px solid #e0e0e0;margin-top:24px; text-align:center; overflow:hidden; font-size:0;}
+
+.lay_chatbot_wrap_ok .close{position:absolute;top:0;right:0;}
+.lay_chatbot_wrap_ok .close button{display:block;width:50px;height:48px;}
+.lay_chatbot_wrap_ok .close button:after {content:''; position:absolute; left:50%; top:50%; width:24px; height:24px; margin:-12px 0 0 -12px; background:url('https://www.cjcookit.com/cjkit/web/images/common/ico_set.png') -750px 0 no-repeat; background-size:800px 800px;}
+
+
+
+
+
+
+
+
+

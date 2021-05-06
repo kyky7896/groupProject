@@ -1,0 +1,202 @@
+@CHARSET "UTF-8";
+
+body, html {
+	width: 100%;	
+	height: 100%;	
+}
+
+hr {
+	margin-left: 310px;
+	width: 980px;	
+}
+ 
+.div_content_all {
+	border: 1px solid black;
+	min-width: 1900px;
+	min-height: 1000px;	
+}
+ 
+/* 맛집정보 */
+.div_title_content {	
+	margin-top: 100px;
+	margin-left: 308px;
+}
+
+.sec_content {	
+	height: 450px;
+	margin-top: 20px;
+	margin-left: 300px;
+	margin-right: 140px;
+}
+
+.div_content {	
+	float: left;
+	width: 1000px;
+}
+
+.tab_content {	
+	height: 450px;
+}
+
+.tab_content td {	
+	padding-left: 10px;	
+}
+
+.tab_content_td01 {
+	width: 550px;
+}
+
+.td_img {
+	width: 550px;
+	height: 450px;	
+}
+
+.map {	
+	float: left;
+	width: 450px;
+	height: 450px;
+}
+
+.lab_staravg {
+	font-size: 20px;
+	color: #b02525;
+}
+
+
+/* 리뷰CSS */
+.sec_review {	
+	margin-top: 10px;
+	margin-left: 300px;
+	margin-right: 600px;
+}
+
+.btn_review {
+	border: 1px solid #eeeeee;
+	position: relative;
+	left: 930px;
+	
+}
+
+.div_review {
+	margin-top: 10px;
+}
+
+.tab_review th {
+	width: 200px;
+}
+
+#footer {
+	top: auto;	
+}
+
+
+/* 별점CSS */
+.star-rating {
+	width: 103px;
+}
+
+.star-rating, .star-rating span {
+	display: inline-block;
+	height: 19px;
+	overflow: hidden;
+	background: url(../../images/star/grade_mini_img.png) no-repeat;
+}
+
+.star-rating span {
+	background-position: left bottom;
+	line-height: 0;
+	vertical-align: top;
+}
+
+
+/* 페이징 처리 */
+.pagination {	
+	display: inline-block;
+	width: 270px;
+	margin-left: 400px;
+	margin-top: -100px;
+	margin-bottom: 100px;
+		
+}
+
+.pagination_chd {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.pagination a {
+	color: black;
+	/* float: left; */
+	padding: 8px 16px;
+	text-decoration: none;	
+}
+
+.pagination a.active {
+	background-color: #4CAF50;
+	color: white;
+	border-radius: 5px;
+}
+
+.pagination a:hover:not (.active ) {
+	background-color: #ddd;
+	border-radius: 5px;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  padding-top: 100px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (Image) */
+.modal-img {
+  margin: auto;
+  display: block;
+  width: 80%;
+  max-width: 700px;
+}
+
+#myImg:hover,
+#myImg:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+/* Add Animation - Zoom in the Modal */
+.modal-img {
+  animation-name: zoom;
+  animation-duration: 0.6s;
+}
+
+@keyframes zoom {
+  from {transform:scale(0)}
+  to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  top: 15px;
+  right: 35px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}

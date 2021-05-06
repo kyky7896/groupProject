@@ -1,0 +1,31 @@
+@CHARSET "UTF-8";
+
+.olki_list {
+	border: 1px solid white;
+	margin-left: 180px;
+	margin-right: 150px;
+	/* text-align: center; */
+	/* vertical-align: middle;
+	margin: 0 auto; */
+	
+}
+.h4_tit{
+	margin-left: 1000px;
+	border: 1px solid white;
+}
+
+/* .item {
+	border: 1px solid white;
+	
+	
+} */
+
+.pro_module {
+	border: 1px solid white;
+	margin-left: 50px;	
+	margin-right: 50px;
+}
+
+.img_wrap {
+	border: 1px solid white;	
+}

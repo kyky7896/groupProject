@@ -1,0 +1,29 @@
+@CHARSET "UTF-8";
+
+body, html {
+	width: 100%;
+	height: 100%;	
+}
+
+td {
+	
+	font-size: 30px;
+	height: 50px;
+}
+
+.tab01 {
+	width: 200px;
+}
+
+.div01 {		
+	margin-top: 10%;
+	margin-left: 800px;
+	margin-right: 500px;
+	margin-bottom: 13%;
+	text-align: center;		
+}
+
+.inp01 {
+	width: 100px;
+	height: 30px;
+}
