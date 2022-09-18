@@ -1,0 +1,1894 @@
+@charset "utf-8";
+/************************************************************************
+* filename : common.css
+* description : 공통 css
+************************************************************************/
+/* Noto Sans */
+@font-face {
+	font-family:'Noto Sans'; /* Bold */
+	src: url('https://www.cjcookit.com/cjkit/web/cjok/web/font/NotoSans-Bold.eot');
+	src:local(※),
+			url('https://www.cjcookit.com/cjkit/web/font/NotoSans-Bold.eot#iefix') format('embedded-opentype'),
+			url('https://www.cjcookit.com/cjkit/web/font/NotoSans-Bold.woff2') format('woff2'),
+			url('https://www.cjcookit.com/cjkit/web/font/NotoSans-Bold.woff') format('woff'),
+			url('https://www.cjcookit.com/cjkit/web/font/NotoSans-Bold.otf') format('opentype');
+	font-weight:700;
+	font-style:normal;
+}
+
+@font-face {
+	font-family:'Noto Sans'; /* Medium */
+	src: url('https://www.cjcookit.com/cjkit/web/font/NotoSans-Medium.eot');
+	src:local(※),
+			url('https://www.cjcookit.com/cjkit/web/font/NotoSans-Medium.eot#iefix') format('embedded-opentype'),
+			url('https://www.cjcookit.com/cjkit/web/font/NotoSans-Medium.woff2') format('woff2'),
+			url('https://www.cjcookit.com/cjkit/web/font/NotoSans-Medium.woff') format('woff'),
+			url('https://www.cjcookit.com/cjkit/web/font/NotoSans-Medium.otf') format('opentype');
+	font-weight:500;
+	font-style:normal;
+}
+ 
+@font-face {
+	font-family:'Noto Sans'; /* Regular */
+	src: url('https://www.cjcookit.com/cjkit/web/font/NotoSans-Regular.eot');
+	src:local(※),
+			url('https://www.cjcookit.com/cjkit/web/font/NotoSans-Regular.eot#iefix') format('embedded-opentype'),
+			url('https://www.cjcookit.com/cjkit/web/font/NotoSans-Regular.woff2') format('woff2'),
+			url('https://www.cjcookit.com/cjkit/web/font/NotoSans-Regular.woff') format('woff'),
+			url('https://www.cjcookit.com/cjkit/web/font/NotoSans-Regular.otf') format('opentype');
+	font-weight:400;
+	font-style:normal;
+}
+
+@font-face {
+	font-family:'Noto Sans'; /* Regular */
+	src: url('https://www.cjcookit.com/cjkit/web/font/NotoSans-Light.eot');
+	src:local(※),
+			url('https://www.cjcookit.com/cjkit/web/font/NotoSans-Light.eot#iefix') format('embedded-opentype'),
+			url('https://www.cjcookit.com/cjkit/web/font/NotoSans-Light.woff2') format('woff2'),
+			url('https://www.cjcookit.com/cjkit/web/font/NotoSans-Light.woff') format('woff'),
+			url('https://www.cjcookit.com/cjkit/web/font/NotoSans-Light.otf') format('opentype');
+	font-weight:200;
+	font-style:normal;
+}
+/* PRINT */
+@media print {
+	@page{size:auto; margin:auto 0cm}
+}
+/* BASE */
+*{margin:0;padding:0;-webkit-text-size-adjust:none;word-break:break-all;box-sizing:border-box;}
+*, *:after, *:before {-webkit-box-sizing:border-box; box-sizing:border-box;}
+html{overflow-y:scroll;}
+html.laypop{overflow-y:scroll;}
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, textarea, p, blockquote, table, th, td, input, select, textarea, button {margin:0;padding:0;word-break:break-all;letter-spacing:-0.5px;}
+body, input, textarea, select, button, table {font-family:'Noto Sans', '맑은 고딕', 'Malgun Gothic', Dotum, '굴림', arial, sans-serif; font-size:15px; font-weight:400; line-height:23px;color:#606060;letter-spacing:-0.5px;}
+pre {font-family:'Noto Sans', '맑은 고딕', 'Malgun Gothic', Dotum, '굴림', arial, sans-serif; font-size:15px; font-weight:400; line-height:23px;color:#606060;letter-spacing:-0.5px;}
+em {font-style:normal}
+fieldset, img {border:0 none}
+img  {vertical-align:middle}
+video {vertical-align:middle}
+dl, ul, ol, menu, li {list-style:none}
+input::-ms-clear {display:none}
+button {border:0 none; border-radius:0; background-color:transparent; cursor:pointer}
+a {color:inherit; text-decoration:none}
+a:hover,
+a:focus,
+a:active {background-color:transparent; text-decoration:none;}
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {display:block;margin:0;padding:0;}
+strong {font-weight:inherit;}
+/* HIDDEN */
+.hide {display:inline-block;position:absolute;z-index:-10;width:0 !important;height:0 !important;overflow:hidden !important;font-size:medium;line-height:normal;word-break:break-all}
+::selection {
+	background:#101010;
+	color: #BDD61A;
+	text-shadow: none;
+}
+::-moz-selection {
+	background:#101010;
+	color: #BDD61A;
+	text-shadow: none;
+}
+::-webkit-selection {
+	background:#101010;
+	color: #BDD61A;
+	text-shadow: none;
+}
+/* TEXT ELLIPSIS */
+.st_elps{width:100%;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;word-wrap:normal;}
+.mt_elps{width:100%; overflow:hidden; max-height:48px;text-overflow:ellipsis;word-break:break-all;line-height:24px;-moz-line-clamp:2;-ms-line-clamp:2;-webkit-line-clamp:2;}
+
+/* FONT */
+h1,h2,h3,h4,h5,h6 {font-weight:normal}
+.h1_tit {font-size:76px; line-height:94px}
+.h2_tit {font-size:54px; line-height:70px}
+.h3_tit {font-size:36px; line-height:48px}
+.h4_tit {font-size:24px; line-height:36px}
+.h5_tit {font-size:24px; line-height:36px}
+.h6_tit {font-size:42px; line-height:56px}
+
+/* COLOR */
+.fc_lgreen {color:#BDD61A;}
+.fc_dgreen {color:#008A00;}
+.fc_red {color:#EE0700;}
+.fc_blue {color:#0379A6;}
+.fc_black {color:#101010;}
+.fc_gray {color:#606060;}
+
+/* align */
+.alignR {text-align:right;}
+
+/* 텍스트 */
+.txt_red{color:#ff0a00!important;}
+
+/* FORM */
+input, select, textarea, button {vertical-align:middle;border:none;}
+input[type=text]::-ms-clear	{width:0;height:0;}
+label {vertical-align:middle}
+textarea {width:100%; border:0; overflow-y:auto; resize:none}
+
+/* LAYOUT - COMMON */
+#wrap{position:relative;width:100%;height:100%}
+#container{width:1180px;height:100%;margin:0 auto;}
+/* #content{min-height:900px; padding:72px 0 140px;} */
+#content{min-height:900px; padding:52px 0 140px;}
+/* LAYOUT - GNB */
+#head{width:100%;}
+#head:before{content:'';display:block;width:auto;}
+#head .gnb_wrap{min-width:1260px; margin:0 auto; background-color:#fff; border-bottom:1px solid #ccc; text-align: center;}
+#head .gnb_util {min-width:1260px; height:35px; padding-top:7px; background-color:#202020;text-align:left;}
+#head .gnb_util .util_wrap {max-width:1920px; min-width:1260px; margin:0 auto;}
+#head .gnb_util .util_wrap:after{content:'';display:table;clear:both;}
+#head .gnb_util ul {float:right; padding-right:40px}
+#head .gnb_util li {float:left;}
+#head .gnb_util li a {color:#fff; font-size:13px; line-height:21px;}
+#head .gnb_util li a:before {content:''; display:inline-block; position:relative; width:1px; height:12px; margin:0 12px; background-color:rgba(255, 255, 255, 0.2); vertical-align:middle;}
+#head .gnb_util li:first-child a:before {display:none;}
+#head .gnb_menu {position:relative; max-width:1920px; min-width:1260px; height:81px; margin:0 auto; padding-top:24px;  text-align:center}
+#head .gnb_menu .logo {position:absolute; left:40px; top:25px;}
+
+
+
+/* background:url('https://www.cjcookit.com/cjkit/web/images/common/ico_set.png') -320px -385px no-repeat; */
+#head .gnb_menu .logo a {
+	display:block; width:100px; height:30px; 
+	background-image:url("./cjkit/web/images/cook_img/main2.png") no-repeat; 
+	background-size:800px 800px;
+	}
+
+
+
+#head .list_gmenu {display:inline-block; font-size:0; line-height:0}
+#head .list_gmenu li {display:inline-block; font-size:0; line-height:0}
+#head .list_gmenu li a {display:inline-block; padding:0 32px; color:#101010; font-weight:700; font-size:22px; line-height:32px;}
+#head .list_gmenu li .red_dot{position:relative;}
+#head .list_gmenu li .red_dot:before{content:'';position:absolute;top:0;right:0;width:6px;height:6px;background:#EE0700;border-radius:3px;}
+#head .my_gmenu {position:absolute; right:40px; top:14px;}
+#head .my_gmenu ul {float:right;}
+#head .my_gmenu li {float:left; margin-left:20px;}
+/* #head .my_gmenu li a {display:block; width:32px; height:32px; background:url('/cjkit/web/images/common/ico_set.png') no-repeat; background-size:800px 800px;} */
+#head .my_gmenu li a {display:block;}
+#head .my_gmenu li a:before {content:'';display:block; width:32px; height:32px; margin:0 auto; background:url('https://www.cjcookit.com/cjkit/web/images/common/ico_set.png') no-repeat; background-size:800px 800px;}
+#head .my_gmenu li a .txt{display:block;margin-top:-2px;font-size:12px;line-height:20px;letter-spacing:-1px;color:#101010;}
+#head .my_gmenu li.g_od {position:relative;}
+#head .my_gmenu li.g_od .num {position:absolute; right:4px; top:-1px; width:16px; height:16px; border-radius:8px; background-color:#FF2727; color:#fff; font-weight:700; font-size:9px; line-height:16px; text-align:center}
+#head .my_gmenu li.g_my a:before {background-position:-540px -320px}
+#head .my_gmenu li.g_od a:before {background-position:-584px -320px}
+#head .my_gmenu li.g_mu a:before {background-position:-628px -320px}
+/* LAYOUT - FOOTER */
+#footer{position:relative; z-index:999;}
+#footer .footer_wrap {position:relative; min-width:1260px; height:290px; margin:0 auto; background-color:#202020; text-align:center}
+#footer .footer_cont {width:1180px; margin:0 auto; text-align:left}
+#footer .footer_cont:after{content:'';display:table;clear:both;}
+#footer .footer_wrap .fl_l {float:left; width:300px; padding-top:36px;}
+#footer .footer_wrap .fl_c {float:left; width:650px; padding-top:32px;}
+#footer .footer_wrap .fl_r {float:right; padding-top:31px;}
+#footer .footer_wrap .foot-ccm {margin-top:26px;font-size:12px;color:#808080;letter-spacing: -0.5px;line-height:18px;}
+#footer .footer_wrap .foot-ccm a  {display:block;height:45px;font-size:12px;color:#808080;letter-spacing: -0.5px;line-height:18px;padding-left:93px;background:url('https://www.cjcookit.com/cjkit/web/images/common/bi-ccm-logo.svg')  no-repeat 0 1px;background-size:87px 45px;}
+#footer .footer_wrap .logo a {display:block; width:160px; height:48px; background:url('https://www.cjcookit.com/cjkit/web/images/common/ico_set.png') -320px -320px no-repeat; background-size:800px 800px;}
+#footer .footer_wrap .copy {padding:45px 0 0 1px; color:#808080; font-size:12px; line-height:20px;}
+#footer .footer_wrap .menu {width:100%; overflow:hidden;}
+#footer .footer_wrap .menu ul {width:625px; margin-left:-25px;}
+#footer .footer_wrap .menu ul:after{content:'';display:table;clear:both;}
+#footer .footer_wrap .menu li {float:left; padding-right:24px;}
+#footer .footer_wrap .menu li:before {content:''; display:inline-block; position:relative; width:1px; height:12px; margin-right:24px; background-color:rgba(255,255,255,0.1); vertical-align:middle;}
+#footer .footer_wrap .menu li a {color:#fff; font-weight:700; font-size:13px; line-height:21px;}
+#footer .footer_wrap .menu li.bg a {color:#BDD61A !important;}
+#footer .footer_wrap .f_info {width:100%; overflow:hidden; padding-top:18px; width:630px;}
+#footer .footer_wrap .f_info .f_info_cont { margin-left:-9px;}
+#footer .footer_wrap .f_info .f_info_cont:after{content:'';display:table;clear:both;}
+#footer .footer_wrap .f_info p {float:left; margin-top:6px; padding-right:8px; color:#808080; font-size:12px; line-height:20px; white-space:nowrap;}
+#footer .footer_wrap .f_info p:before {content:''; display:inline-block; position:relative; width:1px; height:11px; margin-right:8px; background-color:rgba(255,255,255,0.1); vertical-align:middle;}
+#footer .footer_wrap .f_info .link {letter-spacing:0.5px;margin-left:3px;color:#fff;text-decoration:underline;}
+#footer .footer_wrap .f_info .copyright {margin-top:24px;}
+#footer .footer_wrap .cj_manage {text-align:right;}
+#footer .footer_wrap .cj_manage .hd {text-align:left}
+#footer .footer_wrap .cj_manage .hd span {position:relative; color:#fff; font-weight:700; font-size:13px; line-height:30px;padding-right:22px;}
+#footer .footer_wrap .cj_manage .hd span:after {content:''; position:absolute; top:50%;right:1px;width:9px;height:9px;margin-top:-7px;border-right:1.5px solid #fff;border-bottom:1.5px solid #fff;-ms-transform:rotate(45deg);-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);transform:rotate(45deg);}
+#footer .footer_wrap .cj_manage.on .hd span:after {margin-top:-2px; -ms-transform:rotate(-135deg);-webkit-transform:rotate(-135deg);-moz-transform:rotate(-135deg);transform:rotate(-135deg);}
+#footer .footer_wrap .cj_manage .ly_manage {position:absolute; left:0; bottom:76px; width:100%; min-width:1260px; padding:30px 0; z-index:-1; background:#F7F7F7;}
+#footer .footer_wrap .cj_manage .ly_manage_wrap {width:1180px; margin:0 auto;}
+#footer .footer_wrap .cj_manage .ly_manage_wrap:after{content:'';display:table;clear:both;}
+#footer .footer_wrap .cj_manage .manage_cont {float:right;}
+#footer .footer_wrap .cj_manage dl {float:left; margin-left:58px;}
+#footer .footer_wrap .cj_manage dt {padding-bottom:4px; color:#101010; font-weight:700; font-size:14px; line-height:22px; text-align:left;}
+#footer .footer_wrap .cj_manage dd {text-align:left;}
+#footer .footer_wrap .cj_manage li {padding-top:2px;}
+#footer .footer_wrap .cj_manage li a {color:#606060; font-size:12px; line-height:20px;}
+#footer .footer_wrap .f_cs_info {overflow:hidden;margin-top:18px;}
+#footer .footer_wrap .f_cs_info dl {float:right;position:relative;}
+#footer .footer_wrap .f_cs_info dl:after{content:'';display:table;clear:both;}
+#footer .footer_wrap .f_cs_info dt {float:left; padding-right:6px; color:#fff; font-size:17px; line-height:24px}
+#footer .footer_wrap .f_cs_info dd {float:left; color:#fff; font-weight:700; font-size:17px; line-height:24px}
+#footer .footer_wrap .f_cs_info dd .btn_f_link {display:block; position:absolute; right:0; top:40px; width:88px; height:32px; border:1px solid #ccc; color:#fff; font-weight:500; font-size:13px; line-height:30px; text-align:center}
+
+/* LAYER POPUP */
+.dimmed{position:fixed;top:0;bottom:0;width:100%;height:100%;background-color:#000;opacity:0.6;z-index:50;}
+.lay_wrap{display:none; position:absolute;top:20px;left:50%;padding:0 0 24px;background-color:#fff;z-index:9000;}
+.lay_wrap > header{position:static;width:auto;height:auto;padding:20px 0 20px; margin:0 24px;}
+.lay_wrap > header h1{font-size:20px;line-height:30px;color:#101010;font-weight:700;}
+.lay_wrap > header .msg{margin-top:12px;font-size:13px;line-height:19px;text-align:center}
+.lay_wrap > header.line {border-bottom:2px solid #202020;}
+.lay_wrap > header .cnt {color:#008a00;font-size:14px;margin-left:10px;}
+.lay_wrap .lay_conts{}
+.lay_wrap .lay_conts.lay_scroll {position:relative; max-height:626px; overflow-y:auto; overflow-x:hidden; margin-bottom:-24px; padding-left:24px;}
+.lay_wrap .lay_conts.lay_scroll > div {width:432px; padding-bottom:24px;}
+.lay_wrap .lay_btm{padding-top:20px;}
+.lay_wrap .close{position:absolute;top:20px;right:19px;}
+.lay_wrap .close button{display:block;width:32px;height:32px;background:url('https://www.cjcookit.com/cjkit/web/images/common/ico_set.png') -488px 0 no-repeat;}
+.lay_wrap .close button:after {content:''; position:absolute; left:50%; top:50%; width:24px; height:24px; margin:-12px 0 0 -12px; background:url('https://www.cjcookit.com/cjkit/web/images/common/ico_set.png') -750px 0 no-repeat; background-size:800px 800px;}
+.lay_wrap.window_pop {position:static;}
+.lay_wrap.window_pop.w440 {width:440px;}
+.lay_wrap.window_pop.w480 {width:480px;}
+.lay_wrap.window_pop.w540 {width:540px;}
+.lay_wrap.window_pop.lay_wrap {border:none;}
+.lay_wrap.window_pop .input_mobile_num .input_wrap,
+.lay_wrap.window_pop .input_mobile_num .item_wrap {width:132.5px;}
+
+.lay_wrap .btn_wrap {margin-top:24px; text-align:center; overflow:hidden; font-size:0;}
+.lay_wrap .btn_wrap .btn {width:204px; margin:0 5px; vertical-align:top;}
+.lay_wrap .btn_wrap.full .btn{width:100%; margin:0 0;}
+.lay_wrap .btn_wrap.cols2 {font-size:0;}
+.lay_wrap .btn_wrap.cols2 .btn {width:48.5%; margin:0 0 0 8px;}
+.lay_wrap .btn_wrap.cols2 .btn:first-child {margin-left:0;}
+.lay_wrap .btn_wrap .btn.sub.white {color:#101010;border:1px solid #202020;}
+.lay_wrap .box_bul_gray {margin-top:16px; background-color:#f7f7f7; padding:20px 24px;}
+.lay_wrap .box_bul_gray .tit {margin-bottom:10px; color:#101010; font-weight:500; font-size:15px; line-height:23px;}
+.lay_wrap .btn_wrap.cols2:after{content:'';display:table;clear:both;}
+.lay_wrap .btn_wrap.cols2 .fl_l {float:left; width:50%; padding-right:4px;}
+.lay_wrap .btn_wrap.cols2 .fl_r {float:left; width:50%; padding-left:4px;}
+.lay_wrap .btn_wrap.cols2 .fl_l .btn,
+.lay_wrap .btn_wrap.cols2 .fl_r .btn {width:100%; margin:0 0 0 0;}
+
+.lay_wrap .btn_wrap.cols3:after{content:'';display:table;clear:both;}
+.lay_wrap .btn_wrap.cols3 .fl_l {float:left; width:33.3%; padding-right:5px;}
+.lay_wrap .btn_wrap.cols3 .fl_c {float:left; width:33.4%; padding:0 3px;}
+.lay_wrap .btn_wrap.cols3 .fl_r {float:left; width:33.3%; padding-left:5px;}
+.lay_wrap .btn_wrap.cols3 .fl_l .btn,
+.lay_wrap .btn_wrap.cols3 .fl_c .btn,
+.lay_wrap .btn_wrap.cols3 .fl_r .btn {width:100%; margin:0 0 0 0;}
+
+/* 장바구니/찜하기 메시지 */
+.lay_wrap.alerting_message {position:fixed;width:132px; height:132px; margin-left:-66px; border:0; top:50%; margin-top:-66px;background:url('https://www.cjcookit.com/cjkit/web/images/common/ico_set.png') no-repeat; background-size:800px 800px;}
+.lay_wrap.alerting_message.add_cart {background-position:-280px -668px;}
+.lay_wrap.alerting_message.add_interest {background-position:0 -668px;}
+.lay_wrap.alerting_message.remove_interest {background-position:0 -528px;}
+.lay_wrap.alerting_message.add_like {background-position:-140px -668px;}
+.lay_wrap.alerting_message.remove_like {background-position:-140px -528px;}
+.lay_wrap.alerting_message .lay_conts {position:relative; padding:0; text-align:center;}
+.lay_wrap.alerting_message .lay_conts p {padding:79px 0 24px; color:#101010; font-weight:700; font-size:14px; line-height:22px;}
+
+/* WINDOW POPUP */
+.pop_wrap {padding:0 0 24px;}
+.pop_wrap header.pop_header {position:relative; padding:0 24px;}
+.pop_wrap header.pop_header h1 {padding:20px 0; border-bottom:2px solid #202020; color:#101010; font-weight:700; font-size:20px; line-height:30px;}
+.pop_wrap header.pop_header .btn_link {position:absolute; right:24px; top:27px;}
+.pop_wrap .pop_conts{padding:0 24px;}
+.pop_wrap .pop_btm{padding:0 24px;}
+.pop_wrap .box_bul_gray {margin-top:16px; background-color:#f7f7f7; padding:20px 24px;}
+.pop_wrap .box_bul_gray .tit {margin-bottom:10px; color:#101010; font-weight:500; font-size:15px; line-height:23px;}
+.pop_wrap .btn_wrap {margin-top:24px;}
+.pop_wrap .btn_wrap.cols2 {font-size:0;}
+/* .pop_wrap .btn_wrap.cols2 .btn {width:48%; margin:0 0 0 8px;} */
+.pop_wrap .btn_wrap.cols2 .btn {width:49%; margin:0 0 0 8px;}
+.pop_wrap .btn_wrap.cols2 .btn:first-child {margin-left:0;}
+.pop_wrap .btn_wrap.cols2:after{content:'';display:table;clear:both;}
+.pop_wrap .btn_wrap.cols2 .fl_l {float:left; width:50%; padding-right:4px;}
+.pop_wrap .btn_wrap.cols2 .fl_r {float:left; width:50%; padding-left:4px;}
+.pop_wrap .btn_wrap.cols2 .fl_l .btn,
+.pop_wrap .btn_wrap.cols2 .fl_r .btn {width:100%; margin:0 0 0 0;}
+
+.pop_wrap .btn_wrap.cols3:after{content:'';display:table;clear:both;}
+.pop_wrap .btn_wrap.cols3 .fl_l {float:left; width:33.3%; padding-right:5px;}
+.pop_wrap .btn_wrap.cols3 .fl_c {float:left; width:33.3%; padding:0 3px;}
+.pop_wrap .btn_wrap.cols3 .fl_r {float:left; width:33.4%; padding-left:5px;}
+.pop_wrap .btn_wrap.cols3 .fl_l .btn,
+.pop_wrap .btn_wrap.cols3 .fl_c .btn,
+.pop_wrap .btn_wrap.cols3 .fl_r .btn {width:100%; margin:0 0 0 0;}
+
+/* SKIP NAVIGATION */
+#skipnavi a {position:absolute;top:-9999px;background:#35719E;color:#fff;text-align:center;z-index:9999}
+#skipnavi a:hover, #skipnavi a:focus {display:block; top:0; width:100%; padding:5px 0}
+
+/* INPUT - BASIC */
+input[type='submit'],input[type='button'],button {cursor:pointer}
+input.txt {display:inline-block;width:100%;height:48px;padding:0 16px;background-color:#fff;border:1px solid #ccc;color:#101010; font-weight:400; font-size:15px; line-height:23px;-ms-transform:translateZ(0);-webkit-transform:translateZ(0);-moz-transform:translateZ(0);transform:translateZ(0);}
+input.txt::-webkit-input-placeholder {color:#606060;font-size:15px; font-weight:400;}
+input.txt::-moz-placeholder {color:#606060;font-size:15px; font-weight:400;}
+input.txt:-ms-input-placeholder {color:#606060;font-size:15px; font-weight:400;}
+.input_wrap.dis input.txt::-webkit-input-placeholder {color:#b0b0b0;font-size:15px; font-weight:400;}
+.input_wrap.dis input.txt::-moz-placeholder {color:#b0b0b0;font-size:15px; font-weight:400;}
+.input_wrap.dis input.txt:-ms-input-placeholder {color:#b0b0b0;font-size:15px; font-weight:400;}
+.input_wrap.on input.txt,
+input.txt:focus{background-color:#fff;border:1px solid #202020;box-shadow:none; color:#101010;}
+.input_wrap.dis input.txt {background-color:#F7F7F7;border:1px solid #ccc;color:#606060;}
+.input_wrap.dis input[disabled].txt {color:#b0b0b0;}
+.input_wrap.dis input[readonly].txt {color:#606060;}
+
+.bul_req {display:inline-block; position:relative; min-width:6px; min-height:6px; padding-left:10px; color:#a3a3a3; font-size:11px; vertical-align:top;}
+.bul_req:after {content:''; display:block; position:absolute; top:5px; right:0; width:7px; height:7px; background:url('https://www.cjcookit.com/cjkit/web/images/common/ico_set.png') no-repeat; background-position:0 0; background-size:800px 800px;}
+
+/* INPUT - ICON */
+.input_wrap{position:relative;display:inline-block;}
+div.input_wrap {width:100%}
+div[class^="input_wrap ui_input"] input.txt {padding-right:48px;}
+.input_wrap .ico{display:none;position:absolute;top:50%;right:15px;background:url('https://www.cjcookit.com/cjkit/web/images/common/ico_set.png') no-repeat; background-size:800px 800px;}
+.input_wrap input.txt+.ico.help{display:block;width:24px;height:24px;margin-top:-12px;background-position:-30px -70px}
+.input_wrap.on input.txt+.ico.del{display:block;width:24px;height:24px;margin-top:-12px;background-position:0 -70px}
+.input_wrap input.txt+.ico.find{display:block;width:20px;height:20px;margin-top:-10px;background-position:-157px -111px}
+.input_wrap input:focus.txt+.ico.find{background-position:-182px -111px}
+
+.input_wrap.error input.txt{padding-right:48px; background-color:#fff;border:1px solid #EE0700;color:#EE0700}
+.input_wrap.error:after{content:'';display:inline-block;position:absolute;top:0;right:15px;width:24px;height:24px;margin-top:12px; background:url('https://www.cjcookit.com/cjkit/web/images/common/ico_set.png') -86px -70px no-repeat; background-size:800px 800px;}
+.input_wrap.error p{padding-top:7px; font-size:14px;color:#EE0700}
+
+.input_wrap.ok:after{content:'';display:inline-block;position:absolute;top:0;right:16px;width:24px;height:24px;margin-top:12px;background:url('https://www.cjcookit.com/cjkit/web/images/common/ico_set_old.png') -48px -64px no-repeat;}
+
+/* INPUT - CHECKBOX */
+.chk_wrap {display:inline-block;}
+.chk_wrap input {position:absolute; z-index:0; opacity:0; filter:alpha(opacity=0)}
+.chk_wrap label {display:inline-block;color:#101010;font-size:14px;line-height:23px;cursor:pointer;}
+.chk_wrap input:checked + label {color:#101010;}
+.chk_wrap input:disabled + label{color:#B0B0B0;cursor:default}
+.chk_wrap input + label:before {content:'';zoom:1;display:inline-block;width:25px;height:26px;margin:-3px 6px 0 0;background:url('https://www.cjcookit.com/cjkit/web/images/common/ico_set.png') no-repeat;background-position:-1px -40px; background-size:800px 800px; vertical-align:middle;}
+.chk_wrap input:checked + label:before {background-position:-29px -40px}
+.chk_wrap input:disabled + label:before{background-position:-56px -40px}
+
+.chk_wrap.black input + label{color:#B0B0B0;}
+.chk_wrap.black input:checked + label{color:#FFFFFF;}
+.chk_wrap.black input + label:before {background-position:-1px -40px}
+.chk_wrap.black input:checked + label:before {background-position:-27px -40px}
+.chk_wrap.black input:disabled + label:before{background-position:-55px -40px}
+
+/*.chk_wrap input:focus + label {outline:1px solid #71A0F8;}*/
+/* .chk_wrap input:focus + label {outline:none;} */
+
+/* INPUT - RADIO */
+.rad_wrap {display:inline-block;}
+.rad_wrap input {position:absolute;z-index:0;opacity:0;filter:alpha(opacity=0)}
+.rad_wrap input + label {display:inline-block;margin-left:32px;color:#101010; font-weight:400; font-size:14px;line-height:23px;cursor:pointer;text-indent:-32px;}
+.rad_wrap input:checked + label {color:#101010;}
+.rad_wrap input:disabled + label{color:#B0B0B0;cursor:default}
+.rad_wrap input + label:before {content:'';zoom:1;display:inline-block;width:25px;height:26px;margin:-3px 6px 0 0;background:url('https://www.cjcookit.com/cjkit/web/images/common/ico_set.png') no-repeat;background-position:-164px -40px; background-size:800px 800px; vertical-align:middle;}
+.rad_wrap input:checked + label:before {background-position:-192px -40px}
+.rad_wrap input:disabled + label:before{background-position:-220px -40px}
+.rad_wrap.black input:checked + label:before{background-position:-192px -40px}
+.rad_wrap input + label.only{padding-left:0;}
+.rad_wrap input + label.only:before{margin:0;}
+
+/* INPUT - RADIO TAB */
+.rad_tab_wrap {display:table;width:100%;table-layout:fixed;}
+.rad_tab_wrap > li {display:table-cell;vertical-align:middle;}
+.rad_tab_wrap .rad_wrap {display:block;position:relative;height:56px;margin:0 -3px -3px 0;}
+.rad_tab_wrap .rad_wrap input + label {display:block;width:100%;height:56px;margin:0;padding-left:0;background:#fff;border:1px solid #b0b0b0;color:#808080;font-size:15px;line-height:54px;text-align:center;cursor:pointer;text-indent:0;}
+.rad_tab_wrap .rad_wrap input:checked + label,
+.rad_tab_wrap .rad_wrap input:focus + label {position:absolute;top:0;left:0;margin:0;border:3px solid #303030;color:#101010;line-height:50px;font-weight:700;box-shadow:0 2px 2px 0 rgba(0, 0, 0, .12);z-index:1;text-indent:0;}
+.rad_tab_wrap .rad_wrap input + label:before {width:15px;height:9px;background:none;}
+.rad_tab_wrap .rad_wrap input:checked + label:before {display:none;}
+/* .rad_tab_wrap .rad_wrap input:focus + label:before {outline:none;} */
+
+/* INPUT - MOBILE INPUT TYPE */
+.input_mobile_num {font-size:0;}
+.input_mobile_num .input_wrap,
+.input_mobile_num .item_wrap {width:31.5%;margin-left:9px;}
+.input_mobile_num .item_wrap{margin-left:0;}
+.input_mobile_num .dash {display:inline-block;width:16px;font-size:13px;vertical-align:middle;text-align:center;}
+.input_mobile_num.error p {padding-top:7px;font-size:14px;color:#ff7070;}
+.input_mobile_num .input_wrap.error:after {display:none;}
+
+/* INPUT - EMAIL INPUT TYPE */
+.input_email .input_wrap,
+.input_email .item_wrap {width:31.5%;}
+.input_email .ema_id{width:27%;}
+.input_email .item_wrap{margin-left:8px;}
+.input_email .at {display:inline-block;margin:0 8px;font-size:14px;line-height:22px;vertical-align:middle;text-align:center;color:#101010;}
+.input_email.error p {padding-top:7px;font-size:14px;color:#ff7070;}
+.input_email .input_wrap.error:after {display:none;}
+
+/* SELECT BOX */
+.item_wrap {display:inline-block;position:relative; width:100%;height:48px;border:1px solid #ccc;color:#101010;font-size:15px;line-height:23px;font-weight:400;vertical-align:middle;}
+/* .item_wrap select {width:100%;height:100%;padding:0 32px 0 16px;background:transparent;border:0;color:inherit;font-size:inherit;font-family:inherit;outline:0;-moz-appearance:none;-webkit-appearance:none;-o-appearance:none; appearance:none;} */
+.item_wrap select {width:100%;height:100%;padding:0 32px 0 16px;background:transparent;border:0;color:#101010;font-size:inherit;font-family:inherit;-moz-appearance:none;-webkit-appearance:none;-o-appearance:none; appearance:none;} /* 190169 */
+.item_wrap select::-ms-expand, .item_wrap select:hover::-ms-expand {display:none}
+.item_wrap select {position:relative; z-index:1; font-weight:400;}
+.item_wrap select:disabled{color:#B0B0B0;}
+.item_wrap .ico_arr {position:absolute; z-index:0; top:50%;right:18px;width:12px;height:12px;margin-top:-9px;border-right:1.5px solid #303030;border-bottom:1.5px solid #303030;-ms-transform:rotate(45deg);-webkit-transform:rotate(45deg);-moz-transform:rotate(45deg);transform:rotate(45deg);}
+.item_wrap.dis {background-color:#F7F7F7;color:#B0B0B0;border:1px solid #ccc;}
+.item_wrap.dis .ico_arr {border-color:#CCC;}
+.item_wrap.error {border-color:#EE0700 !important;}
+
+/* SELECT BOX(CUSTOM) */
+.selectbox_wrap { display:inline-block; z-index:0; position:relative; border:1px solid #ccc; background:transparent; white-space:nowrap;vertical-align:middle;text-align:left; }
+.selectbox_wrap.active.on, .selectbox_wrap.on { z-index:3; border:1px solid #202020; }
+.selectbox_wrap.disabled, .selectbox_wrap.read {background-color:#f7f7f7 }
+.selectbox_wrap a,
+.selectbox_wrap a:hover { display:block; text-decoration:none; }
+.selectbox_wrap a { display:block; padding:11px 56px 11px 15px; height:46px; }
+.selectbox_wrap.disabled a, .selectbox_wrap.read a { background:#F7F7F7; }
+.selectbox_wrap.disabled a,
+.selectbox_wrap.disabled a:hover,
+.selectbox_wrap.disabled a:focus,
+.selectbox_wrap.read a,
+.selectbox_wrap.read a:hover,
+.selectbox_wrap.read a:focus { pointer-events: none; cursor: default; }
+.selectbox_wrap a .select_text { color:#101010; font-weight:500; font-size:15px; line-height:23px; white-space:nowrap; letter-spacing:0; word-wrap:normal; }
+.selectbox_wrap.placeholder a .select_text { color:#606060; }
+.selectbox_wrap.active.on a .select_text,
+.selectbox_wrap.on a .select_text { color:#606060; }
+.selectbox_wrap.disabled a .select_text,
+.selectbox_wrap.read a .select_text { color:#B0B0B0; }
+.selectbox_wrap .selectbox_view .ico { position:absolute; right:0; top:0; width:46px; height:46px; }
+.selectbox_wrap .selectbox_view .ico:after { content:''; position:absolute; left:50%; margin:-8px 0 0 -6px; top:50%; width:12px; height:12px; border:1.5px solid #303030; border-width: 0 1.5px 1.5px 0;
+	-webkit-transform:rotate(45deg); -ms-transform:rotate(45deg); -moz-transform:rotate(45deg); transform:rotate(45deg);
+}
+.selectbox_wrap.on .selectbox_view .ico:after { margin-top:-3px; border-color:#303030; -webkit-transform:rotate(-135deg); -ms-transform:rotate(-135deg); -moz-transform:rotate(-135deg); transform:rotate(-135deg); }
+.selectbox_wrap .selectbox_list { display:none; position:absolute;top:46px;left:-1px;right:-1px;overflow:hidden;border:1px solid #202020;border-top:0; background:#fff;}
+.selectbox_wrap .selectbox_list .selectbox_area { overflow-y:auto; max-height:264px; }
+.selectbox_wrap .selectbox_list ul { margin:0 !important; padding-bottom:10px; }
+.selectbox_wrap .selectbox_list li a { padding:12px 15px 12px 15px; height:auto; min-height:48px; color:#606060; font-weight:500; font-size:15px; line-height:23px; }
+.selectbox_wrap .selectbox_list li a:hover,
+.selectbox_wrap .selectbox_list li.active a { background:#F7F7F7; }
+.selectbox_wrap.on .selectbox_list li.on a { text-decoration:none; }
+.selectbox_wrap .selectbox_list.up { top:auto; bottom:46px;}
+.selectbox_wrap .selectbox_list.up { border:1px solid #202020; border-bottom:0; }
+.selectbox_wrap .selectbox_list.up .selectbox_area {}
+
+/* TEXTAREA */
+textarea {width:100%;border:0;overflow-y:auto;resize:none;}
+textarea:focus {outline:0;}
+.textarea {position:relative;padding:0 0 0 0;border:1px solid #ccc; }
+/* .textarea textarea {height:208px;padding:16px 16px 0;color:#101010; font-weight:500; font-size:15px; line-height:23px;} */
+.textarea textarea {height:210px;padding:16px 16px 0;color:#101010; font-weight:500; font-size:15px; line-height:23px;} /* 190619 */
+.textarea textarea::-webkit-input-placeholder {color:#606060;font-size:15px; font-weight:400;}
+.textarea textarea::-moz-placeholder {color:#606060;font-size:15px; font-weight:400;}
+.textarea textarea:-ms-input-placeholder {color:#606060;font-size:15px; font-weight:400;}
+.input_wrap.dis .textarea textarea::-webkit-input-placeholder {color:#b0b0b0;font-size:15px; font-weight:400;}
+.input_wrap.dis .textarea textarea::-moz-placeholder {color:#b0b0b0;font-size:15px; font-weight:400;}
+.input_wrap.dis .textarea textarea:-ms-input-placeholder {color:#b0b0b0;font-size:15px; font-weight:400;}
+.textarea .result_txt {padding:16px 0 16px 16px;color:#606060;font-size:14px;line-height:22px;}
+.textarea .result_txt>span {color:#101010; font-weight:700;}
+
+.textarea.error {border:1px solid #Fa3e3e;}
+.textarea.error textarea {color:#Fa3e3e;}
+.textarea.error + .error_msg {padding-top:7px; font-size:15px;color:#ff7070;}
+/* .textarea textarea:focus {outline:1px solid #71A0F8;} */
+.textarea textarea:focus {outline:none;}
+
+/* BUTTON - BASIC */
+.btn{display:inline-block;width:100%;height:56px;text-align:center;font-weight:700;font-size:18px;line-height:54px;}
+.btn.pop{height:56px;font-size:16px;line-height:54px;}
+.btn.sub{height:48px; font-weight:500; font-size:14px;line-height:46px;}
+.btn.sub_em{height:48px;font-size:14px;line-height:46px;}
+.btn.lar_em{height:64px;font-size:20px;line-height:27px;} /* 상품 상세/강조버튼 */
+
+.btn.sm{height:32px;padding:4px 13px 5px; font-weight:500; font-size:13px;line-height:21px;}
+.btn.ssm{height:22px;padding:4px 13px 5px; font-weight:500; font-size:13px;line-height:21px;}
+.btn.sm.white, .btn.sm.white:focus, .btn.sub.white, .btn.sub.white:focus {border:1px solid #ccc;}
+.pop_wrap .btn.sm.white, .pop_wrap .btn.ssm.white, .pop_wrap .btn.sm.white:focus, .pop_wrap .btn.sub.white, .pop_wrap .btn.sub.white:focus {border:1px solid #202020;}
+
+.s_btn{display:inline-block;margin:-2px 0 0 4px;padding: 0 10px;font-size: 12px;line-height: 20px;vertical-align: middle;color: #606060;border: 1px solid #CCCCCC;}
+
+.btn.white{color:#101010;border:1px solid #202020;background-color:#FFFFFF;}
+.btn.white:active{border:1px solid #202020;background-color:#F2F2F2;}
+.btn.green{color:#101010;border:1px solid #BDD61A;background-color:#BDD61A;}
+.btn.green:active{border:1px solid #97AB14;background-color:#97AB14;}
+/* .btn.gray{color:#FFFFFF;border:1px solid #606060;background-color:#606060;}
+.btn.gray:focus{color:#FFFFFF;border:1px solid #4C4C4C;background-color:#4C4C4C;} */
+.btn.black{color:#FFFFFF;border:1px solid #202020;background-color:#202020;}
+.btn.black:active{border:1px solid #191919;background-color:#191919;}
+.btn.dis{color:#B0B0B0;border:1px solid #E0E0E0;background-color:#F2F2F2;cursor:default;}
+.btn.dis_noline{color:#B0B0B0;border:1px solid #F2F2F2;background-color:#F2F2F2;}
+.btn.sub.dis{color:#fff;background-color:#D8D8D8;}
+.btn.sm.gray {border:1px solid #808080;background-color:#808080;}
+
+.btn.white.dis[disabled], .btn.green.dis[disabled]:focus,
+.btn.green.dis[disabled], .btn.white.dis[disabled]:focus {border:1px solid #F2F2F2; background-color:#F2F2F2;}
+
+.btn_lay{display:inline-block;width:50%;color:#606060;font-size:14px;line-height:58px;vertical-align:middle;border-left:1px solid #e0e0e0;}
+.btn_lay:first-child {border-left:0;}
+.btn_lay.green{color:#008a00;}
+
+/* BUTTON - MORE */
+.btn_more_wrap {margin-top:80px; text-align:center}
+.btn_more_wrap .btn_data_full {display:inline-block;width:380px;height:56px; padding:15px 0 17px;vertical-align:top;text-align:center;background-color:#f2f2f2;}
+.btn_data_full span {position:relative;display:inline-block;padding-left:18px;color:#606060; font-size:16px;line-height:24px;font-weight:700;}
+.btn_data_full span:after {content:'';display:block;position:absolute;left:0;top:50%;width:16px;height:16px; margin-top:-7px; background:url('https://www.cjcookit.com/cjkit/web/images/common/ico_set.png') -400px 0 no-repeat; background-size:800px 800px;}
+
+/* BUTTON - AMOUNT */
+.box_prd_quantity {display:inline-block; position:relative; width:96px; height:32px; border:1px solid #ccc; text-align:center; vertical-align:middle}
+.btn_amount{position:absolute;top:0;width:32px;height:32px;}
+.btn_amount.minus {left:0;}
+.btn_amount.plus {right:0;}
+.btn_amount.minus:before,
+.btn_amount.plus:before{content:'';display:block;position:absolute;left:0;top:0;width:32px;height:32px; background:url('https://www.cjcookit.com/cjkit/web/images/common/ico_set.png') no-repeat; background-size:800px 800px;}
+.btn_amount.minus:before {background-position:-264px -38px}
+.btn_amount.plus:before {background-position:-296px -38px}
+.prd_quantity .quantity{display:inline-block;width:40px;height:30px; font-weight:700; font-size:16px;line-height:30px;color:#101010;text-align:center;}
+
+/* BUTTON - TEXT */
+.btn_link{display:inline-block;font-weight:400;font-size:14px;line-height:21px;color:#606060;}
+.btn_link:after{content:'';display:inline-block;width:8px;height:8px;margin:-3px 0 0 4px;border-bottom:1.5px solid #606060;border-right:1.5px solid #606060;-ms-transform:rotate(-45deg);-moz-transform:rotate(-45deg);-webkit-transform:rotate(-45deg);transform:rotate(-45deg);vertical-align:middle}
+.rec_link{display:inline-block; min-width:142px;padding:11px 20px 11px; border:1px solid #ccc; text-align:center;}
+.rec_link span {font-size:14px;line-height:22px;color:#101010;font-weight:500}
+.rec_link span:after{content:'';display:inline-block;width:8px;height:8px;margin:-3px 0 0 8px;border-bottom:1.5px solid #202020;border-right:1.5px solid #202020;-ms-transform:rotate(-45deg);-moz-transform:rotate(-45deg);-webkit-transform:rotate(-45deg);transform:rotate(-45deg);vertical-align:middle}
+
+/* BUTTON - ICON + TEXT */
+.ico_btn{height:32px;padding:2px 12px 3px;font-weight:500;font-size:13px;line-height:21px;color:#101010;border:1px solid #CCC;background-color:#FFF;}
+.ico_btn span{display:inline-block;}
+.ico_btn span:before{content:'';display:inline-block;width:20px;height:20px;margin:0 4px 0 0;vertical-align:-0.3em;background:url('https://www.cjcookit.com/cjkit/web/images/common/ico_set.png') no-repeat; background-size:800px 800px;}
+.ico_btn span.resale {width:140px;}
+.ico_btn span.resale:before{background-position:-350px -30px;} /* 재입고알림신청 */
+.ico_btn span.resale.fin:before{background-position:-374px -30px;}  /* 재입고알림신청완료 */
+.ico_btn span.bascket:before{background-position:-322px -62px;}
+.ico_btn span.recipe:before{background-position:-349px -62px;}
+.ico_btn span.review:before{background-position:-380px -62px;}
+
+/* Green TEXT */
+a.link_txt_green {color:#008A00; text-decoration:underline}
+
+/* PRODUCT LIST - FLAG */
+.prd_flag_wrap {margin-left:0; padding-bottom:12px; font-size:0; line-height:0;}
+.prd_flag_wrap .flag {display:inline-block; min-width:55px; height:25px; margin:0 0 0 0; border:1px solid #202020; color:#101010; font-size:12px; line-height:22px; text-align:center; vertical-align:middle; font-weight:500;}
+.prd_flag_wrap .flag:nth-of-type(1) {margin-left:0;}
+.prd_flag_wrap .flag.closing {color:#fff; background-color:#202020;} /*NEW*/
+.prd_flag_wrap .flag.new {border:1px solid #BDD61A; background-color:#BDD61A;} /*마감임박*/
+.prd_flag_wrap .flag.reserve {color:#fff;border:1px solid #8D4D2E; background-color:#8D4D2E;} /*사전예약*/
+.prd_flag_wrap.bflag .flag {min-width:55px; height:25px; font-size:12px; line-height:22px;}
+
+/* PRODUCT LIST - ZZIM & BASCKET */
+.act_btn_wrap {position:static; font-size:0; z-index:1;}
+.act_btn_wrap .btn {display:inline-block; width:40px; height:40px; margin-left:10px; background:url('https://www.cjcookit.com/cjkit/web/images/common/ico_set.png') no-repeat; background-size:800px 800px;}
+.act_btn_wrap .btn:first-child {margin-left:0;}
+.act_btn_wrap .btn.btn_interest {background-position:0 -190px;} /* 찜하기 */
+.act_btn_wrap .btn.btn_interest.on {background-position:0 -235px;}
+.act_btn_wrap .btn.btn_cart {background-position:-45px -190px;} /* 장바구니담기 */
+/* .act_btn_wrap .btn.btn_cart.on {background-position:-45px -235px;} */
+.act_btn_wrap .btn.btn_alarm {background-position:-90px -190px;} /* 재입고알림 */
+.act_btn_wrap .btn.btn_alarm.on {background-position:-90px -235px;}
+.act_btn_wrap .btn.btn_resel {background-position:-135px -190px;} /* 재판매알림 */
+.act_btn_wrap .btn.btn_resel.on {background-position:-135px -235px;}
+.act_btn_wrap .btn.btn_ar_new {background-position:-376px -190px;} /* 신메뉴알림 */
+.act_btn_wrap .btn.btn_ar_new.on {background-position:-376px -235px;}
+
+/* TOOLTIP - COMMON */
+.bul_qt {position:relative;margin-top:7px;padding-left:19px;color:#101010;font-size:15px;line-height:235px;}
+.bul_qt:before {content:'';display:inline-block;position:absolute;top:0;left:0;width:24px;height:24px;vertical-align:middle;background:url('https://www.cjcookit.com/cjkit/web/images/common/ico_set_old.png') no-repeat -376px 0;}
+.bul_qt > a{font-size:15px;line-height:23px;color:#101010;text-decoration:none;}
+a.btn_qt{display:inline-block; position:relative; width:20px;height:20px;vertical-align:middle;}
+a.btn_qt:before {content:''; position:absolute; left:0; top:0; width:20px; height:20px;background:url('https://www.cjcookit.com/cjkit/web/images/common/ico_set.png') no-repeat -330px -74px; background-size:800px 800px;}
+
+.q_wrap {display:inline-block;position:relative;vertical-align:middle;}
+.q_wrap .btn_qt {display:block;}
+.q_wrap .info_layer {display:none;position:absolute;top:25px;left:50%;margin-left:-150px; z-index:5;}
+.q_wrap .info_layer .arr {position:relative; top:-5px; left:50%; display:block; width:10px; height:10px; margin-left:-5px; background-color:#fff; -ms-transform:rotate(45deg); -moz-transform:rotate(45deg); -webkit-transform:rotate(45deg); transform:rotate(45deg); border-top:1px solid #e0e0e0; border-left:1px solid #e0e0e0; z-index:1;}
+.q_wrap.open .info_layer {display:block;}
+.q_wrap .info_layer .inner {position:relative;width:300px; padding:15px; background-color:#fff; text-align:left; -ms-transform:rotate(0deg); -webkit-transform:rotate(0deg); -moz-transform:rotate(0deg); transform:rotate(0deg); color:#606060; font-size:13px; line-height:21px; border:1px solid #202020;}
+.q_wrap .info_layer .inner .btn_close {position:absolute; top:7px; right:7px; width:32px; height:32px;}
+.q_wrap .info_layer .inner .btn_close:after {content:''; position:absolute; left:8px; top:8px; width:16px; height:16px; background:url('https://www.cjcookit.com/cjkit/web/images/common/ico_set.png') no-repeat -324px 0; background-size:800px 800px;}
+.q_wrap .info_layer .inner h3.tip_tit {padding-top:2px; color:#101010; font-size:15px; line-height:24px; font-weight:700;}
+.q_wrap .info_layer .inner h3.tip_tit:first-child {padding-top:0; padding-right:40px;}
+.q_wrap .info_layer .inner h3.tip_tit + .tip_txt {padding-top:6px;}
+.q_wrap .info_layer .inner .tip_txt + .tip_txt {padding-top:6px;}
+.q_wrap .info_layer .inner .tip_txt {display:inline-block; padding-top:4px;}
+.q_wrap .info_layer .inner .tip_box {margin:0; padding-top:20px;}
+.q_wrap .info_layer .inner .tip_box .sub_tit {float:none; width:100%; color:#101010; font-size:15px; line-height:18px; font-weight:bold;}
+.q_wrap .info_layer .inner .tip_box .txt {display:block; padding-top:4px; color:#606060; font-size:13px; line-height:18px;}
+
+/* 챗봇 */
+.fix_contsbtm {position:fixed; z-index:888; left:50%; bottom:40px; width:44px; height:1px; margin-left:596px;}
+.fix_contsbtm .fx_button {position:absolute; left:0; width:44px; height:44px;}
+.fix_contsbtm .fx_button button,
+.fix_contsbtm .fx_button a {display:block; width:44px; height:44px; background:url('https://www.cjcookit.com/cjkit/web/images/common/ico_set.png') no-repeat -660px -54px; background-size:800px 800px;}
+.fix_contsbtm .fx_button.chatbot {bottom:100px;}
+.fix_contsbtm .fx_button.chatbot button {background-position:-660px -54px;}
+.fix_contsbtm .fx_button.top {bottom:47px;}
+.fix_contsbtm .fx_button.top a {background-position:-714px -54px;}
+.fix_contsbtm.btm {position:absolute; bottom:253px;}
+
+.fix_contsbtm .ui_chatBot {
+    transform:translate(0,52px);-webkit-transform:translate(0,52px);
+    transition:0.26s cubic-bezier(.77,0,.175,1);-webkit-transition:0.26s cubic-bezier(.77,0,.175,1);
+}
+.fix_contsbtm .ui_chatBot.show {
+    transform:translate(0,0);-webkit-transform:translate(0,0);
+    transition:0.55s 0.3s cubic-bezier(.3,.7,0,1);-webkit-transition:0.55s 0.3s cubic-bezier(.3,.7,0,1);
+}
+
+.fix_contsbtm .ui_gotoTop {
+    transform:translate(0,88px);-webkit-transform:translate(0,88px);
+    transition:0.26s cubic-bezier(.165,.84,.44,1);-webkit-transition:0.26s cubic-bezier(.165,.84,.44,1);
+}
+.fix_contsbtm .ui_gotoTop.show {
+    transform:translate(0,0);-webkit-transform:translate(0,0);
+    transition:0.55s 0.3s cubic-bezier(.3,.7,0,1);-webkit-transition:0.55s 0.3s cubic-bezier(.3,.7,0,1);
+}
+
+#footer .footer_wrap .cj_manage .ly_manage {
+    transform:translate(0,0);-webkit-transform:translate(0,0);
+    transition:0.36s cubic-bezier(.165,.84,.44,1);-webkit-transition:0.36s cubic-bezier(.165,.84,.44,1);
+}
+
+#footer .footer_wrap .cj_manage .ly_manage.show {
+    transform:translate(0,-214px);-webkit-transform:translate(0,-214px);
+    transition:0.65s 0.3s cubic-bezier(.3,.7,0,1);-webkit-transition:0.65s 0.3s cubic-bezier(.3,.7,0,1);
+}
+/* 챗봇 layer popup */
+.lay_chatbot_wrap{display:none; position:fixed; bottom:28px;left:50%; overflow:hidden;  width:360px; margin-left:250px; padding:0; z-index:999;}
+.lay_chatbot_frame {position:relative; top:668px; background-color:#fff; border:1px solid #ccc;}
+.lay_chatbot_wrap header{position:static;width:auto;height:auto;padding:20px 0 22px; margin:0 24px;}
+.lay_chatbot_wrap header h1{font-size:20px;line-height:30px;color:#101010;font-weight:700;}
+.lay_chatbot_wrap .chatbot_conts{line-height:0;}
+.lay_chatbot_wrap .chatbot_conts iframe {width:100%; height:578px; border:0 none;}
+.lay_chatbot_wrap .close{position:absolute;top:20px;right:19px;}
+.lay_chatbot_wrap .close button{display:block;width:32px;height:32px;}
+.lay_chatbot_wrap .close button:after {content:''; position:absolute; left:50%; top:50%; width:24px; height:24px; margin:-12px 0 0 -12px; background:url('https://www.cjcookit.com/cjkit/web/images/common/ico_set.png') -750px 0 no-repeat; background-size:800px 800px;}
+
+/* 메인이벤트 layer popup  */
+/* .lay_wrap.main_ev{padding:0;overflow:hidden;}
+.lay_wrap.main_ev .lay_conts {padding:0;}
+.lay_wrap.main_ev .lay_conts .laypop_cont {padding:0;}
+.lay_wrap.main_ev .lay_conts .laypop_cont .img_wrap .img img {display:block; width:100%;}
+.lay_wrap.main_ev .slide_wrap .slide_content .slide_conts {height:432px;} */
+/* 190705 */
+/* .lay_wrap.main_ev .lay_conts .laypop_cont .slide_arrow_wrap {position:absolute; bottom:24px;left:40px;width:80px;}
+.lay_wrap.main_ev .lay_conts .laypop_cont .arr_area{position:relative;}
+.lay_wrap.main_ev .lay_conts .laypop_cont .slide_arrow_wrap .btn_arrow{position:absolute; width:24px; height:24px; background:url('/cjkit/web/images/common/ico_set.png') no-repeat;background-size:800px 800px;}
+.lay_wrap.main_ev .lay_conts .laypop_cont .slide_arrow_wrap .btn_arrow.prev {bottom:0; left:-9px;background-position:-540px 0;}
+.lay_wrap.main_ev .lay_conts .laypop_cont .slide_arrow_wrap .btn_arrow.next {bottom:0; right:-9px;background-position:-564px 0;}
+.lay_wrap.main_ev .lay_conts .laypop_cont .img_wrap.slide_wrap .count_wrap {position: absolute;left:62px;bottom:26px;width:42px;text-align:center;z-index:2;}
+.lay_wrap.main_ev .lay_conts .laypop_cont .img_wrap.slide_wrap .count_wrap .num {display:inline-block;color:#101010;font-size:18px;line-height:24px;font-weight:400;vertical-align:middle;}
+.lay_wrap.main_ev .lay_conts .laypop_cont .img_wrap.slide_wrap .count_wrap .num em {font-weight:500;letter-spacing:2px;} */
+/* .lay_wrap.main_ev .lay_conts .laypop_cont .slide_arrow_wrap {position:absolute; left:0; right:0; top:50%; margin-top:-40px;}
+.lay_wrap.main_ev .lay_conts .laypop_cont .slide_arrow_wrap .btn_arrow {width:80px; height:80px;background:url('/cjkit/web/images/common/ico_set.png') no-repeat; background-size:800px auto;}
+.lay_wrap.main_ev .lay_conts .laypop_cont .slide_arrow_wrap .btn_arrow.prev {left:0; background-position:-519px -154px;}
+.lay_wrap.main_ev .lay_conts .laypop_cont .slide_arrow_wrap .btn_arrow.next {right:0; background-position:-599px -154px;}
+.lay_wrap.main_ev .lay_conts .laypop_cont .count_wrap {position:absolute; right:20px; bottom:16px; height:36px; text-align:center;}
+.lay_wrap.main_ev .lay_conts .laypop_cont .count_wrap .count {display:inline-block; background-color:rgba(16,16,16,0.55); border-radius:28px; vertical-align:middle;}
+.lay_wrap.main_ev .lay_conts .laypop_cont .count_wrap .num {display:inline-block; padding:0 16px; color:#fff; font-size:16px; line-height:36px; vertical-align:middle;}
+.lay_wrap.main_ev .lay_conts .laypop_cont .count_wrap strong {display:inline-block; margin:0; color:#fff; font-size:16px; line-height:36px; font-weight:500;} */
+/* //190705 */
+/* .lay_wrap.main_ev .lay_conts .btn_wrap.laypop{margin:0;height:58px;text-align:center;border-top:1px solid #E0E0E0;} */
+
+/* 메인팝업 수정 */
+.lay_wrap.main_ev{left:0!important;width:100%;padding:0;margin:0!important;}
+.lay_wrap.main_ev .laypop_box{position:relative;width:1260px;margin:0 auto;padding:0 40px;box-sizing:border-box;}
+.lay_wrap.main_ev .lay_conts {position:absolute;top:0;right:40px;width:400px;padding:0;background:#fff;}
+.lay_wrap.main_ev .lay_conts .laypop_cont {padding:0;}
+.lay_wrap.main_ev .lay_conts .laypop_cont .ui_carousel_track{display:inline-flex;}
+.lay_wrap.main_ev .lay_conts .laypop_cont .slide_conts{float:inherit;}
+.lay_wrap.main_ev .lay_conts .laypop_cont .slide_conts .conts{width:400px;height:424px;}
+.lay_wrap.main_ev .lay_conts .laypop_cont .slide_conts .conts img{width:100%;height:100%;}
+.lay_wrap.main_ev .lay_conts .indigator_pos{position:static;margin-left:0;}
+.lay_wrap.main_ev .lay_conts .indigator button{display:inline-block;}
+.lay_wrap.main_ev .lay_conts .indigator button.prev,
+.lay_wrap.main_ev .lay_conts .indigator button.next{position:absolute;top:186px;width:32px;height:52px;background:rgba(0, 0, 0, 0.2);border-radius:0;font-size:0;line-height:0;text-indent:-9999px;}
+.lay_wrap.main_ev .lay_conts .indigator button.prev{left:0;}
+.lay_wrap.main_ev .lay_conts .indigator button.next{right:0;}
+.lay_wrap.main_ev .lay_conts .indigator button.prev:after,
+.lay_wrap.main_ev .lay_conts .indigator button.next:after{position:absolute;top:17px;content:'';display:block;width:12px;height:18px;background:url('https://www.cjcookit.com/cjkit/web/images/common/bg_popup_arrow.png') no-repeat;}
+.lay_wrap.main_ev .lay_conts .indigator button.prev:after{right:12px;}
+.lay_wrap.main_ev .lay_conts .indigator button.next:after{left:12px;background-position:100% 0}
+.lay_wrap.main_ev .lay_conts .indi_wrap{bottom:13px;}
+.lay_wrap.main_ev .lay_conts .indi_conts > li .btn_indi{width:10px;height:10px;margin:0 5px;}
+.lay_wrap.main_ev .lay_conts .indi_conts > li .btn_indi{background:rgba(255, 255, 255, 0.2);}
+.lay_wrap.main_ev .lay_conts .indi_conts > li.on .btn_indi{background:#fff;}
+.lay_wrap.main_ev .lay_conts .laypop_cont .count_wrap {position:absolute; right:20px; bottom:16px; height:36px; text-align:center;}
+.lay_wrap.main_ev .lay_conts .laypop_cont .count_wrap .count {display:inline-block; background-color:rgba(16,16,16,0.55); border-radius:28px; vertical-align:middle;}
+.lay_wrap.main_ev .lay_conts .laypop_cont .count_wrap .num {display:inline-block; padding:0 16px; color:#fff; font-size:16px; line-height:36px; vertical-align:middle;}
+.lay_wrap.main_ev .lay_conts .laypop_cont .count_wrap strong {display:inline-block; margin:0; color:#fff; font-size:16px; line-height:36px; font-weight:500;}
+.lay_wrap.main_ev .lay_conts .btn_wrap{overflow:hidden;margin-top:0;}
+.lay_wrap.main_ev .lay_conts .btn_wrap button{float:left;height:42px;line-height:42px;color:#777;border-left:1px solid rgba(0, 0, 0, 0.07);border-radius:0;box-sizing:border-box;}
+.lay_wrap.main_ev .lay_conts .btn_wrap button:first-child{border-left:0;}
+.lay_wrap.main_ev .lay_conts .btn_wrap .btn_lay{width:calc((100% / 2) - 21px);}
+.lay_wrap.main_ev .lay_conts .btn_wrap.no_control .btn_control{display:none;}
+.lay_wrap.main_ev .lay_conts .btn_wrap.no_control .btn_lay{width:50%;}
+.lay_wrap.main_ev .lay_conts .btn_wrap.no_control .btn_control + .btn_lay{border-left:0;}
+.lay_wrap.main_ev .btn_control.pause,
+.lay_wrap.main_ev .btn_control.play{width:42px;display:inline-block;background:url('https://www.cjcookit.com/cjkit/web/images/common/ico_popup_control.png') no-repeat;}
+.lay_wrap.main_ev .btn_control.pause{background-position:18px 50%;}
+.lay_wrap.main_ev .btn_control.play{background-position:-12px 50%;}
+
+/* ACCORDION */
+.list_acco {background-color:#fff;}
+/* .list_acco > ul {border-bottom:1px solid #ebebeb} */
+.list_acco > ul {border-top:2px solid #202020; border-bottom:none}
+.list_acco > ul > li {border-top:1px solid #e0e0e0;}
+.list_acco > ul > li:first-child {border-top:0;}
+.list_acco > ul > li.line_none {border-top:0;}
+.list_acco li .head {position:relative;}
+.list_acco li .head a {display:block; padding-right:44px;}
+.list_acco li .head a:before {content:''; display:block; position:absolute; top:50%; right:16px; width:12px; height:12px; margin-top:-8px; border:1.5px solid #303030; border-top:none; border-left:none; -ms-transform:rotate(45deg); -webkit-transform:rotate(45deg); -moz-transform:rotate(45deg); transform:rotate(45deg);}
+.list_acco li .head a .tit,
+.list_acco li .head .tit {display:block; padding:20px 10px; color:#101010; font-size:14px; line-height:22px; font-weight:500; word-break:break-all;}
+.list_acco li .head a .tit span,
+.list_acco li .head .tit span {word-break:break-all;}
+.list_acco li .head .cate {display:block; padding-bottom:4px; color:#808080; font-size:13px; line-height:18px;}
+.list_acco li .desc {display:none; padding:40px 24px; border-top:1px solid #e0e0e0; color:#101010; font-size:14px; line-height:22px;}
+.list_acco li .desc .img {width:260px; margin-bottom:12px;}
+.list_acco li .desc .cont {word-break:break-all;}
+.list_acco li .desc .cont p {word-break:break-all;}
+.list_acco li .desc .cont > .btn_wrap {margin-top:16px;}
+.list_acco li.on .head a:before {margin-top:-1px; border:1.5px solid #303030; border-top:none; border-left:none; -ms-transform:rotate(-136deg); -webkit-transform:rotate(-136deg); -moz-transform:rotate(-136deg); transform:rotate(-136deg);}
+
+/* 약관 동의 */
+.term_agreement > header{position:static;height:auto;}
+.term_agreement > header > h2{padding-bottom:8px; font-size:15px;line-height:23px;color:#101010;font-weight:700;text-align:left;}
+.term_agreement > header > h2 + p{margin-top:12px;}
+.term_agreement > header > p{margin-top:16px; font-size:14px;line-height:22px;}
+.term_agreement > header .box_jump {margin-bottom:40px; padding:24px 0 8px 32px; background-color:#f7f7f7;}
+.term_agreement > header .box_jump ol {}
+.term_agreement > header .box_jump ol:after{content:'';display:table;clear:both;}
+.term_agreement > header .box_jump li {float:left; width:350px; margin:0 32px 16px 0;}
+.term_agreement > header .box_jump li,
+.term_agreement > header .box_jump li a {color:#101010; font-weight:500; font-size:16px; line-height:24px; text-decoration:underline;}
+.term_wrap header p ~ .box_jump {margin-top:32px;}
+.term_agreement .p_sec{padding-bottom:8px;}
+.term_agreement .p_sec a{text-decoration:underline}
+.term_agreement .p_sec h3{padding-top:16px; margin-bottom:6px;font-size:14px;line-height:22px;font-weight:700;color:#101010;}
+.term_agreement .p_sec:first-child h3 {padding-top:0;}
+.term_agreement .p_sec h4{margin-top:20px;font-weight:700;}
+.term_agreement .p_sec > h3 + p{margin-top:0}
+.term_agreement .p_sec > h4 + p{margin-top:6px}
+/*.term_agreement .p_sec > p{margin-top:20px;}*/
+.term_agreement .p_sec p + p {margin-top:5px;}
+.term_agreement .p_sec {font-size:14px;line-height:22px;color:#101010;}
+.term_agreement .p_sec .bul_list{margin-top:6px;}
+.term_agreement .p_sec .bul_list .bul_dot {font-size:12px;line-height:20px;}
+.term_agreement .p_sec .tb_row + .bul_list,
+.term_agreement .p_sec .tb_col + .bul_list{margin-top:10px;}
+.term_agreement .p_sec .tb_row + .bul_list li,
+.term_agreement .p_sec .tb_col + .bul_list li{margin-top:6px;}
+.term_agreement .p_sec .tb_row th{vertical-align:middle;border-left:none; font-weight:500; font-size:13px; line-height:20px}
+.term_agreement .p_sec .tb_row td{border-right:none;word-break:break-word; font-size:13px; line-height:20px}
+.term_agreement .p_sec .tb_row td strong{color:#101010;font-weight:400;}
+.term_agreement .p_sec .tb_row {border-top:1px solid #e0e0e0;}
+.term_agreement .p_sec .tb_col{margin-top:40px;}
+.term_agreement .p_sec .tb_col {border-top:0;}
+.term_agreement .p_sec .tb_col th{padding:10px 0;border-left:none; color:#606060; font-weight:500; font-size:13px; line-height:20px; vertical-align:middle;}
+.term_agreement .p_sec .tb_col td {padding:20px 24px; font-size:13px; line-height:20px}
+.term_agreement .p_sec h4 + .tb_col{margin-top:16px;}
+.term_agreement .p_sec .tb_col td{vertical-align:middle;}
+/* 190705 */
+/* .term_agreement .p_sec .tb_col th:first-child,
+.term_agreement .p_sec .tb_col td:first-child{border-left:none;} */
+.term_agreement .p_sec .tb_col td.f_noline{border-left:none;}
+/* //190705 */
+.term_agreement .p_sec .tb_col th:last-child,
+.term_agreement .p_sec .tb_col td:last-child{border-right:none;}
+.term_agreement .p_sec .tb_col.mtb,
+.term_agreement .p_sec .tb_row.mtb {margin:16px 0;}
+.term_agreement .p_sec > ol{margin-top:5px;}
+.term_agreement .p_sec .list_sec{margin-top:5px;}
+.term_agreement .p_sec .list_sec + p {margin-top:5px;}
+.term_agreement .p_sec .list_sec > ol > li,
+.term_agreement .p_sec .list_sec > ul.ul_bul > li {margin-top:5px;padding-left:16px;text-indent:-16px;}
+.term_agreement .p_sec .list_sec > ol > li:first-child,
+.term_agreement .p_sec .list_sec > ul.ul_bul > li:first-child{margin-top:0;}
+.term_agreement .p_sec .list_sec > ol > li > ol{margin:10px 0 10px 22px;}
+.term_agreement .p_sec .list_sec > ol > li > ol > li{font-size:13px;line-height:18px;color:#606060;}
+.term_agreement .p_sec .list_sec > ol > li > ol > li > ol {padding:0 0 10px 16px;}
+.term_agreement .p_sec .list_sec > ol > li > ul > li.bul_dot{text-indent:0;}
+.term_agreement .p_sec .list_sec li.bul_dot .sub_txt {padding-left:10px; font-size:12px;line-height:20px;}
+.term_agreement .history{margin-top:40px;}
+
+/* TABLE */
+table {width:100%;border:0 none;border-spacing:0;border-collapse:collapse;}
+caption, legend {overflow:hidden;line-height:0;height:0;position:absolute;z-index:-10;width:0}
+
+.tb_row {border-top:2px solid #202020;border-bottom:1px solid #e0e0e0;}
+.tb_row tr{border-top:1px solid #e6e6e6;}
+.tb_row tr:first-child {border-top:none;}
+.tb_row th,
+.tb_row td {padding:10px 24px;vertical-align:middle;text-align:left;font-size:13px;line-height:20px}
+.tb_row th {background:#F2F2F2;font-weight:normal; color:#606060; font-weight:500;}
+.tb_row td {color:#101010;}
+.tb_row td .bul_list {margin:0;}
+.list_acco li .desc .tb_row th,
+.list_acco li .desc .tb_row td {font-size:12px;}
+
+.tb_col {border-top:2px solid #202020;}
+.tb_col th,
+.tb_col td {vertical-align:top; vertical-align:middle;}
+.tb_col th {padding:12px 0; background:#f2f2f2;color:#101010;font-weight:700;font-size:15px;line-height:23px;text-align:center;}
+.tb_col th {border:1px solid #E0E0E0; border-right:0;}
+.tb_col td {border:1px solid #E0E0E0; border-right:0; border-top:0;}
+.tb_col td {padding:20px 32px;color:#101010;font-weight:400;font-size:14px;line-height:22px;}
+.tb_col td.center{text-align:center;vertical-align:middle;}
+.tb_col td .bul_list {margin:0;}
+.tb_col td.import {font-weight:500;font-size:16px;line-height:24px;}
+.tb_col .btn {margin:-5px 0;}
+.tb_col th.first, .tb_col td.first {border-left:none;}
+
+.tb_col.noline th {border:0;}
+.tb_col.noline td {padding-left:10px; padding-right:10px; border:0; border-bottom:1px solid #E0E0E0; text-align:center;}
+.tb_col.noline td.left {text-align:left;}
+
+	/* thead 2열인 table */
+.tb_col.multi.noline th.th_t {padding-top:16px; padding-bottom:4px; border-bottom:0;}
+.tb_col.multi.noline tr.sub th {padding:0 0 16px 0; color:#606060; font-weight:400; font-size:13px; line-height:21px;}
+.tb_col.multi.noline tr.sub th.ta_r {text-align:right;}
+.tb_col.multi.noline tr.sub th.ta_l {text-align:left;}
+.tb_col.multi.noline tr.sub th .sub_txt {display:block; position:relative; padding-left:16px;padding-right:16px;}
+.tb_col.multi.noline tr.sub th.ta_r .sub_txt {padding-right:17px;}
+.tb_col.multi.noline tr.sub th.ta_r .sub_txt:after {content:''; position:absolute; right:0; top:50%; width:1px; height:10px; margin-top:-5px; background-color:#e0e0e0;}
+
+.tb_col.multi.noline td {padding-left:10px; padding-right:10px;}
+.tb_col.multi.noline td.first {padding-left:20px;}
+.tb_col.multi.noline td.last {padding-right:20px;}
+.tb_col.multi.noline td.td_sub_r {padding-left:16px;padding-right:16px; text-align:right;}
+.tb_col.multi.noline td.td_sub_l {padding-left:16px;padding-right:16px; text-align:left;}
+
+.pop_wrap .tb_col,
+.lay_wrap .tb_col {border-top:0;}
+.pop_wrap .tb_col.hline,
+.lay_wrap .tb_col.hline {border-top:2px solid #202020;}
+.pop_wrap .tb_col th, .lay_wrap .tb_col th,
+.pop_wrap .tb_col td, .lay_wrap .tb_col td {border:1px solid #E0E0E0;vertical-align:top;}
+.pop_wrap .tb_col th, .lay_wrap .tb_col th {padding:9px 0;background:#f2f2f2;color:#101010;font-weight:400;font-size:12px;line-height:15px;text-align:center;}
+.pop_wrap .tb_col td, .lay_wrap .tb_col td {padding:20px 12px;color:#606060;font-size:13px;line-height:16px;}
+.pop_wrap .tb_col td.center, .lay_wrap .tb_col td.center{text-align:center;vertical-align:middle;}
+.pop_wrap .tb_col td .bul_list, .lay_wrap .tb_col td .bul_list {margin:0;}
+
+/* PRRODUCT LIST - COL Type */
+.prd_list .prd_mod .img_wrap{position:relative;}
+.prd_list .prd_mod .img_wrap .dimm{display:table;position:absolute;top:0;left:0;width:100%;height:100%;background-color:rgba(0,0,0,.5)}
+.prd_list .prd_mod .img_wrap .dimm span{display:table-cell;width:100%;height:100%;text-align:center;vertical-align:middle;color:#FFFFFF;font-weight:700;font-size:14px;line-height:22px;}
+
+.prd_list.col li{display:inline-block;width:268px;margin-left:32px;border:none;white-space:initial;vertical-align:top;}
+.prd_list.col li:first-child{margin-left:0;}
+.prd_list.col li a{display:inline-block;width:100%;}
+
+.prd_list.col.bascket li{width:200px;margin-left:21px;}
+.prd_list.col.bascket li:first-child{margin-left:0;}
+
+.prd_list.row li{display:block;width:100%;padding:16px 0; border-top:1px solid #ccc; white-space:initial;}
+.prd_list.row li:first-child{margin-left:0;margin-top:-1px; padding-top:26px}
+
+.prd_list.col .prd_mod .img_wrap{position:relative;display:block;height:200px;text-align: center;}
+.prd_list.col .prd_mod .img_wrap img{width:80%;margin-top:10%;}
+.prd_list.col .prd_mod .img_wrap:after{content:'';display:block;position: absolute;top: 0;left: 0;width: 100%;height: 100%;background-color: rgba(0,0,0,0.05);z-index: 5}
+.prd_list.col .prd_mod .img_wrap .selling_fin {position: absolute;top: 0;left: 0;width: 100%;height: 100%;text-align: center;line-height: 200px;background-color: rgba(32, 32, 32, 0.60);z-index: 5;}
+.prd_list.col .prd_mod .img_wrap .selling_fin .txt {padding: 0;color: #fff;font-size: 20px;text-align: center;font-weight:700;}
+.prd_list.col .prd_mod .info_wrap{margin-top:12px; padding:4px 0; font-size:16px; line-height:24px;}
+.prd_list.col .prd_mod .info_wrap span{display:inline-block; vertical-align:middle;}
+.prd_list.col .prd_mod .info_wrap span:first-child{margin-top:0;}
+.prd_list.col .prd_mod .info_wrap .tit{display:block;margin-top:8px;font-size:17px;line-height:24px;color:#101010;font-weight:500;}
+.prd_list.col .prd_mod .info_wrap .price{margin-top:8px;font-size:18px;line-height:27px;color:#101010;font-weight:700;}
+.prd_list.col .prd_mod .info_wrap .price del{font-size:13px;line-height:21px;color:#606060;font-weight:400;}
+.prd_list.col .prd_mod .info_wrap .price .price_name{display: inline-block;margin-right: 5px;color: #EE0700;vertical-align: top;}
+.prd_list.col .prd_mod .act_btn_wrap{position:static;margin-top:20px;}
+
+.prd_list.row .prd_mod{position:relative; padding:0 0 0 104px;}
+.prd_list.row li > .prd_mod { display:table-cell; height:80px; vertical-align:middle}
+.prd_list.row .prd_mod:after{content:'';display:block;clear:both;}
+.prd_list.row .prd_mod .chk_wrap,
+.prd_list.row .prd_mod .rad_wrap{position:absolute; left:0; top:50%;}
+.prd_list.row .prd_mod .img_wrap{position:absolute; left:0; top:50%; width:80px; text-align:center}
+.prd_list.row .prd_mod .img_wrap img{width:100%}
+.prd_list.row .prd_mod .img_wrap .dimm{height:80px;}
+.prd_list.row li > .prd_mod > a{display:table-cell; height:80px; vertical-align:middle}
+.prd_list.row .prd_mod .info_wrap{width:1012px; padding-right:446px;}
+.prd_list.row .prd_mod .info_wrap span{display:block;}
+.prd_list.row .prd_mod .info_wrap span:first-child{margin-top:0;}
+.prd_list.row .prd_mod .info_wrap .flag{color:#606060;font-size:13px;line-height:21px}
+.prd_list.row .prd_mod .info_wrap .flag span{display:inline-block;}
+.prd_list.row .prd_mod .info_wrap .flag span:before{content:'';display:inline-block;width:3px;height:3px;background-color:#CCC;border-radius:50%;margin:0 4px 0;vertical-align:middle}
+.prd_list.row .prd_mod .info_wrap .flag span:first-child:before {display:none;}
+.prd_list.row .prd_mod .info_wrap .flag strong{display:inline-block;color:#0379A6;font-weight:500;}
+.prd_list.row .prd_mod .info_wrap .flag strong:before{content:'';display:inline-block;width:3px;height:3px;background-color:#CCC;border-radius:50%;margin:0 4px 0;vertical-align:middle}
+.prd_list.row .prd_mod .info_wrap .flag strong:first-child:before {display:none;}
+.prd_list.row .prd_mod .info_wrap .flag .reserve {color:#8D4D2E;}
+.prd_list.row .prd_mod .info_wrap .tit{margin-top:4px;font-size:17px;line-height:24px;color:#101010;font-weight:500;}
+.prd_list.row .prd_mod .info_wrap .price{margin-top:8px;font-size:18px;line-height:27px;color:#101010;font-weight:700;}
+.prd_list.row .prd_mod .info_wrap .price del{font-size:13px;line-height:21px;color:#606060;font-weight:400;}
+.prd_list.row .prd_mod .info_wrap .sale_end {margin-top:4px; color:#EE0700; font-weight:500; font-size:13px; line-height:21px;}
+.prd_list.row .prd_mod .prd_quantity{position:absolute; right:200px; top:50%; height:auto;}
+.prd_list.row .prd_mod .prd_price{position:absolute; right:64px; top:50%; height:auto; color:#101010;font-size:18px;line-height:27px;font-weight:700; text-align:right; vertical-align:top;}
+.prd_list.row .prd_mod .prd_del{position:absolute;right:28px;top:50%;display:block;width:24px;height:24px;margin-top:-12px;}
+.prd_list.row .prd_mod .prd_del:after {content:''; position: absolute; left:4px; top:4px; width:16px; height:16px; background:url('https://www.cjcookit.com/cjkit/web/images/common/ico_set.png') -324px 0 no-repeat; background-size:800px 800px;}
+.prd_list.row .prd_mod .prd_date {position:absolute;right:120px;top:50%;margin-top:-22px;font-size:14px;text-align:center;line-height:22px;}
+.prd_list.row .prd_mod .prd_date dt {color:#606060;}
+.prd_list.row .prd_mod .prd_date dd {color:#101010;font-weight:bold;}
+.prd_list.row .prd_mod .chk_wrap,
+.prd_list.row .prd_mod .rad_wrap,
+.prd_list.row .prd_mod .img_wrap,
+.prd_list.row .prd_mod .prd_quantity,
+/* .prd_list.row .prd_mod .prd_price {-ms-transform:translate(0, -50%); -webkit-transform:translate(0, -50%); -moz-transform:translate(0, -50%);transform:translate(0, -50%);} */
+.prd_list.row .prd_mod .prd_price {-ms-transform:translate(0, -35%); -webkit-transform:translate(0, -50%); -moz-transform:translate(0, -50%);transform:translate(0, -50%);}
+
+.prd_list.row .add_material:before {content:''; display:block; margin-left:174px; margin-right:32px; margin-top:16px; height:12px; border-top:1px dashed #CCC;}
+.prd_list.row .add_material .prd_mod{margin-left:174px;padding-top:4px; padding-bottom:4px;}
+.prd_list.row .add_material .prd_mod .info_wrap{padding-top:4px; padding-bottom:4px;}
+.prd_list.row .add_material .prd_mod:first-child .info_wrap{}
+/*.prd_list.row .add_material .prd_mod .prd_quantity{top:0;}
+.prd_list.row .add_material .prd_mod:first-child .prd_quantity{top:16px;}*/
+/*.prd_list.row .add_material .prd_mod .prd_price{top:3px;font-size:16px;line-height:24px;}
+.prd_list.row .add_material .prd_mod:first-child .prd_price{top:18px;}
+.prd_list.row .add_material .prd_mod .prd_del{top:4px;}
+.prd_list.row .add_material .prd_mod:first-child .prd_del{top:19px;}*/
+
+/* NO DATA */
+.no_data{padding:80px 0 0;text-align:center;}
+.no_data strong{display:block;font-size:20px;line-height:30px;color:#101010;font-weight:700;}
+.no_data .ico{display:block;width:80px;height:80px;margin:0 auto 24px;background:url('https://www.cjcookit.com/cjkit/web/images/common/ico_set.png') 0 -100px no-repeat; background-size:800px 800px;}
+.no_data > span{display:block; margin-top:8px; font-size:14px;line-height:22px;color:#606060;}
+/* .no_data .rec_link{min-width:152px;margin:32px auto 0;} */
+.no_data .rec_link{min-width:141px;margin:32px auto 0;} /* 190619 */
+
+.lay_wrap .no_data strong {font-size:18px; line-height:27px;}
+
+.tb_col td .no_data {padding:60px 0 60px;}
+
+.no_data_wrap .no_data{padding-bottom:80px;}
+
+/* LIST SLIDE */
+.list_slide .indigator{position:absolute;top:4px;right:0;}
+.list_slide .indigator span{font-size:18px;line-height:27px;color:#101010;}
+.list_slide .indigator em{font-weight:500;}
+.list_slide .indigator button{display:inline-block;width:24px;height:24px;margin-top:-2px;background:url('https://www.cjcookit.com/cjkit/web/images/common/ico_set.png') no-repeat; background-size:800px 800px;vertical-align: middle}
+.list_slide .indigator .prev{margin-right:12px;background-position:-540px 0;}
+.list_slide .indigator .next{margin-left:12px;background-position:-564px 0;}
+
+/* BULLET LIST */
+.bul_list li{text-indent:-10px;margin-left:10px;margin-top:6px;font-size:13px;line-height:20px;}
+.bul_list li:first-child{margin-top:0;}
+.bul_list li > ul > li{margin-top:2px;}
+.bul_dot, .bul_star{text-indent:-10px;margin-left:10px;color:#606060;}
+.bul_list .bul_dot .bullet,
+.bul_dot .bullet{display:inline-block;width:3px;height:3px;margin:8px 4px 0 0;background-color:#b0b0b0;vertical-align:top;font-style:normal;text-indent:-10px;}
+i.bullet{font-style:normal}
+/* .bul_list .bul_dot .dash{display:inline-block;width:1px;height:10px;margin:8px 4px 0 0;background-color:#BBBBBB;vertical-align:top;} */
+.bul_dot .dash{display:inline-block;width:4px;height:1px;margin:0 4px 0;background-color:#606060;vertical-align:middle;}
+div.bul_dot, p.bul_dot, span.bul_dot {text-indent:-10px;margin-left:10px;font-size:12px;line-height:20px;}
+
+/* TAB */
+.tab_wrap {width:100%;}
+.tab_wrap .tabs {position:relative; width:100%; font-size:0;}
+.tab_wrap .tabs:after{content:'';display:table;clear:both;}
+.tab_wrap.tab02 .tabs {position:relative; width:100%; height:auto; margin-top:20px;}
+.tab_wrap .tabs.center{}
+.tab_wrap .tabs:before {content:''; position:absolute; z-index:-1; bottom:0; left:0; right:0; border-bottom:1px solid #e0e0e0;}
+.tab_wrap.tab02 .tabs:before {display:none;}
+.tab_wrap .tabs li {display:inline-block; width:initial; text-align:center; vertical-align:top;}
+.tab_wrap .tabs li a {display:block; width:100%; height:100%; padding:0 12px; white-space:nowrap;}
+.tab_wrap .tabs li:first-child a {padding-left:0;}
+.tab_wrap .tabs li a > span {position:relative; z-index:1; display:inline-block; height:41px; color:#606060; font-weight:500; font-size:24px; line-height:34px; vertical-align:top;}
+.tab_wrap.tab02 .tabs li a > span {position:relative; z-index:1; display:inline-block; color:#606060 ;height:auto; vertical-align:top;}
+.tab_wrap .tabs li a > span .badge {overflow:hidden; position:absolute; top:50%; right:-10px; width:6px; height:6px; margin-top:-5px; white-space:nowrap; color:transparent; border-radius:50%; border:none; background:#e90070;}
+.tab_wrap .tabs li.on a > span {border-bottom:3px solid #202020; color:#101010; font-weight:700;}
+.tab_wrap.tab02 .tabs li.on a > span {border-bottom:3px solid #202020; color:#202020; font-weight:700;}
+/*.tab_wrap.num02 .tabs li {width:50%;}*/
+.tab_wrap.num03 .tabs li {width:33.3%;}
+.tab_wrap.num04 .tabs li {width:25%;}
+.tab_wrap.num05 .tabs li {width:20%;}
+.scroll_tab_fixed .tab_wrap {position:fixed; top:0; left:0; right:0; background-color:#fff; z-index:20; box-shadow:0 2px 4px rgba(0, 0, 0, .05);}
+.scroll_tab_fixed .tab_wrap .tabs {margin-bottom:20px;}
+
+/* 상단 타이틀 공통 */
+.top_sec h2 {color:#101010; font-size:40px; line-height:56px; font-weight:700;}
+
+/* 목록 정렬 선택 */
+.top_sec {position:relative;}
+.top_sec .list_sort {position:absolute; right:0; top:8px; font-size:0;}
+.top_sec .list_sort .rad_wrap {position:relative; padding:0 8px 0 9px;}
+.top_sec .list_sort .rad_wrap:before {content:''; display:block; position:absolute; top:50%; left:0; width:1px; height:14px; margin-top:-6px; background-color:#e0e0e0;}
+.top_sec .list_sort .rad_wrap:first-child:before {width:0; background:none;}
+.top_sec .list_sort .rad_wrap:last-child {padding-right:0;}
+.top_sec .list_sort .rad_wrap input + label {margin:0; color:#606060; font-size:16px; line-height:24px; text-indent:0; vertical-align:middle;}
+.top_sec .list_sort .rad_wrap input + label:before {width:0; height:16px; margin:-1px 0 0 0; background:none;}
+.top_sec .list_sort .rad_wrap input:checked + label {color:#101010; font-weight:700;}
+.top_sec .list_sort .rad_wrap input:checked + label:before {content:''; zoom:1; display:inline-block; position:relative; top:-3px; width:16px; height:16px; margin:0 2px 0 0; background:url('https://www.cjcookit.com/cjkit/web/images/pd/ico_set.png') no-repeat; background-position:-48px 0; background-size:800px 800px; vertical-align:middle;}
+
+/* 상품 모듈 */
+.pro_module {position:relative; margin-top:60px;}
+.pro_module:first-child {margin-top:0;}
+.pro_module a  {display:block;}
+.pro_module a video {width:100%; height:100%;}
+.pro_module .img_wrap {position:relative;}
+.pro_module .img_wrap,
+.pro_module .img_wrap a {text-align:center}
+.pro_module .img_wrap img {display:block; width:100%;}
+
+.pro_module .img_wrap .selling_fin {position:absolute; top:0; left:0; width:100%; height:100%; text-align:center; line-height:320px; background-color:rgba(32, 32, 32, 0.60); z-index:5;}
+.pro_module .img_wrap .selling_fin .txt {padding:0; color:#fff; font-size:28px; font-weight:700; text-align:center;}
+
+.onmart_list .pro_module .img_wrap {display:table; width:268px; table-layout:fixed}
+.onmart_list .pro_module .img_wrap a {display:table-cell; height:320px; text-align:center; vertical-align:middle}
+.onmart_list .pro_module .img_wrap img {display:inline-block; width:auto; vertical-align:top;}
+.onmart_list .pro_module .img_wrap .dim {position:absolute; left:0; top:0; width:100%; height:100%; background-color:rgba(0,0,0,0.05);}
+
+.pro_module .txt_wrap {position:relative; padding:16px 0 0;}
+.pro_module .txt_wrap .tit_info {font-size:0;}
+.pro_module .txt_wrap .tit_info .tit {display:block; color:#101010; font-weight:500; font-size:17px; word-break:break-all;}
+.pro_module .txt_wrap .price_info {padding-top:8px; font-size:0;}
+.pro_module .txt_wrap .price_info .sale {display:inline-block; color:#101010; font-size:18px; line-height:27px; font-weight:700; vertical-align:middle;}
+.pro_module .txt_wrap .price_info .sale .price {display:inline-block; vertical-align:top;}
+.pro_module .txt_wrap .price_info .sale .won {letter-spacing:0;}
+.pro_module .txt_wrap .price_info .sale .price_name {display:inline-block; margin-right:5px; color:#EE0700;  vertical-align:top;}
+.pro_module .txt_wrap .price_info .cost {display:inline-block; padding-left:6px; color:#606060; font-size:13px; line-height:21px; text-decoration:line-through; vertical-align: middle;}
+.pro_module .txt_wrap .price_info .servings {display:inline-block; padding-left:6px; font-size:16px; line-height:24px; vertical-align: middle;}
+.pro_module .txt_wrap .etc_info {padding-bottom:6px; font-size:0; line-height:0;}
+.pro_module .txt_wrap .etc_info .txt {position:relative; display:inline-block; padding:0 8px 0 9px; color:#606060; font-size:13px; line-height:20px; vertical-align:middle;}
+.pro_module .txt_wrap .etc_info .txt.spice i.ico {display:inline-block; width:20px; height:20px; background:url('https://www.cjcookit.com/cjkit/web/images/pd/ico_set.png') no-repeat;  background-size:800px 800px; vertical-align:top;}
+.pro_module .txt_wrap .etc_info .txt.spice i.ico.step01 {background-position:-84px 0;} /* 약간매운맛 */
+.pro_module .txt_wrap .etc_info .txt.spice i.ico.step02 {background-position:-104px 0;} /* 적당히매운맛 */
+.pro_module .txt_wrap .etc_info .txt.spice i.ico.step03 {background-position:-124px 0;} /* 아주매운맛 */
+.pro_module .txt_wrap .etc_info .txt:before {content:''; display:block; position:absolute; top:50%; left:0; width:1px; height:12px; margin-top:-6px; background-color:#e0e0e0;}
+.pro_module .txt_wrap .etc_info .txt:first-child {padding-left:0;}
+.pro_module .txt_wrap .etc_info .txt:first-child:before {width:0;}
+.pro_module .act_btn_wrap {position:static; margin-top:24px;}
+.pro_module .video_btn_wrap {position:absolute; bottom:20px; right:20px; font-size:0; z-index:1;}
+.pro_module .video_btn_wrap .btn {display:inline-block; width:32px; height:32px; margin-left:6px; background:url('https://www.cjcookit.com/cjkit/web/images/common/ico_set.png') no-repeat; background-size:800px 800px; border-radius:50%;}
+.pro_module .video_btn_wrap .btn:first-child {margin-left:0;}
+.pro_module .video_btn_wrap .btn.btn_sound {background-position:-30px 0;}
+.pro_module .video_btn_wrap .btn.btn_sound.on {background-position:-67px 0;}
+.pro_module .video_btn_wrap .btn.btn_play {background-position:-104px 0;}
+.pro_module .video_btn_wrap .btn.btn_play.on {background-position:-141px 0;}
+.pro_module .no_data {padding:80px 0 93px; border-bottom:0; text-align:center;}
+.pro_module .no_data i.ico {display:block; width:84px; height:84px; margin:0 auto; background:url('https://www.cjcookit.com/cjkit/web/images/common/ico_set01.svg') no-repeat 0 -316px; background-size:400px auto;}
+.pro_module .no_data .txt {display:inline-block; color:#808080; font-size:14px; line-height:19px;}
+
+/* 리스트 별점/리뷰 추가 */
+.pro_module .txt_wrap .etc_info{padding:8px 0 0;}
+.pro_module .txt_wrap .etc_info .rating_wrap .rating_star {padding:0;}
+.pro_module .txt_wrap .etc_info .review_num {display:inline-block; color:#606060; font-size:14px; line-height:16px; vertical-align:middle}
+.pro_module .txt_wrap .etc_info .review_num:before {content:''; display:inline-block; width:1px; height:14px; margin:-2px 10px 0; background-color:#e0e0e0; vertical-align:middle}
+
+/* 페이징 */
+.pagination {padding-top:56px; font-size:0; text-align:center;}
+.pagination a,
+.pagination strong {display:inline-block; min-width:40px; height:40px; background-color:#fff; color:#606060; font-size:14px; font-weight:700; text-align:center; line-height:40px; vertical-align:top; }
+.pagination strong {background-color:#202020; color:#fff;}
+.pagination a:hover,
+.pagination a:focus {text-decoration:underline;}
+.pagination .page_num {display:inline-block; padding:0 20px; vertical-align:middle;}
+.pagination .btn_first,
+.pagination .btn_prev,
+.pagination .btn_next,
+.pagination .btn_last {display:inline-block; width:40px; height:40px; margin:0 -0.5px; padding:0; background:url('https://www.cjcookit.com/cjkit/web/images/common/ico_set.png') no-repeat; background-size:800px 800px; vertical-align:middle;}
+.pagination .btn_first {background-position:0 -300px;}
+.pagination .btn_prev {background-position:-40px -300px;}
+.pagination .btn_next {background-position:-80px -300px;}
+.pagination .btn_last {background-position:-120px -300px;}
+
+/*.pagination.small a,
+.pagination.small strong {min-width:32px; height:32px; font-size:13px; line-height:32px;}
+.pagination.small .btn_last {display:inline-block; width:32px; height:32px; margin:0 -0.5px; padding:0; background:url('/cjkit/web/images/common/ico_set_old.png') no-repeat; vertical-align:middle;}
+.pagination.small .btn_first,
+.pagination.small .btn_prev,
+.pagination.small .btn_next,
+.pagination.small .btn_last {width:32px; height:32px;}
+.pagination.small .btn_first {background-position:-557px -60px;}
+.pagination.small .btn_prev {background-position:-589px -60px;}
+.pagination.small .btn_next {background-position:-621px -60px;}
+.pagination.small .btn_last {background-position:-653px -60px;}*/
+
+/* slide indicator */
+.slide_wrap {position:relative;}
+.slide_wrap .indi_wrap {position: absolute; bottom:10px; left:0; right:0; z-index:1;}
+.slide_wrap .indi_conts {text-align:center; font-size:0; line-height:0;}
+.slide_wrap .indi_conts > li {display:inline;}
+.slide_wrap .indi_conts > li .btn_indi {display:inline-block; width:5px; height:5px; margin:0 3px; background:rgba(255, 255, 255, .5); border-radius:50%; vertical-align:middle;}
+.slide_wrap .indi_conts > li.on .btn_indi {background:rgba(255, 255, 255, .8);}
+.slide_wrap .btn_arrow {position:absolute;}
+.slide_wrap .btn_arrow.disabled {display:none;}
+.slide_wrap .slide_content {position:relative; overflow:hidden;}
+.slide_wrap .slide_content .slide_conts {float:left; position:relative;}
+.slide_wrap .slide_content .slide_conts .conts {display:block; width:100%;}
+
+/* 파일첨부 */
+.input_order dl {margin-top:24px;}
+.input_order dt {position:relative;color:#101010;font-size:14px;line-height:22px; font-weight:400;}
+.input_order dt label {vertical-align:top;}
+.input_order dd {padding-top:8px;}
+
+.input_order dl.file_cont .total_lang {position:absolute;top:0;right:0;font-size:14px;line-height:22px;}
+.input_order dl.file_cont .total_lang .now{font-weight:700;}
+.input_order dd .bul_list {padding-top:12px;}
+.input_order dt .fl_r {position: absolute; top:0; right:0; }
+.input_order dt .fl_r.btn_r {top:-5px;}
+.input_order dt .fl_r.btn_r span {display:block; color:#fff; font-size:11px; line-height:1;}
+.input_order dt .fl_r .chk_wrap label {color:#808080;}
+
+.input_order .cate_wrap ul:after {content:''; display:block; clear:both;}
+.input_order .cate_wrap li {width:33.3%; float:left;}
+.input_order .cate_wrap .rad_tab_wrap {display:block;}
+.input_order .cate_wrap .rad_tab_wrap .rad_wrap {position:relative; }
+
+.input_order .answer_way {margin-top:12px;}
+.input_order .answer_way:first-child {margin-top:0;}
+.input_order .answer_way .rad_wrap {display:block; padding-bottom:12px;}
+.input_order .answer_way .input_tel_wrap {font-size:0;}
+.input_order .answer_way .input_tel_wrap .input_wrap,
+.input_order .answer_way .input_tel_wrap .item_wrap {width:30%; width:-webkit-calc((100% - 32px)/3); width:calc((100% - 32px)/3);}
+.input_order .answer_way .input_tel_wrap .dash {display:inline-block; width:16px; font-size:13px; vertical-align:middle; text-align:center;}
+
+.input_order .scroll{width:100%;overflow-x:visible;}
+.input_order .add_file_wrap {margin-left:-20px;}
+.input_order .add_file_wrap ul:after {content:''; display:block; clear:both;}
+.input_order .add_file_wrap li {float:left; width:172px; margin:0 0 0 20px;}
+.input_order .add_file_wrap .img_wrap {position:relative;}
+.input_order .add_file_wrap .dim_div {display: flex; position: absolute; top: 0;left: 0; width:100%; height:172px;background-color: rgba(0, 0, 0, 0.45); z-index: 1;align-items: center;justify-content: center;}
+.input_order .add_file_wrap .dim_div .num{font-size: 28px;color: #fff; font-weight: bold;}
+.input_order .add_file_wrap .img_wrap img {display:block; width:172px; height:172px;}
+.input_order .add_file_wrap .img_wrap .btn_delete {display:block;position:absolute; top:0; right:0; width:30px; height:30px; background:rgba(32, 32, 32, 0.6) url('https://www.cjcookit.com/cjkit/web/images/my/btn_rv_delete.svg') no-repeat 50%; z-index:2;}
+.input_order .add_file_wrap .add_file {display:block; position:relative; width:172px; height:172px; border:1px solid #ccc; background:#fff; cursor:pointer; color:transparent; text-indent:-100px}
+.input_order .add_file_wrap .add_file::after {content:''; position:absolute; left:50%; top:50%; width:32px; height:32px; margin:-16px 0 0 -16px; background:url('https://www.cjcookit.com/cjkit/web/images/common/ico_set.png') -460px -150px no-repeat; background-size:800px 800px;}
+.input_order .add_file_wrap .add_file_frame {position:relative}
+.input_order .add_file_wrap .trans_add_file {position:absolute; z-index:2; left:0; top:0; width:100%; height:100%; background:transparent; color:transparent; opacity:0;}
+.input_order .add_file_wrap .add_file_frame input:focus ~ .add_file {outline:1px solid #71A0F8;}
+.input_order .file_info {position:relative; margin-top:11px;}
+.input_order .file_info .bul_dot {font-size:12px; line-height:20px;}
+.input_order .file_info .file_size {position:absolute; top:-1px; right:0; color:#303030; font-size:14px;line-height:22px;}
+.input_order .file_info .file_size .now{font-weight:700;}
+.input_order .file_info .file_size .now.over {color:#EE0700;}
+
+/* Calendar */
+.ui-calendar-container { width:324px; padding:24px 32px; border:1px solid #202020; background:#fff; }
+.ui-calendar-container .ui-select-day .ui-calendar-header-second { height:30px; text-align:center; }
+.ui-calendar-container .ui-select-day .ui-calendar-date { margin-top:16px; }
+.ui-calendar-container .ui-select-day .ui-calendar-header-second .ui-calendar-now {display:inline-block;font-size:20px;line-height:30px;color:#101010;font-weight:700;}
+.ui-calendar-container .ui-select-day .ui-calendar-header-second > a { display:inline-block; position:relative; top:-2px; width:24px; height:24px;}
+.ui-calendar-container .ui-select-day .ui-calendar-header-second > a:after {content:''; position:absolute; left:50%; top:50%; width:20px; height:20px; margin:-10px 0 0 -10px; background:url('https://www.cjcookit.com/cjkit/web/images/common/ico_set.png') no-repeat; background-size:800px 800px;}
+.ui-calendar-container .ui-select-day .ui-calendar-header-second .ui-calendar-prev { margin-right:24px; color:#fff; text-indent:-10000px; }
+.ui-calendar-container .ui-select-day .ui-calendar-header-second .ui-calendar-next { margin-left:24px; color:#fff; text-indent:-10000px;  }
+.ui-calendar-container .ui-select-day .ui-calendar-header-second .ui-calendar-prev:after {background-position:-610px -24px; }
+.ui-calendar-container .ui-select-day .ui-calendar-header-second .ui-calendar-next:after {background-position:-635px -24px;}
+.ui-calendar-container .ui-select-day .date { margin-top:26px; }
+.ui-calendar-container .ui-calendar-table th { color:#101010; font-weight:500; padding-bottom:16px;}
+.ui-calendar-container .ui-calendar-table td { text-align:center; color:#606060;  font-weight:400; }
+.ui-calendar-container .ui-calendar-table td button { display:block; position:relative; width:32px; height:32px; text-align:center; color:#606060; border-radius:16px; overflow:visible; }
+.ui-calendar-container .ui-calendar-table td button:hover { background-color:#F2F2F2; }
+.ui-calendar-container .ui-calendar-table td.ui-calendar-today button { color:#101010; }
+.ui-calendar-container .ui-calendar-table td.ui-calendar-today button:after {content:''; position:absolute; right:4px; top:4px; width:5px; height:5px; background-color:#008A00; border-radius:50%; }
+.ui-calendar-container .ui-calendar-table td.ui-calendar-active button { background-color:#BDD61A;color:#101010; }
+.ui-calendar-container .ui-calendar-table td.ui-calendar-today.ui-calendar-active button:after {display:none;}
+
+/* 회색 안내 박스 */
+.btm_noti {margin-top:16px;padding:20px 32px;background-color:#F7F7F7;}
+.lay_wrap .btm_noti, .pop_wrap .btm_noti {padding-left:24px; padding-right:24px;}
+.btm_noti > p{padding-bottom:9px; color:#101010; font-weight:500; font-size:15px; line-height:23px;}
+.btm_noti .bul_list li{margin-top:4px;}
+.btm_noti .bul_list li:first-child {margin-top:0;}
+.btm_noti.row1 .bul_list li:first-child {margin-top:0;}
+.btm_noti.page_btm_noti {margin-top:56px;}
+.btm_noti .bul_list + p {padding-top:20px;}
+.btm_noti .etc_info {padding-top:10px;}
+.btn_wrap + .btm_noti,
+.btm_noti.page_btm_noti {margin-top:56px;}
+.btm_noti.row1 {padding-top:14px; padding-bottom:14px;} /* 한개의 블릿과 텍스트가 한줄일 경우 */
+.btm_noti.mt_m {margin-top:24px;} /* 상단 margin 여백 */
+.btm_noti a.link {color:#101010; font-size:12px; line-height:20px; text-decoration:underline;}
+.btm_noti ul + a.link {margin-top:6px;}
+.btm_noti .bul_list li .emp {color:#ee0700;}
+
+/* 탭 UI 인 radio */
+.tab_rad_menu {padding-top:64px;}
+.tab_rad_menu:after{content:'';display:block;clear:both;}
+.tab_rad_menu li {float:left; margin-right:24px;}
+.tab_rad_menu .rad_wrap input + label {margin-left:0; color:#606060; font-weight:500; font-size:24px; line-height:34px; text-indent:0;}
+.tab_rad_menu .rad_wrap input:checked + label {padding-bottom:4px; border-bottom:3px solid #202020; color:#101010; font-weight:700;}
+.tab_rad_menu .rad_wrap input + label:before {display:none;}
+
+/* 리뷰-guide */
+.rvpo_guide {padding:26px 0 26px 0; background-color:#f7f7f7;}
+.rvpo_guide .cjpo_txt {padding:0 32px 20px; color:#101010; font-weight:700; font-size:18px; line-height:27px;}
+.rvpo_guide .cjpo_txt span {color:#008A00;}
+.rvpo_guide dl {position:relative; float:left; padding-left:81px; padding-right:5px; margin-bottom:16px;}
+.rvpo_guide dl:before {content:''; position:absolute; left:0; top:4px; width:1px; height:36px; background-color:#e0e0e0; font-size:0; line-height:0}
+.rvpo_guide dt {color:#101010; font-weight:700; font-size:14px; line-height:22px;}
+.rvpo_guide dd {color:#606060; font-size:14px; line-height:22px;}
+.rvpo_guide dd:after {content:''; position:absolute; left:33px; top:50%; width:32px; height:32px; margin-top:-16px; background:url('https://www.cjcookit.com/cjkit/web/images/pd/ico_set.png') no-repeat; background-size:800px 800px;}
+
+.rvpo_guide dl.photo {width:25%; padding-left:80px;}
+.rvpo_guide dl.photo:before {display:none}
+.rvpo_guide dl.photo dd:after {left:32px; background-position:-614px -86px;}
+.rvpo_guide dl.text {width:25%;}
+.rvpo_guide dl.text dd:after {background-position:-666px -86px;}
+.rvpo_guide dl.tip {width:25%;}
+.rvpo_guide dl.tip dd:after {background-position:-718px -86px;}
+.rvpo_guide dl.best {width:25%;}
+.rvpo_guide dl.best dd:after {background-position:-768px -86px;}
+
+.rvpo_guide .bul_list {clear:both; padding-left:32px; padding-right:32px;}
+
+.rvpo_guide.my_rvpo dl {padding-left:88px;}
+.rvpo_guide.my_rvpo dl.photo {padding-left:80px;}
+.rvpo_guide.my_rvpo dd:after {left:40px;}
+
+/* 작은 별점 (16*16) */
+.rating_wrap {display:inline-block; vertical-align:top;}
+.rating_wrap .rating_star {display:inline-block; padding:7px 0; vertical-align:middle;}
+.rating_wrap .rating_star .star,
+.rating_wrap .rating_star span {display:block; width:88px; height:16px; background:url('https://www.cjcookit.com/cjkit/web/images/pd/ico_set.png') no-repeat -374px -26px; background-size:800px 800px;}
+.rating_wrap .rating_star span {background-position:-374px 0;}
+.rating_wrap .num {display:inline-block; padding-left:6px;  color:#101010; font-size:20px; line-height:30px; font-weight:700; vertical-align:top;}
+
+/* 리뷰-list */
+.taste_review_list .no_data {padding-bottom:80px; border-bottom:1px solid #e0e0e0;}
+/* .taste_review_list .no_data .ico {width:80px; height:80px; margin:0 auto 16px; background-position:0 -100px;} */
+.taste_review_list li {padding:24px 0; border-top:1px solid #e0e0e0;}
+.taste_review_list li:first-child {border-top:0;}
+.taste_review_list li:last-child {border-bottom:1px solid #e0e0e0;}
+.taste_review_list .review_module {}
+.taste_review_list .top_wrap {margin-bottom:6px;}
+.taste_review_list .top_wrap:after{content:'';display:table;clear:both;}
+.taste_review_list .top_wrap .tit {float:left; padding-left:1px;}
+.taste_review_list .top_wrap .flag {float:left; min-width:48px; height:20px; margin:2px -1px 2px 0; padding:0 10px; border:1px solid #202020; background-color:#fff; color:#101010; font-weight:500; font-size:12px; line-height:18px; text-align:center;}
+.taste_review_list .top_wrap .flag.panel {border:1px solid #008A00; color:#008A00;}
+.taste_review_list .top_wrap .link_id {float:left; display:inline-block; color:#101010; font-weight:700; font-size:16px; line-height:24px;}
+.taste_review_list .top_wrap .flag ~ .link_id,
+.taste_review_list .top_wrap .flag ~ .name {margin-left:8px;}
+.taste_review_list .top_wrap .name {float:left; display:inline-block; width:560px; color:#101010; font-weight:700; font-size:16px; line-height:24px;}
+.taste_review_list .top_wrap .name strong {color:#008A00; font-weight:700;}
+.taste_review_list .top_wrap time {float:right; margin-top:2px; font-size:14px; line-height:24px;}
+.taste_review_list .link_more {display:block; width:100%;}
+.taste_review_list .link_more:after{content:'';display:table;clear:both;}
+.taste_review_list .etc_info {float:left; width:100%; margin-bottom:20px;}
+.taste_review_list .etc_info .rating_wrap .rating_star {padding:0;}
+.taste_review_list .etc_info .purchase_num {display:inline-block; color:#606060; font-size:14px; line-height:22px; vertical-align:middle}
+.taste_review_list .etc_info .purchase_num:before {content:''; display:inline-block; width:1px; height:14px; margin:-2px 10px 0; background-color:#e0e0e0; vertical-align:middle}
+.taste_review_list .link_more .img_left_wrap {float:left; width:206px;}
+.taste_review_list .link_more .thumb_img {position:relative;}
+.taste_review_list .link_more .thumb_img .img {position:relative; width:186px; height:116px; overflow:hidden;}
+.taste_review_list .link_more .thumb_img img {position:absolute; width:100%; height:auto; margin:auto; top:50%; left:0; -ms-transform: translateY( -50% ); -moz-transform: translateY( -50% ); transform: translateY( -50% );}
+.taste_review_list .link_more .thumb_img .lang {position:absolute; z-index:3; right:20px; bottom:0; width:24px; height:24px; background-color:rgba(32,32,32,.5); color:#fff; font-weight:700; font-size:13px; line-height:24px; text-align:center}
+.taste_review_list .link_more .img_wrap {display:none; }
+.taste_review_list .link_more .img_wrap .img {width:100%; margin-top:16px; width:100%; text-align:center;}
+.taste_review_list .link_more .img_wrap .img:first-child {margin-top:0;}
+.taste_review_list .link_more .img_wrap img {width:780px;}
+
+.taste_review_list .link_more .txt_wrap {float:right; width:100%;}
+.taste_review_list .review_module.photo .link_more .txt_wrap {width:574px;}
+.taste_review_list .link_more .txt_wrap .txt {font-size:14px; line-height:22px;}
+.taste_review_list .link_more .txt_wrap .txt.mt_elps {max-height:44px; font-size:14px; line-height:22px;}
+.taste_review_list .link_more .txt_wrap .txt strong {font-weight:400; color:#008A00;}
+.taste_review_list .link_more .tag_wrap {display:none; padding-top:8px; color:#008A00; font-size:13px; line-height:21px;}
+.taste_review_list .link_more .tip_box {position:relative; margin-top:8px; padding:8px 16px 8px 47px; -ms-border-radius:0 8px 8px 8px; -moz-border-radius:0 8px 8px 8px; -webkit-border-radius:0 8px 8px 8px; border-radius:0 8px 8px 8px; background-color:#f7f7f7;}
+.taste_review_list .link_more .tip_box .tip_flag {position:absolute; left:16px; top:14px; width:31px;}
+.taste_review_list .link_more .tip_box .tip_flag:before {content:''; position:absolute; left:0; top:0; width:23px; height:10px; background:url('https://www.cjcookit.com/cjkit/web/images/pd/ico_set.png') -490px -130px no-repeat; background-size:800px 800px;}
+.taste_review_list .link_more .tip_box .tip_txt {color:#606060; font-size:13px; line-height:21px; vertical-align:top;}
+.taste_review_list .link_more .bul_wrap {display:none; float:left; width:100%; margin-top:16px;}
+.taste_review_list .link_more .bul_wrap .bul_dot {font-size:12px; line-height:20px;}
+.taste_review_list .link_more a.link_wrap {display:block;}
+.taste_review_list .review_module.open .link_more .img_left_wrap,
+.taste_review_list .review_module.open .link_more .txt_wrap,
+.taste_review_list .review_module.photo.open .link_more .txt_wrap {width:100%;}
+.taste_review_list .review_module.open .link_more .img_wrap {margin-top:16px;}
+.taste_review_list .review_module.open .link_more .img_wrap,
+.taste_review_list .review_module.open .link_more .tag_wrap,
+.taste_review_list .review_module.open .link_more .bul_wrap {display:block;}
+.taste_review_list .review_module.open .link_more .thumb_img {display:none;}
+.taste_review_list .review_module.open .link_more .img_left_wrap ~ .txt_wrap {margin-top:16px;}
+.taste_review_list .unexposed_box {position:relative; margin-top:16px; padding:12px 24px; background-color:#f7f7f7;}
+.taste_review_list .unexposed_box p {padding-right:100px;color:#606060; font-size:14px; line-height:22px;}
+.taste_review_list .unexposed_box pre {padding-right:100px;overflow:hidden;color:#606060; font-size:14px; line-height:22px;}
+.taste_review_list .unexposed_box .btn_link {position:absolute; right:28px; top:50%; margin-top:-10px;}
+
+/* 통합검색 */
+.sch_wrap {position:relative; z-index:30; width:644px; margin:0 auto;}
+.sch_wrap .input_wrap {height:68px;}
+.sch_wrap .input_wrap .ico {right:66px;}
+.sch_wrap input.txt {height:68px; padding:0 106px 0 20px; border:2px solid #202020; color:#101010; font-weight:700; font-size:20px; opacity:1;}
+.sch_wrap input.txt::-webkit-input-placeholder {color:#606060;font-size:20px; font-weight:700;}
+.sch_wrap input.txt::-moz-placeholder {color:#606060;font-size:20px; font-weight:700;}
+.sch_wrap input.txt:-ms-input-placeholder {color:#606060;font-size:20px; font-weight:700;}
+.sch_wrap .input_wrap.on input.txt,
+.sch_wrap input.txt:focus{border:2px solid #202020;}
+.sch_wrap .btn_srch {position:absolute; right:18px; top:50%; width:32px; height:32px; margin-top:-16px; background:url('https://www.cjcookit.com/cjkit/web/images/pd/ico_set.png') -600px -150px no-repeat; background-size:800px 800px;}
+
+/* 이메일 */
+.inp_email_wrap .mark {margin:0 4px; color:#101010; font-weight:400; font-size:14px; line-height:22px; vertical-align:middle}
+.inp_email_wrap .input_wrap {width:auto;}
+.inp_email_wrap .input_wrap.ema_id .txt {width:382px;}
+.inp_email_wrap .input_wrap.ema_do .txt {width:235px;}
+.inp_email_wrap .item_wrap {width:122px; margin-left:8px;}
+
+/* 기획전 layer popup */
+.lay_planmk_list .box {border:1px solid #ccc; border-top:0;}
+.lay_planmk_list .box li {border-top:1px solid #e0e0e0;}
+.lay_planmk_list .box li:first-child {border-top:0}
+.lay_planmk_list .box a.link {display:block; position:relative; padding:16px 60px 16px 16px;}
+.lay_planmk_list .box a.link strong {display:block; color:#101010; font-weight:500; font-size:18px; line-height:27px;}
+.lay_planmk_list .box a.link .time {display:block; margin-top:4px; color:#606060; font-size:13px; line-height:22px;}
+.lay_planmk_list .box a.link:after {content:''; position:absolute; right:24px; top:50%; width:14px; height:14px; margin-top:-7px; border:1.5px solid #606060; border-width: 1.5px 1.5px 0 0; -webkit-transform:rotate(45deg); -ms-transform:rotate(45deg); -moz-transform:rotate(45deg); transform:rotate(45deg);}
+
+/* 재료 추가 layer popup */
+.add_fd_ingredients .top_wrap {position:relative; padding:16px 24px 16px;background-color:#F2F2F2;}
+.add_fd_ingredients .top_wrap h1 {color:#101010; font-weight:500; font-size:17px; line-height:23px;}
+.add_fd_ingredients .top_wrap a.btn_reset{position:absolute; top:16px; right:24px; padding-left:21px; color:#606060; font-weight:500; font-size:15px; line-height:23px;}
+.add_fd_ingredients .top_wrap a.btn_reset:before {content:''; position:absolute; left:0; top:0; width:16px; height:23px; background:url('https://www.cjcookit.com/cjkit/web/images/op/ico_set.png') -550px 3px no-repeat;  background-size:800px 800px;}
+.add_fd_ingredients .add_fd_cont {padding:24px 0 167px;}
+.add_fd_ingredients .add_fd_cont .add_fd_over {padding:0 24px; max-height:358px; overflow-y:auto;}
+.add_fd_ingredients .add_fd_cont .box_add_fd {border:1px solid #ccc;}
+.add_fd_ingredients .add_fd_cont .box_add_fd ul {}
+.add_fd_ingredients .add_fd_cont .box_add_fd li {padding:10px 24px; border-top:1px solid #e0e0e0;}
+.add_fd_ingredients .add_fd_cont .box_add_fd li:first-child {border-top:0;}
+.add_fd_ingredients .add_fd_cont .box_add_fd li .tr {display:table; table-layout:fixed;}
+.add_fd_ingredients .add_fd_cont .box_add_fd li .name_wrap,
+.add_fd_ingredients .add_fd_cont .box_add_fd li .prd_quantity,
+.add_fd_ingredients .add_fd_cont .box_add_fd li .price_wrap {display:table-cell; height:24px; font-weight:500; font-size:15px; line-height:24px; vertical-align:middle;}
+.add_fd_ingredients .add_fd_cont .box_add_fd li .name_wrap {width:144px; color:#101010; text-align:left;}
+.add_fd_ingredients .add_fd_cont .box_add_fd li .name_wrap .name {display:block}
+.add_fd_ingredients .add_fd_cont .box_add_fd li .name_wrap .state {display:block; padding-top:2px; color:#008A00; font-weight:400; font-size:14px; line-height:22px;}
+.add_fd_ingredients .add_fd_cont .box_add_fd li .prd_quantity {width:128px; text-align:center;}
+.add_fd_ingredients .add_fd_cont .box_add_fd li .prd_quantity .box_prd_quantity {width:96px; margin:0 auto;}
+.add_fd_ingredients .add_fd_cont .box_add_fd li .prd_quantity .quantity_state {display:block; color:#606060;}
+.add_fd_ingredients .add_fd_cont .box_add_fd li .price_wrap {width:120px; text-align:right;}
+.add_fd_ingredients .add_fd_cont .box_add_fd li .price_wrap .discount {display:block; padding-bottom:2px; color:#606060; font-weight:400; font-size:14px; line-height:22px; text-decoration:line-through}
+.add_fd_ingredients .add_fd_cont .box_add_fd li .price_wrap .price {display:block; color:#101010; font-weight:700;}
+.add_fd_ingredients .add_fd_over .no_data {padding-bottom:56px;}
+.add_fd_ingredients .add_fd_footer {position:absolute; bottom:0; left:0; width:100%; height:167px; padding:0 24px; border-top:1px solid #e0e0e0;}
+.add_fd_ingredients .add_fd_footer .add_total {width:100%; padding:18px 0 14px;}
+.add_fd_ingredients .add_fd_footer .add_total:after{content:'';display:table;clear:both;}
+.add_fd_ingredients .add_fd_footer .add_total dt {float:left; width:30%; padding-top:7px; color:#101010; font-weight:500; font-size:16px; line-height:24px;}
+.add_fd_ingredients .add_fd_footer .add_total dd {float:left; width:70%; color:#101010; font-weight:700; font-size:22px; line-height:34px; text-align:right}
+
+/* 사은품 안내 layer popup */
+.lay_gift_guide .box_gift {margin-top:16px; padding:20px 20px 8px 20px; border:1px solid #ccc;}
+.lay_gift_guide .box_gift.first { margin-top:0; border-top:0;}
+.lay_gift_guide .box_gift dt .tit {display:block; color:#101010; font-weight:500; font-size:18px; line-height:27px;}
+.lay_gift_guide .box_gift dt .tit .stats {color:#008A00;}
+.lay_gift_guide .box_gift dt .period {display:block; margin-top:4px; color:#606060; font-size:13px; line-height:22px;}
+.lay_gift_guide .box_gift dd {padding-top:4px;}
+.lay_gift_guide .box_gift ul.glist li {display:table; table-layout:fixed; padding:12px 0; border-top:1px solid #e0e0e0;}
+.lay_gift_guide .box_gift ul.glist li:nth-of-type(1) {border-top:0;}
+.lay_gift_guide .box_gift ul.glist .img_wrap {display:table-cell; position:relative; width:80px; height:80px; vertical-align:middle}
+.lay_gift_guide .box_gift ul.glist .img_wrap .dimm {display:table; position:absolute; left:0; top:0; width:100%; height:100%; background-color:rgba(32,32,32,.6); color:#fff; font-weight:700; font-size:14px; line-height:80px; text-align:center}
+.lay_gift_guide .box_gift ul.glist .info_wrap {display:table-cell; width:310px; height:80px; padding-left:16px; vertical-align:middle}
+.lay_gift_guide .box_gift ul.glist .info_wrap .tit {display:block; color:#101010; font-weight:500; font-size:17px; line-height:24px;}
+.lay_gift_guide .box_gift ul.glist .info_wrap .precon {display:block; margin-top:4px; color:#606060; font-size:14px; line-height:22px;}
+
+/* 공유하기 layer popup */
+.lay_wrap .sns_share {padding-bottom:12px;}
+.lay_wrap .sns_share ul {width:228px; margin:0 auto;}
+.lay_wrap .sns_share ul:after{content:'';display:table;clear:both;}
+.lay_wrap .sns_share li {float:left; padding:0 14px;}
+.lay_wrap .sns_share li a {display:block; width:48px; height:48px; background:url('https://www.cjcookit.com/cjkit/web/images/common/ico_set.png') no-repeat; background-size:800px 800px;}
+.lay_wrap .sns_share li.fb a {background-position:-400px -64px;} /* 페이스북 */
+.lay_wrap .sns_share li.tw a {background-position:-458px -64px;} /* 트위터 */
+.lay_wrap .sns_share li.url a {background-position:-516px -64px;} /* URL */
+.lay_wrap .sns_share .copy {padding:16px 24px 0;}
+.lay_wrap .sns_share .copy p {color:#101010; font-weight:400; font-size:14px; line-height:22px;}
+.lay_wrap .sns_share .copy .url {border:1px solid #ccc; margin-top:8px; padding:9px 15px; color:#606060; font-weight:400; font-size:13px; line-height:21px;}
+
+/* 우편번호찾기 */
+.pop_wrap .find_zip_wrap .top_sec{margin-top:24px;font-size:14px;line-height:22px;color:#101010;}
+.pop_wrap .find_zip_wrap .find_code {position:relative;margin-top:8px;font-size:0;}
+.pop_wrap .find_zip_wrap .find_code .input_wrap .ico{right:48px;}
+.pop_wrap .find_zip_wrap .find_code .input_wrap input.txt{padding-right:76px;}
+.pop_wrap .find_zip_wrap .find_code .search{position:absolute;top:12px;right:16px;display:block;width:24px;height:24px;background:url('https://www.cjcookit.com/cjkit/web/images/my/ico_set.png') -32px 2px no-repeat; background-size:800px 800px;font-size:0;}
+.pop_wrap .find_zip_wrap .btn.sub.white,
+.pop_wrap .find_zip_wrap .btn.sub.white:focus{border:1px solid #ccc;}
+.pop_wrap .search_result{padding-top:24px;}
+.pop_wrap .search_result .tab_wrap .tabs {position:relative; height:auto;}
+.pop_wrap .search_result .tab_wrap .tabs:before {display:none;}
+.pop_wrap .search_result .tab_wrap .tabs li span {position:relative; z-index:1; display:inline-block; height:auto; color:#010101; font-size:18px; line-height:27px; vertical-align:top;font-weight:700;}
+.pop_wrap .search_result .tab_wrap .tabs li span:after {content:''; display:block; position:absolute;bottom:-2px;left:0;width:100%;height:3px; background-color:#202020;}
+.pop_wrap .search_result .no_data {padding:64px 0;}
+.pop_wrap .search_result .no_data strong {font-size:18px; line-height:27px;color:#008A00;font-weight:700;}
+.pop_wrap .search_result .no_data p{font-size:18px; line-height:27px;color:#101010;font-weight:700;}
+.pop_wrap .search_result .no_data .help_info {margin-top:64px; padding:16px 24px; background-color:#f7f7f7;text-align: left}
+.pop_wrap .search_result .sel_region {margin-top:24px; font-size:0;}
+.pop_wrap .search_result .sel_region .item_wrap {width:210px; margin-left:10px;}
+.pop_wrap .search_result .sel_region .item_wrap:first-child {margin-left:0;}
+.pop_wrap .search_result .address_list {padding-top:24px;}
+.pop_wrap .search_result .address_list li {display:block; padding:10px 0 15px;border-bottom:1px solid #e0e0e0;color:#101010; font-size:14px; line-height:22px;}
+.pop_wrap .search_result .address_list li:first-child {padding-top:0;}
+.pop_wrap .search_result .address_list li > a {display:block;}
+.pop_wrap .search_result .address_list .address_zip {display:block;font-weight:bold;}
+.pop_wrap .search_result .address_list .address_ad1,
+.pop_wrap .search_result .address_list .address_ad2 {display:block;margin-top:5px;}
+.pop_wrap .search_result .address_list .address_ad1:after,
+.pop_wrap .search_result .address_list .address_ad2:after {display:block;clear:both;content:'';}
+.pop_wrap .search_result .address_list .address_ad1 em,
+.pop_wrap .search_result .address_list .address_ad2 em {float:left;width:47px;color:#00893d;}
+.pop_wrap .search_result .address_list .address_ad1 span,
+.pop_wrap .search_result .address_list .address_ad2 span {float:right;width:385px;}
+.pop_wrap .search_result .pagination {padding-top:24px;}
+.pop_wrap .address_input {margin-top:32px;}
+.pop_wrap .address_input dl {margin-top:8px; font-size:0;}
+.pop_wrap .address_input dl:first-child {margin-top:0;}
+.pop_wrap .address_input dt {display:inline-block; width:20%; color:#101010; font-size:15px; line-height:23px; font-weight:500; vertical-align:middle;}
+.pop_wrap .address_input dd {display:inline-block; width:80%; vertical-align:middle; color:#606060; font-size:15px; line-height:23px;}
+.pop_wrap .address_input_d {position:relative; }
+.pop_wrap .address_input_d .input_wrap {margin-top:8px;font-size:0;}
+.pop_wrap .address_input_d  input {width:100%;}
+.pop_wrap .address_input_d .readonly input {width:100%;}
+.pop_wrap .address_input_d .btn {width:100px;}
+.pop_wrap .address_input_d .chk_wrap {margin-top:16px;}
+.pop_wrap .dawn_delivery {position:relative; margin-top:24px; padding:20px 32px; background-color:#f7f7f7;}
+.pop_wrap .dawn_delivery dt {font-size:15px;line-height:23px;color:#008A00; font-weight:500;}
+.pop_wrap .dawn_delivery dd {padding-top:10px; color:#606060;}
+.pop_wrap .find_zip_wrap .btn_wrap{margin:24px 0 0}
+.pop_wrap .find_zip_wrap .zip_noti {margin-top:24px;}
+.pop_wrap .find_zip_wrap .zip_noti dt {padding-bottom:6px; }
+.pop_wrap .find_zip_wrap .zip_noti dt .tit {color:#101010; font-weight:700; font-size:16px; line-height:24px;}
+.pop_wrap .find_zip_wrap .zip_noti dt .sub_tit {display:block; padding-bottom:4px; color:#101010; color:#101010; font-weight:500; font-size:15px; line-height:23px;}
+.pop_wrap .find_zip_wrap .zip_noti dt .sub_tit::before {content:''; display:inline-block; position:relative; top:3px; width:16px; height:16px; margin-right:4px; background:url('https://www.cjcookit.com/cjkit/web/images/common/ico_set.png') -304px -110px no-repeat; background-size:800px 800px; vertical-align:top;}
+.pop_wrap .find_zip_wrap .zip_noti .txt {margin-top:6px; font-size:14px; line-height:22px}
+
+/* 에러페이지 */
+.error_conts{padding-top:88px;text-align:center}
+.error_conts > p{font-size:32px;line-height:48px;color:#101010;font-weight:500;}
+.error_conts > p:before{content:'';display:block;margin:0 auto 30px;background:url('https://www.cjcookit.com/cjkit/web/images/common/ico_set.png') no-repeat;background-size:800px 800px;}
+.error_conts.ico01 > p:before{width:95px;height:83px;background-position:-450px -529px;}
+.error_conts.ico02 > p:before{width:105px;height:88px;background:url('https://www.cjcookit.com/cjkit/web/images/common/ico_chara.png') -108px -130px no-repeat;background-size:500px 500px;} /* 아이콘변경 */
+.error_conts > span{display:block;margin-top:32px;font-size:14px;line-height:22px;}
+.error_conts > span.eng{margin-top:16px;}
+.error_conts .btn_wrap{margin-top:56px;}
+.error_conts .btn_wrap .btn{width:240px;margin:0 5px;}
+.error_conts .btm_noti{text-align:left;}
+
+/* 약관 */
+.term_wrap .title {padding-bottom:36px; border-bottom:4px solid #202020; color:#101010; font-weight:700; font-size:40px; line-height:56px;}
+.term_wrap .detail{margin-top:40px;}
+.term_agreement.indiv_term h3 {margin-bottom:24px; padding-bottom:18px; border-bottom:2px solid #202020; color:#101010; font-weight:700; font-size:22px; line-height:32px;}
+.term_agreement.indiv_term .p_sec + .p_sec {padding-top:40px}
+.term_agreement.indiv_term .ul_bul {color:#606060;}
+.term_agreement.indiv_term .bul_dash {color:#606060;}
+.term_agreement.indiv_term .bul_dash .dash{display:inline-block;width:4px;height:1px;margin:0 4px 3px;background-color:#606060;vertical-align:middle;}
+.term_agreement.indiv_term .p_sec h4 {margin-top:24px;}
+.term_agreement.indiv_term .p_sec h4 + p {margin-top:10px;}
+.term_agreement.indiv_term .p_sec h4 + .tb_col,
+.term_agreement.indiv_term .p_sec h4 + .tb_row {margin-top:16px;}
+.term_agreement.indiv_term .p_sec .list_sec + p {margin-top:24px;}
+.term_agreement.indiv_term .p_sec .list_sec p + p {margin-top:24px;}
+.term_agreement.indiv_term .p_sec .list_sec {margin-top:10px;}
+.term_agreement.indiv_term .p_sec .tb_col.mtb,
+.term_agreement.indiv_term .p_sec .tb_row.mtb {margin:32px 0;}
+.term_agreement.indiv_term .p_sec .tb_col,
+.term_agreement.indiv_term .p_sec .tb_row {margin-top:32px;}
+/*.term_agreement.indiv_term .p_sec .tb_col.mt,
+.term_agreement.indiv_term .p_sec .tb_row.mt {margin-top:16px;}*/
+.term_agreement.indiv_term .p_sec .tb_col td {padding:10px 10px;}
+.term_agreement.indiv_term .p_sec .tb_col > p {margin-bottom:10px;}
+.term_agreement .term_titr_data {display:block; margin-top:-114px; padding-bottom:74px; color:#101010; font-weight:500; font-size:16px; line-height:24px; text-align:right;}
+.term_wrap .legal_noti .legal_tit {padding-bottom:32px; color:#101010; font-weight:700; font-size:22px; line-height:32px;}
+.term_wrap .legal_noti .legal_major {padding-bottom:10px; color:#101010; font-weight:500; font-size:15px; line-height:23px;}
+
+/* 레시피 window popup */
+.pop_conts .recipe_detail_wrap {width:780px; padding:24px 0;}
+.pop_conts .detail_wrap .recipe_detail_wrap .info_detail_wrap {min-width:780px; margin-top:0; padding-top:0;}
+.pop_conts .detail_wrap .recipe_detail_wrap .info_detail_wrap .detail_box {padding-top:24px;}
+.pop_conts .detail_wrap .recipe_detail_wrap .info_detail_wrap .detail_box:first-of-type {padding-top:56px;}
+.pop_conts .detail_wrap .recipe_detail_wrap .info_detail_wrap .detail_box ~ .detail_box {padding-top:64px;}
+.pop_conts .detail_wrap .recipe_detail_wrap .info_detail_wrap .detail_box.box_video{padding-top:24px;}
+.pop_conts .sel_multi_pd .pdform_only .tit {padding-bottom:16px; border-bottom:1px solid #e0e0e0; color:#101010; font-weight:700; font-size:20px; line-height:30px;}
+.pop_conts .detail_wrap .recipe_detail_wrap .info_detail_wrap .detail_box.pop_box_video .video_wrap video {width:100%; height:480px;} /* ckg 24일배포할때 삭제하기 */
+
+/* 상품 상세 window popup */
+.pop_conts .pop_pd_detail_wrap {width:780px; padding:24px 0;}
+.pop_conts .pop_pd_detail_wrap .sel_multi_pd{margin-bottom:30px;} /* 20200121_추가 */
+.pop_conts .pop_pd_detail_wrap .basic_info {padding:0 0 16px; border-bottom:1px solid #e0e0e0;}
+.pop_conts .pop_pd_detail_wrap .img_detail_wrap {margin:56px auto 0; padding-bottom:56px; width:600px; }
+.pop_conts .detail_wrap .pop_pd_detail_wrap  .info_detail_wrap {min-width:780px; margin-top:0; padding-top:100px;}
+.pop_conts .detail_wrap .pop_pd_detail_wrap  .info_detail_wrap .detail_box ~ .detail_box {padding-top:64px;}
+.pop_conts .detail_wrap .pop_pd_detail_wrap  .info_detail_wrap .detail_box ~ .prd_detail_img {margin-top:64px;}
+
+/* 리뷰 아이디 모아보기 window popup */
+.pop_wrap .detail_wrap .review_wrap {width:780px;}
+.pop_wrap .detail_wrap .review_wrap .taste_review_list .review_module.open .link_more .img_left_wrap,
+.pop_wrap .detail_wrap .review_wrap .taste_review_list .review_module.open .link_more .txt_wrap,
+.pop_wrap .detail_wrap .review_wrap .taste_review_list .review_module.photo.open .link_more .txt_wrap {width:100%;}
+
+/* 리뷰 상세 window popup */
+.pop_wrap .detail_wrap .review_wrap .taste_review_list > .review_module {margin-top:24px;}
+.pop_wrap .detail_wrap .review_wrap .taste_review_list .review_module.open .link_more .img_wrap.slide_wrap .slide_conts .slide_arrow_wrap {position:absolute; bottom:24px; right:32px; width:105px;}
+.pop_wrap .detail_wrap .review_wrap .taste_review_list .review_module.open .link_more .img_wrap.slide_wrap .slide_conts .arr_area {position:relative;}
+.pop_wrap .detail_wrap .review_wrap .taste_review_list .review_module.open .link_more .img_wrap.slide_wrap .slide_conts .btn_arrow {position:absolute; width:24px; height:24px; background:url('https://www.cjcookit.com/cjkit/web/images/common/ico_set.png') no-repeat; background-size:800px 800px;}
+.pop_wrap .detail_wrap .review_wrap .taste_review_list .review_module.open .link_more .img_wrap.slide_wrap .slide_conts .btn_arrow.prev {bottom:0; left:0; background-position:-540px 0;}
+.pop_wrap .detail_wrap .review_wrap .taste_review_list .review_module.open .link_more .img_wrap.slide_wrap .slide_conts .btn_arrow.next {bottom:0; right:0; background-position:-564px 0;}
+.pop_wrap .detail_wrap .review_wrap .taste_review_list .review_module.open .link_more .img_wrap .count_wrap {position:absolute; right:63px; bottom:24px; width:42px; text-align:center; z-index:2;}
+.pop_wrap .detail_wrap .review_wrap .taste_review_list .review_module.open .link_more .img_wrap .count_wrap .num {display:inline-block; color:#101010; font-size:18px; line-height:24px; font-weight:400; vertical-align:middle;}
+.pop_wrap .detail_wrap .review_wrap .taste_review_list .review_module.open .link_more .img_wrap .count_wrap .num strong {font-weight:500;}
+
+/* 리뷰 모듈 */
+.review_module_p {padding:64px 0 25px; border-bottom:1px solid #e0e0e0;}
+.review_module_p .top_wrap{position:relative;padding-bottom:16px;border-bottom:2px solid #202020;}
+.review_module_p .top_wrap .tit {padding-right:80px; color:#101010; font-size:22px;line-height:32px;font-weight:700;}
+.review_module_p .etc_info {position:relative; padding-top:24px; font-size:0;}
+.review_module_p .etc_info > div {position:relative; display:inline-block; vertical-align:middle;}
+.review_module_p .etc_info > div:first-child {padding-left:0;}
+.review_module_p .etc_info .star_wrap {vertical-align:top;}
+.review_module_p .etc_info .star,
+.review_module_p .etc_info .star span {display:block; width:88px; height:16px; background:url('https://www.cjcookit.com/cjkit/web/images/pd/ico_set.png') no-repeat -374px -26px; background-size:800px auto;}
+.review_module_p .etc_info .star span {background-position:-374px 0;}
+.review_module_p .etc_info .time {position:absolute; top:20px; right:0; color:#606060; font-size:14px; line-height:22px;}
+.review_module_p .txt_wrap {padding-top:24px; overflow:hidden;}
+.review_module_p .txt_wrap .txt {color:#606060; font-size:14px; line-height:22px;}
+.review_module_p .tag_wrap {padding-top:24px; font-size:0;}
+.review_module_p .tag_wrap .tag {display:inline-block; padding-right:8px; color:#008a00; font-size:13px; line-height:21px;}
+.review_module_p .tag_wrap .tag:last-child {padding-right:0;}
+.review_module_p .tip_box {position:relative; padding:8px 20px; background-color:#f7f7f7; border-radius:0 8px 8px 8px;}
+.review_module_p .tip_box .tip_flag {position:absolute; left:16px; top:10px; width:31px;}
+.review_module_p .tip_box .tip_flag:before {content:''; position:absolute; left:0; top:3px; width:23px; height:10px; background:url('https://www.cjcookit.com/cjkit/web/images/pd/ico_set.png') -490px -130px no-repeat; background-size:800px 800px;}
+.review_module_p .tip_box .tip_flag span {display:block; margin-top:2px; color:#101010; font-size:13px; line-height:15px; font-weight:900;}
+.review_module_p .tip_box .tip_txt {padding-left:26px; color:#606060; font-size:13px; line-height:20px;}
+.review_module_p .img_wrap {overflow:hidden;text-align:center;}
+.review_module_p .img_wrap .img {padding:8px 0; width:780px; margin:0 auto;}
+.review_module_p .img_wrap .img:first-child {padding-top:16px;}
+.review_module_p .img_wrap .img:last-child {padding-bottom:0;}
+.review_module_p .img_wrap .img img {display:block; width:100%;}
+.review_module_p .img_wrap.slide_wrap .indi_wrap {position:absolute; bottom:10px; left:0; right:0;}
+.review_module_p .img_wrap.slide_wrap .img {max-height:360px; background-color:#000;}
+.review_module_p .img_wrap.slide_wrap .img img {display:block; margin:0 auto;}
+.review_module_p .img_wrap.slide_wrap .slide_conts .slide_arrow_wrap {position:absolute; bottom:20px; right:20px; width:80px;}
+.review_module_p .img_wrap.slide_wrap .slide_conts .arr_area {position:relative;}
+.review_module_p .img_wrap.slide_wrap .slide_conts .slide_arrow_wrap .btn_arrow {position:absolute; width:20px; height:20px; background:url('https://www.cjcookit.com/cjkit/mobile/images/common/ico_arrow.svg') no-repeat; background-size:100px auto;}
+.review_module_p .img_wrap.slide_wrap .slide_conts .slide_arrow_wrap .btn_arrow.prev {bottom:0; left:0; background-position:0 -20px;}
+.review_module_p .img_wrap.slide_wrap .slide_conts .slide_arrow_wrap .btn_arrow.next {bottom:0; right:0; background-position:-20px -20px;}
+.review_module_p .img_wrap.slide_wrap .count_wrap {position:absolute; right:38px; bottom:16px; width:40px; text-align:center; z-index:2;}
+.review_module_p .img_wrap.slide_wrap .count_wrap .num {display:inline-block; color:#fff; text-shadow: 0 2px 0 rgba(0, 0, 0, .5); font-size:14px; line-height:22px; font-weight:bold; vertical-align:middle;}
+.review_module_p .img_wrap.slide_wrap .count_wrap .num strong {font-size:16px; font-style:normal; letter-spacing:2px;}
+.review_module_p .bul_list {padding-top:16px;}
+
+/* 재입고 알림 신청/재판매 알림 신청 */
+.lay_re_put .major_txt {padding:24px 0; border-bottom:1px solid #e0e0e0; color:#202020; font-weight:700; font-size:17px; line-height:23px;}
+.lay_re_put .re_pd_wrap {display:table; table-layout:fixed; width:100%; padding-top:16px;}
+.lay_re_put .re_pd_wrap .img_wrap {display:table-cell; width:80px; height:80px; vertical-align:middle;}
+.lay_re_put .re_pd_wrap .img_wrap img {width:100%;}
+.lay_re_put .re_pd_wrap .txt_wrap {display:table-cell; width:352px; height:80px; padding-left:16px; vertical-align:middle;}
+.lay_re_put .re_pd_wrap .txt_wrap p {color:#101010; font-weight:500; font-size:17px; line-height:24px;}
+.lay_re_put .list_not dl {margin-top:16px; padding-top:16px; border-top:1px solid #e0e0e0;}
+.lay_re_put .list_not dl:after{content:'';display:table;clear:both;}
+.lay_re_put .list_not dt {float:left; width:116px; color:#101010; font-weight:700; font-size:17px; line-height:24px;}
+.lay_re_put .list_not dd {float:left; width:316px;}
+.lay_re_put .list_not dl.dl_app .rad_wrap {width:104px;}
+.lay_re_put .list_not dl.dl_app .box_send_date {margin-top:16px; padding:16px 0 16px 11px; background-color:#f7f7f7;}
+.lay_re_put .list_not dl.dl_app .box_send_date .tt {padding-left:13px; color:#101010; font-weight:500; font-size:14px; line-height:22px;}
+.lay_re_put .list_not dl.dl_app ul:after{content:'';display:table;clear:both;}
+.lay_re_put .list_not dl.dl_app li {float:left; width:134px; margin:10px 0 0 13px;}
+.lay_re_put .list_not dl.dl_type dd {position:relative;}
+.lay_re_put .list_not dl.dl_type label {display:block; padding-bottom:8px; color:#101010; font-size:14px; line-height:23px;}
+.lay_re_put .list_not dl.dl_type .btn_link {position:absolute; right:0; top:0;}
+.lay_re_put .list_not dl.dl_type .input_wrap.dis input.txt {color:#606060;}
+
+/* 로딩전용 */
+.preloader { z-index:10000; position:fixed; left:0; top:0; width:100%; height:100%; background:rgba(0,0,0,.3); }
+.preloader .loader { display:block; overflow:hidden; position:relative; left:50%; top:50%; width:144px; height:144px;
+  transform:scale(0.5,0.5) translate(-50%,-50%); transform-origin:left top;
+  -webkit-transform:scale(0.5,0.5) translate(-50%,-50%); -webkit-transform-origin:left top;
+}
+.preloader .loader .loading { display:block; width:100%; height:100%; background:url('https://www.cjcookit.com/cjkit/web/images/common/loading.png') 0 0;/* 1440 x 1296 */
+  animation:moveXLoading 0.7s steps(10) infinite, moveYLoading 6.3s steps(9) infinite;
+  -webkit-animation:moveXLoading 0.7s steps(10) infinite, moveYLoading 6.3s steps(9) infinite;
+}
+
+@-webkit-keyframes moveXLoading {
+  from { background-position-x:0px; }
+  to { background-position-x:-1440px; }
+}
+
+@keyframes moveXLoading {
+  from { background-position-x:0px; }
+  to { background-position-x:-1440px; }
+}
+
+@-webkit-keyframes moveYLoading {
+  from { background-position-y:0px; }
+  to { background-position-y:-1296px; }
+}
+
+@keyframes moveYLoading {
+  from { background-position-y:0px; }
+  to { background-position-y:-1296px; }
+}
+/* 로그인 */
+.login_wrap .title {padding-bottom:36px; border-bottom:4px solid #202020; color:#101010; font-weight:700; font-size:40px; line-height:56px;}
+.logc_content .login_wrap .title {padding-bottom:0; border-bottom:0; text-align:center}
+.login_wrap .top_ico_head {padding:64px 0; text-align:center;}
+/* .login_wrap .top_ico_head i {display:block; width:106px; height:104px; margin:0 auto 20px; background:url('/cjkit/web/images/common/login_set.png') 0 0 no-repeat; background-size:800px 800px;} */ /* 이용약관 */
+.login_wrap .top_ico_head i {display:block; width:106px; height:104px; margin:0 auto 20px; background:url('https://www.cjcookit.com/cjkit/web/images/common/ico_chara.png') 0 0 no-repeat; background-size:500px 500px;} /* 아이콘변경 */
+/*.login_wrap .top_ico_head i.ico_welcome {background-position:-299px -180px;}*/ /* welcome */
+.login_wrap .top_ico_head i.ico_welcome {background-position:-320px 0;} /* 아이콘변경 */
+/*.login_wrap .top_ico_head i.ico_confirm {background-position:-423px -180px;}*/ /* confirm */
+.login_wrap .top_ico_head i.ico_confirm {background-position:0 0;}  /* 아이콘변경 */
+.login_wrap .top_ico_head strong {display:block; margin-bottom:32px; padding:0 100px; color:#101010; font-weight:500; font-size:32px; line-height:48px; word-break:keep-all; word-wrap:break-word;}
+.login_wrap .top_ico_head p {padding:0 160px; font-size:14px; line-height:22px;}
+.login_wrap .btn_wrap {margin-top:56px; text-align:center;}
+.login_wrap .btn_wrap .btn {width:240px; margin:0 5px; vertical-align:top;}
+.logc_content .login_wrap .btn_wrap {margin-top:0;}
+.logc_content .login_wrap .btn_wrap .btn {width:204px;}
+.logc_content .login_wrap .btn_wrap.full .btn{width:100%; margin:0 0;}
+.logc_content .login_wrap .btn_wrap.cols2 {font-size:0;}
+.logc_content .login_wrap .btn_wrap.cols2:after{content:'';display:table;clear:both;}
+.logc_content .login_wrap .btn_wrap.cols2 .fl_l {float:left; width:50%; padding-right:4px;}
+.logc_content .login_wrap .btn_wrap.cols2 .fl_r {float:left; width:50%; padding-left:4px;}
+.logc_content .login_wrap .btn_wrap.cols2 .btn {width:100%; margin:0 0;}
+.login_wrap .tab_rad_menu {width:478px; margin:0 auto 24px; padding-top:56px;}
+.login_wrap .login_cont {width:478px; margin:0 auto;}
+.login_wrap .login_cont .login_input {position:relative; margin-bottom:32px; padding-bottom:80px;}
+.login_wrap .login_cont .login_input dl.in  {margin-top:8px;}
+.login_wrap .login_cont .login_input dl.in:first-child {margin-top:0;}
+.login_wrap .login_cont .login_input .btn_wrap {position:absolute; left:0; bottom:0; width:100%;}
+.login_wrap .login_cont .login_input .desc_wrap {margin-top:16px;}
+.login_wrap .login_cont .login_input .desc_wrap:after {content:''; display:block; clear:both;}
+.login_wrap .login_cont .login_input .desc_wrap .chk_wrap label {font-size:15px;}
+.login_wrap .login_cont .login_input .desc_wrap .find {float:right;}
+.login_wrap .login_cont .login_input .desc_wrap .find a {float:left; color:#101010; font-size:15px; line-height:23px;}
+.login_wrap .login_cont .login_input .desc_wrap .find a:before {content:''; display:inline-block; float:left; width:1px; height:16px; margin:3px 8px 0; background-color:#ccc;}
+.login_wrap .login_cont .login_input .desc_wrap .find a:first-child:before {display:none;}
+.login_wrap .login_cont .auto_protect {margin-top:24px;}
+.login_wrap .login_cont .auto_protect .chara_view .error_msg {color:#EE0700; font-size:12px; line-height:20px;}
+.login_wrap .login_cont .auto_protect .chara_view .chara_box:after {content:''; display:block; clear:both;}
+.login_wrap .login_cont .auto_protect .chara_view .chara {float:left; width:340px; margin-top:8px;}
+.login_wrap .login_cont .auto_protect .chara_view .btn_support {float:right; width:130px;}
+.login_wrap .login_cont .auto_protect .chara_view .btn_support button {width:100%; height:32px;  margin-top:8px; border:1px solid #ccc;}
+.login_wrap .login_cont .auto_protect .chara_view .btn_support button .txt {position:relative; padding-left:28px; color:#101010; font-weight:500; font-size:13px; line-height:30px;}
+.login_wrap .login_cont .auto_protect .chara_view .btn_support button .txt:before {content:''; position:absolute; left:0; top:50%; width:24px; height:24px; margin-top:-12px; background:url('https://www.cjcookit.com/cjkit/web/images/common/login_set.png') 0 0 no-repeat; background-size:800px 800px;}
+.login_wrap .login_cont .auto_protect .chara_view .btn_support button.voice .txt:before {background-position:-270px 0}
+.login_wrap .login_cont .auto_protect .chara_view .btn_support button.reset .txt:before {background-position:-304px 0}
+.login_wrap .login_cont .auto_protect .input_wrap {margin-top:8px;}
+.login_wrap .login_cont .easy_login ul {text-align:center; line-height:0;}
+.login_wrap .login_cont .easy_login li {display:inline-block; padding:0 14px 0 15px;}
+.login_wrap .login_cont .easy_login li a {display:block; width:48px; height:48px; background:url('https://www.cjcookit.com/cjkit/web/images/common/login_set.png') 0 0 no-repeat; background-size:800px 800px;}
+.login_wrap .login_cont .easy_login li.easy_p a {background-position:0 0;} /* 휴대폰 */
+.login_wrap .login_cont .easy_login li.easy_k a {background-position:-58px 0;} /* 카카오톡 */
+.login_wrap .login_cont .easy_login li.easy_n a {background-position:-116px 0;} /* 네이버 */
+.login_wrap .login_cont .easy_login li.easy_f a {background-position:-174px 0;} /* 페이스북 */
+.login_wrap .login_cont .box_induce {margin-top:64px; padding:20px 32px; background-color:#f7f7f7;}
+.login_wrap .login_cont .box_induce dt strong {color:#101010; font-weight:700; font-size:18px; line-height:27px}
+.login_wrap .login_cont .box_induce dt {margin-bottom:4px;}
+.login_wrap .login_cont .box_induce dd {}
+.login_wrap .login_cont .box_induce dd .txt {font-size:13px; line-height:21px; word-break:keep-all; word-wrap:break-word;}
+.login_wrap .login_cont .box_induce dd .rec_link {display:block; margin-top:16px; width:240px; background-color:#fff;}
+.login_wrap .login_cont .lbann_wrap {margin-top:56px;}
+.login_wrap .login_cont .lbann_wrap img {display:block; width:100%; vertical-align:top}
+.logc_content .login_wrap .top_ico_head {padding-bottom:56px;}
+.logc_content .login_wrap .top_ico_head i {width:80px; height:80px; background:url('https://www.cjcookit.com/cjkit/web/images/common/login_set.png') 0 0 no-repeat; background-size:800px 800px;}}
+.logc_content .login_wrap .top_ico_head i.easy_p {background-position:0 -68px;} /* 휴대폰 */
+.logc_content .login_wrap .top_ico_head i.easy_k {background-position:-100px -68px;} /* 카카오톡 */
+.logc_content .login_wrap .top_ico_head i.easy_n {background-position:-200px -68px;} /* 네이버 */
+.logc_content .login_wrap .top_ico_head i.easy_f {background-position:-300px -68px;} /* 페이스북 */
+.logc_content .login_wrap .top_ico_head strong {margin-bottom:6px; font-weight:700; font-size:24px; line-height:34px}
+
+.login_wrap .box_benfit {padding:0 32px 32px; background-color:#f7f7f7;}
+.login_wrap .box_benfit:after{content:'';display:table;clear:both;}
+.login_wrap .box_benfit .cookit_benfit {float:left; width:100%;}
+.login_wrap .box_benfit .mem_benfit {float:left; width:100%; margin-top:32px; border-top:1px solid #e0e0e0;}
+.login_wrap .box_benfit dl {float:left; width:100%; padding-top:32px;}
+.login_wrap .box_benfit dt {float:left; width:100%; padding-bottom:24px; color:#101010; font-weight:700; font-size:18px; line-height:27px}
+.login_wrap .box_benfit .cookit_benfit dd {float:left; position:relative; width:279px; padding-left:96px;}
+.login_wrap .box_benfit .cookit_benfit dd p {display:table-cell; height:80px; color:#101010; font-size:15px; line-height:23px; vertical-align:middle;}
+.login_wrap .box_benfit .cookit_benfit dd:before {content:''; position:absolute; left:0; top:0; width:80px; height:80px; background:url('https://www.cjcookit.com/cjkit/web/images/common/login_set.png') 0 0 no-repeat; background-size:800px 800px;}
+.login_wrap .box_benfit .cookit_benfit dd.bf_01:before {background-position:-400px 0;}
+.login_wrap .box_benfit .cookit_benfit dd.bf_02:before {background-position:-490px 0;}
+.login_wrap .box_benfit .cookit_benfit dd.bf_03:before {background-position:-580px 0;}
+.login_wrap .box_benfit .cookit_benfit dd.bf_04:before {background-position:-670px 0;}
+.login_wrap .box_benfit .mem_benfit dd {float:left; width:372px; height:60px;}
+.login_wrap .box_benfit .mem_benfit dd a {display:block; position:relative; width:372px; height:60px;}
+.login_wrap .box_benfit .mem_benfit dd a:before {content:''; position:absolute; left:50%; top:0; height:60px; background:url('https://www.cjcookit.com/cjkit/web/images/common/login_set.png') 0 0 no-repeat; background-size:800px 800px;}
+.login_wrap .box_benfit .mem_benfit dd.cj_01 a:before {width:141px; margin-left:-70px; background-position:0 -170px;}
+.login_wrap .box_benfit .mem_benfit dd.cj_02 a:before {width:149px; margin-left:-74px; background-position:0 -230px;}
+.login_wrap .box_benfit .mem_benfit dd.cj_03 a:before {width:84px; margin-left:-42px; background-position:0 -290px;}
+
+.logc_content .login_wrap .top_ico_head ~ .login_cont .login_input {padding-bottom:88px;}
+
+	/* 약관동의 */
+.terms_agr_wrap .mtit_wrap {margin-bottom:17px;}
+.terms_agr_wrap .mtit_wrap .mtit {color:#202020; font-weight:700; font-size:22px; line-height:32px}
+.terms_agr_wrap .mtit_wrap .desc_txt {margin-top:6px; font-size:14px; line-height:22px;}
+.terms_agr_wrap .list_ps_agr {margin-bottom:56px;}
+.terms_agr_wrap .list_ps_agr > dl {border:1px solid #ccc; border-top:2px solid #202020;}
+.terms_agr_wrap .list_ps_agr > dl > dt {border-bottom:1px solid #e0e0e0; padding:20px 31px;}
+.terms_agr_wrap .list_ps_agr > dl > dt .chk_wrap label {font-weight:700; font-size:18px; line-height:27px}
+.terms_agr_wrap .list_ps_agr > dl > dd {}
+.terms_agr_wrap .list_ps_agr .list_acco {}
+.terms_agr_wrap .list_ps_agr .list_acco > ul {border-top:0;}
+.terms_agr_wrap .list_ps_agr .list_acco li .head {padding:19px 31px;}
+.terms_agr_wrap .list_ps_agr .list_acco li .head .chk_wrap {width:900px;}
+.terms_agr_wrap .list_ps_agr .list_acco li .head .chk_wrap label {font-weight:500; font-size:16px; line-height:24px}
+.terms_agr_wrap .list_ps_agr .list_acco li .head .chk_wrap label .req {color:#008A00;}
+.terms_agr_wrap .list_ps_agr .list_acco li a.link_cnt {position:absolute; right:18px; top:50%; width:24px; height:24px; margin-top:-10px;}
+.terms_agr_wrap .list_ps_agr .list_acco li .desc {padding:7px 31px 32px 61px; border-top:0;}
+.terms_agr_wrap .list_ps_agr .list_acco li .desc .scroll {max-height:320px; overflow-x:hidden; overflow-y:auto;}
+.terms_agr_wrap .list_ps_agr .list_acco li .desc .cont {width:1042px;}
+.terms_agr_wrap .list_mk_agr {width:100%; overflow:hidden; padding:25px 0; border:1px solid #ccc; border-top:2px solid #202020;}
+.terms_agr_wrap .list_mk_agr dl {float:left; width:364px; margin-left:-1px; padding-left:32px; border-left:1px solid #e0e0e0;}
+.terms_agr_wrap .list_mk_agr dt {color:#101010; font-weight:500; font-size:16px; line-height:24px}
+.terms_agr_wrap .list_mk_agr dd {padding-top:10px;}
+.terms_agr_wrap .list_mk_agr dd .chk_wrap {width:122px;}
+.terms_agr_wrap .list_mk_agr dd .chk_wrap label {}
+.terms_agr_wrap .terms_agr_txt {margin-top:56px; text-align:center}
+.terms_agr_wrap .terms_agr_txt strong.em {color:#101010; font-weight:700; font-size:24px; line-height:34px}
+.terms_agr_wrap .terms_agr_txt .btn_wrap {margin-top:32px;}
+
+	/* layer popup - 상단 영역 */
+.lay_wrap .top_ico_head {padding:24px 0 12px; text-align:center;}
+/* .lay_wrap .top_ico_head i {display:block; width:106px; height:104px; margin:0 auto 16px; background:url('/cjkit/web/images/common/login_set.png') 0 0 no-repeat; background-size:800px 800px;} */
+.lay_wrap .top_ico_head i {display:block; width:106px; height:104px; margin:0 auto 16px; background:url('https://www.cjcookit.com/cjkit/web/images/common/ico_chara.png') 0 0 no-repeat; background-size:500px 500px;} /* 아이콘변경 */
+.lay_wrap .top_ico_head i.ico_confirm {background-position:-423px -180px;}
+/* .lay_wrap .top_ico_head i.ico_lock {background-position:-548px -180px;} */
+.lay_wrap .top_ico_head i.ico_lock {background-position:-212px 6px;} /* 아이콘변경 */
+/* .lay_wrap .top_ico_head i.ico_guide {background-position:-673px -180px;} */
+.lay_wrap .top_ico_head i.ico_guide {background-position:-106px 6px;} /* 아이콘변경 */
+.lay_wrap .top_ico_head strong {display:block; margin-bottom:4px; color:#101010; font-weight:500; font-size:24px; line-height:34px;}
+.lay_wrap .top_ico_head p {font-size:14px; line-height:22px;}
+.lay_wrap .top_ico_head p strong {margin:10px 0 0; color:#101010; font-weight:500; font-size:14px; line-height:22px;}
+
+	/* 간편로그인 */
+.lay_wrap .lay_easy_login {padding:0 24px;}
+.lay_wrap .lay_easy_login .input_certify_num .item_wrap {width:102px;}
+.lay_wrap .lay_easy_login .input_certify_num .input_wrap {width:102px; margin-left:5px;}
+.lay_wrap .lay_easy_login .input_certify_num .btn {width:102px; margin-left:5px;}
+.lay_wrap .lay_easy_login .input_certify_num .row {margin-top:8px;}
+.lay_wrap .lay_easy_login .input_certify_num .row .remain_txt {position:absolute; right:16px; top:50%; margin-top:-11px; color:#EE0700; font-size:13px; line-height:22px;}
+.lay_wrap .lay_easy_login .input_certify_num .row .input_wrap {width:100%; margin-left:0;}
+.lay_wrap .lay_easy_login .input_certify_num .row input {padding-right:112px;}
+.lay_wrap .lay_easy_login .btn_wrap {margin-top:24px;}
+
+	/* 정기 비멀번호 변경 */
+.lay_wrap .lay_pw_change {padding-right:18px;}
+.lay_wrap .lay_pw_change .top_ico_head p {letter-spacing:-1px}
+
+	/* 장김 안내 */
+.lay_lock_guide {padding:0 24px;}
+.lay_lock_guide .btm_noti {margin-top:20px;}
+
+	/* COOKIT 마케팅 수신동의 */
+.lay_ck_mk_agree {padding:24px 24px 0;}
+.lay_ck_mk_agree p.top_txt {font-size:14px; line-height:22px}
+
+/* COOKIT 약관 동의 안내 */
+.pop_sso_agree {padding-top:24px;}
+.pop_sso_agree p.top_txt {color:#101010; font-weight:700; font-size:17px; line-height:24px;}
+.pop_sso_agree .btm_noti .bul_list li {margin-top:6px; font-size:14px; line-height:22px;}
+.pop_sso_agree .btm_noti .bul_list li:first-child {margin-top:0;}
+/* CJ제일제당 통합회원 안내 */
+.lay_cj_total {padding:24px 24px 0;}
+.lay_cj_total p.txt {padding-bottom:16px; font-size:14px; line-height:22px}
+.lay_cj_total p.txt_em strong {color:#101010; font-weight:700; font-size:17px; line-height:24px;}
+/* 마케팅 정보 수신동의*/
+.lay_receive_agree {padding:0 24px;}
+.lay_receive_agree dl {margin-top:25px;}
+.lay_receive_agree .sec_agree01 .chk_wrap label {text-indent:-31px;padding-left:31px;}
+.lay_receive_agree dt {margin-bottom:15px;font-size:17px;line-height:23px;color:#010101;font-weight:bold;}
+.lay_receive_agree .btm_noti {padding:18px 20px 20px;font-size:12px;}
+.lay_receive_agree .btm_noti .bul_list li {color:#606060;}
+.lay_receive_agree .bul_list .bul_dot .bullet {color:#bbb;}
+.lay_receive_agree .sec_agree02 .chk_wrap {margin-right:35px;}
+/* 이벤트 댓글 모듈 */
+.ev_reply_module {position:relative; margin-top:56px;}
+.ev_reply_module:before {content:''; display:block; position:absolute; top:0; left:0; right:0; height:56px; border-top:2px solid #202020; z-index:-1;}
+.ev_reply_module .reply_top {padding-top:56px;}
+.ev_reply_module .reply_top .comment_num {display:inline-block; position:relative; color:#606060; font-size:15px; line-height:20px; vertical-align:middle;}
+.ev_reply_module .reply_top .comment_num span {margin-right:2px; color:#606060; font-size:15px; line-height:23px}
+.ev_reply_module .reply_top .comment_num strong {color:#101010; font-weight:500;}
+.ev_reply_module .reply_top .chk_wrap {float:right;}
+.ev_reply_module .write_wrap {padding:16px 0 56px;}
+.ev_reply_module .write_area {position:relative; padding-bottom:12px;}
+.ev_reply_module .write_area .textarea {display:inline-block; width:100%;}
+.ev_reply_module .write_area .textarea textarea {height:84px; padding:16px 16px 0; line-height:20px;}
+.ev_reply_module .write_area .textarea .result_txt {}
+.ev_reply_module .write_area .btn_wrap {position:absolute; right:0; bottom:0; text-align:right;}
+.ev_reply_module .write_area .btn_wrap .btn {width:120px;}
+.ev_reply_module .write_area .link_box .input_wrap {margin-top:8px;}
+.ev_reply_module .write_area .link_box .input_wrap input.txt {padding:0 52px 0 16px;}
+.ev_reply_module .write_area .link_box .input_wrap .input_del {position:absolute; top:0; right:0; width:52px; height:48px; overflow:visible;}
+.ev_reply_module .write_area .link_box .input_wrap .input_del:after {content:''; display:block; position:absolute; top:50%; left:50%; width:12px; height:2px; margin:-1px 0 0 -6px; background-color:#606060;}
+.ev_reply_module .write_area .btn_add_link {margin-top:21px;}
+.ev_reply_module .write_area .btn_add_link span {position:relative; display:block; padding-left:26px; color:#606060; font-size:15px; line-height:23px; font-weight:500;}
+.ev_reply_module .write_area .btn_add_link span:before {content:''; display:block; position:absolute; top:0; left:0; width:20px; height:20px; background:url('https://www.cjcookit.com/cjkit/web/images/common/ico_set.png') -680px -330px no-repeat; background-size:800px 800px;}
+.ev_reply_module .reply_list {border-top:1px solid #e0e0e0;}
+.ev_reply_module .reply_list .item {padding:24px 0; border-bottom:1px solid #e0e0e0;}
+.ev_reply_module .reply_list .item .user_info {position:relative; font-size:0;}
+.ev_reply_module .reply_list .item .user_info > span {display:inline-block; font-size:14px; line-height:22px; vertical-align:middle;}
+.ev_reply_module .reply_list .item .user_info .user_id {position:relative; margin-right:8px; padding-right:8px; color:#101010; font-weight:500;}
+.ev_reply_module .reply_list .item .user_info .user_id:after {content:''; display:block; position:absolute; top:50%; right:0; margin-top:-7px; width:1px; height:12px; background-color:#e0e0e0;}
+.ev_reply_module .reply_list .item .user_info .date {color:#606060;}
+.ev_reply_module .reply_list .item .txt_cont {padding-top:8px; color:#101010; font-size:14px; line-height:22px;}
+.ev_reply_module .reply_list .item .write_area {padding-bottom:13px;}
+.ev_reply_module .reply_list .item .write_area .textarea {width:100%; margin-top:8px;}
+.ev_reply_module .reply_list .item .write_area .textarea textarea {height:84px; padding:16px 16px 0; line-height:20px;}
+.ev_reply_module .reply_list .item .write_area .textarea .result_txt {display:block;}
+.ev_reply_module .reply_list .item .write_area .btn_wrap {position:static; margin-top:16px;}
+.ev_reply_module .reply_list .item .write_area .btn_wrap .btn {width:100%;}
+.ev_reply_module .reply_list .item .write_area .link_box {display:block;}
+.ev_reply_module .reply_list .item .write_area .btn_wrap {position:absolute; right:0; bottom:0; padding:0;}
+.ev_reply_module .reply_list .item .write_area .btn_wrap .btn {width:120px;}
+.ev_reply_module .reply_list .item .opt_btn {position:absolute; top:0; right:-12px; font-size:0;}
+.ev_reply_module .reply_list .item .opt_btn .btn_txt {position:relative; color:#606060; font-size:13px; line-height:18px; padding:0 12px;}
+.ev_reply_module .reply_list .item .opt_btn .btn_txt.del:before {content:''; display:block; position:absolute; top:50%; left:0; width:1px; height:12px; margin-top:-7px; background-color:#e0e0e0;}
+.ev_reply_module .reply_list .item .opt_btn .btn_txt.cancle {display:none;}
+.ev_reply_module .reply_list .item .opt_btn.edit_mode .btn_txt.cancle {display:block;}
+.ev_reply_module .reply_list .item .opt_btn.edit_mode .btn_txt.edit,
+.ev_reply_module .reply_list .item .opt_btn.edit_mode .btn_txt.del {display:none;}
+.ev_reply_module .reply_list .item .link_wrap {padding-top:10px;}
+.ev_reply_module .reply_list .item .link_wrap li { margin-top:6px;}
+.ev_reply_module .reply_list .item .link_wrap li:first-child {margin-top:0;}
+.ev_reply_module .reply_list .item .link_wrap .url {display:inline-block; text-decoration:underline;}
+.ev_reply_module .reply_list .item .link_wrap .url span {position:relative; padding-left:24px; color:#101010; font-size:13px; line-height:21px;}
+.ev_reply_module .reply_list .item .link_wrap .url span:before {content:''; display:block; position:absolute; top:0; left:0; width:20px; height:20px; background:url('https://www.cjcookit.com/cjkit/web/images/common/ico_set.png') no-repeat -780px -294px; background-size:800px 800px;}
+.ev_reply_module .reply_list .no_data {padding:80px 0 80px; border-bottom:1px solid #e0e0e0;}
+.ev_reply_module .reply_list .btn_wrap {padding:28px 20px 36px;}
+.ev_reply_module .pagination ~ .btn_wrap {margin-top:80px;}
+/* //이벤트 댓글 모듈 */
+
+/* margin */
+.mt10 {margin-top:10px !important;}
+.mt30 {margin-top:30px !important;}
+.mt50 {margin-top:50px;}
+
+/* 새벽배송안내 팝업 */
+.lay_wrap .dawn_delivery {padding:24px 24px 0;}
+.lay_wrap .dawn_delivery dt {color:#101010; font-size:14px; line-height:22px;}
+.lay_wrap .dawn_delivery dd.inner_box {margin-top:10px; padding:20px 15px 20px 20px; background-color:#f7f7f7;}
+/* 20191014 쿡킷 쿠폰등록 팝업 */
+.lay_wrap .register_box {margin:24px;}
+.lay_wrap .register_box .input_wrap {display:inline-block;width:322px;}
+.lay_wrap .register_box .btn {display:inline-block;width:102px;margin-left:5px;}
+.lay_wrap .register_box + .bul_list {margin:20px 48px;}
+.lay_wrap .register_box + .bul_list li {position:relative;font-size:12px;line-height:20px;margin-bottom:6px;margin-left:0;text-indent:0;padding-left:9px;}
+.lay_wrap .register_box + .bul_list li:before {content:'';display:block;position:absolute;left:0;top:9px;width:3px;height:3px;background:#b0b0b0;}
+/* 에러 페이지 */
+.p_error{position:relative;padding-top:300px;}
+.p_error #content {padding:0;min-height:auto;}
+.p_error:before{content:'';position:absolute;top:202px;left:50%;width:80px;height:68px;margin-left:-40px;background:url('https://www.cjcookit.com/cjkit/mobile/images/common/ico_olki.svg') no-repeat;background-size:400px auto;} /* 아이콘변경 */
+.p_error.type01:before{background:url('https://www.cjcookit.com/cjkit/mobile/images/common/ico_set01.svg') -262px -239px no-repeat;background-size:400px auto;} /* 아이콘변경 */
+.p_error #container{width:auto;padding-top:0;}
+.p_error p{text-align:center;}
+.p_error p strong{display:block;font-size:26px;line-height:34px;font-weight:bold;color:#101010;}
+.p_error p span{display:block;margin-top:12px;font-size:13px;line-height:18px;color:#808080;}
+.p_error .noti_bottom{margin-bottom:12px; text-align:left;padding:15px;background-color:#F9F9F9;}
+.p_error .noti_wrap.bfixed {position:fixed;left:20px;right:20px;bottom:36px;display:block;box-sizing:border-box;}
+.p_error .noti_bottom p{font-size:13px;line-height:18px;color:#606060;text-align:left;font-weight:bold;}
+.p_error .noti_bottom .bul_list{margin-top:8px;}
+.p_error  .btn_wrap {font-size:0;}
+.p_error  .btn_wrap:after{content:'';display:block;clear:both;}
+.p_error  .btn_wrap .btn{width:49.5%; width:-webkit-calc((100% - 5px)/2); width:calc((100% - 5px)/2);}
+.p_error  .btn_wrap .btn:nth-child(2) {float:right;}
+
+/* 거래명세서 팝업 */
+.pop-transaction .pop_conts .tit-type{font-size:14px;color:#101010;font-weight:700;margin:18px 0 8px;}
+.pop-transaction .pop_conts table th,
+.pop-transaction .pop_conts table td{font-size:14px;padding:10px;}
+.pop-transaction .pop_conts table th{text-align:center;font-weight:700;color:#101010;}
+.pop-transaction .pop_conts table td{color:#606060;}
+.pop-transaction .pop_conts table td.ac{text-align:center;}
+.pop-transaction .pop_conts table td.ar{text-align:right;}
+.pop-transaction .pop_conts table td .num{font-size:15px;}
+.pop-transaction .pop_conts .tb_row{border-top:1px solid #e0e0e0}
+.pop-transaction .pop_conts .tb_col th{border-bottom:0;}
+.pop-transaction .pop_conts .tb_col th:first-child,
+.pop-transaction .pop_conts .tb_col td:first-child{border-left:0;}
+.pop-transaction .pop_conts .tb_col th:last-child,
+.pop-transaction .pop_conts .tb_col td:last-child{border-right:0;}
+.pop-transaction .pop_conts .tb_col th span{font-weight:400;}
+.pop-transaction .pop_conts .tb_col .del-charge td{border-left:0;border-right:0;}
+.pop-transaction .pop_conts .tb_col.type-total{margin-top:25px;border-top:2px solid #101010;}
+.pop-transaction .pop_conts .tb_col.type-total td{font-size:16px;color:#101010;font-weight:700;vertical-align:middle;}
+.pop-transaction .pop_conts .tb_col.type-total td strong{font-size:18px;}
+.pop-transaction .pop_conts .tb_col.type-total .tt-price{color:#ee0700;}
+.pop-transaction .pop_conts .tb_col.type-total .tt-price .desc{color:#606060;font-size:14px;margin-top:6px;font-weight:400;}
+.pop-transaction .pop_conts .tb_col.type-total .tt-price .desc i{font-style:normal;font-size:15px;}
+.pop-transaction .pop_conts .dot-list{background:#f7f7f7;padding:14px 28px;margin-top:20px;}
+.pop-transaction .pop_conts .dot-list li{position:relative;font-size:12px;color:#606060;padding-left:10px;}
+.pop-transaction .pop_conts .dot-list li:before{content:'';display:block;position:absolute;left:0;top:10px;width:3px;height:3px;background:#bbb;}
+@media print{
+	body {-webkit-print-color-adjust: exact !important;}
+	.pop-transaction .pop_conts table th{background-color: #f2f2f2;}
+}
+
+
+
+

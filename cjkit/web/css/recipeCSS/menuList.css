@@ -1,0 +1,16 @@
+@CHARSET "UTF-8";
+
+.writebutton{
+	border: 1px solid white;
+	position: relative;
+	right: 840px;
+	top: -54px;
+    	
+}
+
+
+.sele{
+	border: 1px solid white;
+	margin-top: 5px;
+	
+}

@@ -1,0 +1,103 @@
+@CHARSET "UTF-8";
+
+body, html {
+	width: 100%;
+	height: 100%;
+	font-weight: bold;
+	color: black;
+}
+
+.div_backImg {	
+	position: relative;
+	height: 100%;
+	margin-left: 15%;
+	margin-right: 15%;
+}
+
+.imgBack {	
+	width: 100%;
+	height: 100%;
+}
+
+.insertTitle {	
+	text-align: center;
+	margin-top: 50px;
+}
+
+.div01 {
+	margin-left: 0%;
+	position: absolute;
+	top: 8%;
+	left: 30%;
+	min-width: 800px;
+}
+
+.div02 {
+	width: 200px;
+}
+
+.tab02 {
+	margin-top: 30px;
+}
+
+.tab01 td {
+	width: 250px;
+	padding: 10px;	
+}
+
+.tab01 input {
+	width: 250px;
+	padding: 10px;
+	border: 1px solid black;
+}
+
+.tab01 .div01_inp_postcode {
+	width: 100px;	
+}
+
+.tab01 .div01_inp_idChk {
+	width: 100px;
+	height: 38px;	
+}
+
+.tab01 .div01_inp_pwChkRes {
+	width: 200px;
+	border: 0;
+	background-color: transparent;
+}
+
+.inp01, .inp02, .inp03 {
+	width: 150px;
+	height: 50px;
+	background-color: #ffffff;
+	border: 1px solid black;
+	border-color: #999999;
+}
+
+.tab_btn {
+	margin-top: 20px;
+}
+
+.inp02 {
+	margin-left: -65%;
+}
+
+.inp03 {
+	margin-left: -32%;
+}
+
+.inp01:HOVER {
+	background-color: #999999;
+}
+
+.inp02:HOVER {
+	background-color: #999999;
+}
+
+.inp03:HOVER {
+	background-color: #999999;
+}
+
+#footer {
+	top: auto;
+}

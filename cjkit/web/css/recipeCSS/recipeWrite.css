@@ -1,0 +1,346 @@
+@CHARSET "UTF-8";
+
+@import
+	url(https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@400;600&display=swap)
+	;
+
+.container {
+	margin: auto;
+	top: 50%;
+	left: 50%;
+	height: auto;
+}
+
+body, html {
+	margin: 0;
+	font-family: "Nunito Sans", -apple-system, BlinkMacSystemFont,
+		"Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif,
+		"Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+	font-size: .875rem;
+	font-weight: 400;
+	color: #55595c;
+	text-align: center;
+	width: 100%;	
+	background-color: #fff
+}
+
+
+hr {
+	box-sizing: content-box;
+	height: 0;
+	overflow: visible
+}
+
+p {
+	margin-top: 0;
+	margin-bottom: 1rem
+}
+
+dl, ol, ul {
+	margin-top: 0;
+	margin-bottom: 1rem
+}
+
+ol ol, ol ul, ul ol, ul ul {
+	margin-bottom: 0
+}
+
+a {
+	color: #1a1a1a;
+	text-decoration: none;
+	background-color: transparent
+}
+
+img {
+	vertical-align: middle;
+	border-style: none
+}
+
+button, input, optgroup, select, {
+	margin: 0;
+	font-family: inherit;
+	font-size: inherit;
+	line-height: inherit text-align: center;
+}
+
+button, input {
+	overflow: visible
+}
+
+button, select {
+	text-transform: none
+}
+
+[role=button] {
+	cursor: pointer
+}
+
+select {
+	word-wrap: normal
+}
+
+[type=button], [type=reset], [type=submit], button {
+	-webkit-appearance: button
+}
+
+[type=button]:not(:disabled),
+[type=reset]:not(:disabled),
+[type=submit]:not(:disabled),
+button:not(:disabled){
+cursor:pointer}
+
+[type=button]::-moz-focus-inner, [type=reset]::-moz-focus-inner, [type=submit]::-moz-focus-inner,
+	button::-moz-focus-inner {
+	padding: 0;
+	border-style: none
+}
+
+input[type=checkbox], input[type=radio] {
+	box-sizing: border-box;
+	padding: 0
+}
+
+
+#addedCuisine input[type=file] {
+ float: none !important;	
+ margin-left: 0 !important;
+}
+
+
+.form-group {
+	margin-bottom: 2rem;
+	margin-top: 10px;
+
+}
+
+.row {
+	display: -ms-flexbox;s
+	display: inline;
+	-ms-flex-wrap: wrap;
+	flex-wrap: wrap;
+	margin-right: -15px;
+	margin-left: -15px;
+}
+
+.col-sm-12 {
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-top: 30px;
+	margin-bottom: 30px;
+	position: relative;
+	top:50px;
+	bottom: 20px;
+	
+}
+
+.btn-primary {
+	color: #fff;
+	background-color: #1a1a1a;
+	border-color: #1a1a1a;
+	width: 80px;
+	height: 40px;
+}
+
+.btn-primary:hover {
+	color: #fff;
+	background-color: #070707;
+	border-color: #010101
+}
+
+/* 추가 */
+
+/* input text 기본 */
+input[type=text] {
+    color : black;
+    background : #DCDCDC	;
+    border-color: 1px solid black;
+    height: auto;
+    padding: .8em .5em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+
+input[type=file]{
+	float: right;
+	margin-left: 100px;
+}
+
+/* 제일 큰 div wrap */
+#wrap{
+	height: auto;
+}
+
+/* 요리 썸네일 div */
+.t_img{
+	float:left;
+	box-sizing: border-box;
+
+}
+
+/* 요리 썸네일 이미지 */
+#thumb_img {
+	width: 300px;
+	height: 300px;
+}
+
+/* 레시피 제목, 요리 소개, 카테고리 div */
+.a01 .a02 .a03{
+	float: left;
+	margin-top: 10px;
+	margin-left:20px;
+	display: inline;
+	position: relative;
+	top: 5px;
+}
+
+/* 재료 div */
+.size{
+	height: 700px;
+}
+.form-group{
+	margin: 0 auto;
+	margin-top: 20px;
+	clear: both;
+}
+
+.ingredi{
+	float: left;
+	margin-top: 10px;
+	margin-left:170px;
+	text-align: center;
+}
+
+
+/* 재료 text의 id */
+#R_ingre {
+	width: 200px;
+	margin-right: 5px;
+}
+
+/* 요리 순서 div */
+
+.form-group01{
+	width: 700px;
+    height: auto;
+}
+
+.order{
+	margin-top: 20px;
+	float: left;
+	margin-left: 40px;
+	margin-bottom: 150px;
+}
+
+/* 요리 순서추가 생성 div id*/
+ #ac1 #ac2 #ac3{
+	margin-top: 30px;
+	margin-left: 20px;
+	overflow: hidden;
+	height: 400px;
+} 
+
+/* 전체 div - vertical 2개 */
+.vertical{
+	float: left;
+}
+
+.vertical_01{
+	float: left;
+	
+}
+
+/* !!!!!!!!!!!!!!!!!!!!!! 안먹는 css!!!!!!!!!!!!!! */
+/*  내부 div - 순서 텍스트 : textarea */
+textarea[id=f_rcp_ord_text], #ord_text{
+	margin-bottom: 37px !important;
+	margin-top: 37px !important;
+}
+/* !!!!!!!!!!!!!!!!!!!!!! 안먹는 css!!!!!!!!!!!!!! */
+
+/* 내부 div-순서 이미지: img  */
+.f_rcp_ord_img, .f_rcp_ord_imgfile1, 
+.f_rcp_ord_imgfile2, .f_rcp_ord_imgfile3{
+	width:200px; 
+	height:200px;
+	margin-right: 10px;
+}
+
+
+/* 해시태그 */
+#hashtag{
+	width:400px;
+	
+}
+
+#hash01{
+	clear:both;
+	
+}
+.tag{
+	clear:both;
+	overhidden:
+}
+
+/* 수정완료 & 초기화 */
+.regi{
+	position: relative;
+	top: 50px;
+	width: 200px;
+	height: 40px;
+}
+
+
+/* 모든 제목은 label로 감싸줌 */
+label{
+	margin-bottom: 10px;
+}
+
+
+.class{
+	position: relative
+}
+
+
+form {
+	margin: 0 auto;
+	width: 800px;
+}
+
+
+h2{
+	display: inline;
+	text-decoration: bold;
+}
+
+
+textarea{
+	color : black;
+    background : #DCDCDC	;
+    border-color: 1px solid black;
+    height: auto;
+    padding: .8em .5em;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    overflow: auto;
+	resize: vertical;
+	text-align: center;
+    }
+
+select{
+	color : black;
+    background : #DCDCDC;
+    border-color: 1px solid black;
+    height: 40px;
+	width: 400px;
+	margin-top: 10px;
+}
+
+#footer{
+	clear:both;
+
+}
+
+
+

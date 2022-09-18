@@ -1,0 +1,87 @@
+@CHARSET "UTF-8";
+
+body, html {
+	width: 100%;	
+	height: 100%;	
+}
+
+.h1_title {
+	text-align: center;
+	margin-bottom: 50px;
+}
+
+.sec_review {	
+	margin-top: 50px;
+	margin-left: 600px;
+	margin-right: 600px;	
+	min-width: 710px;
+}
+
+.div_review {	
+	margin-top: 50px;	
+}
+
+.div_tab {
+	margin-bottom: 50px;
+}
+
+.tab_review th {
+	width: 200px;
+}
+
+#footer {
+	top: auto;	
+}
+
+
+/* 별점CSS */
+.star-rating {
+	width: 103px;
+}
+
+.star-rating, .star-rating span {
+	display: inline-block;
+	height: 19px;
+	overflow: hidden;
+	background: url(../../images/star/grade_mini_img.png) no-repeat;
+}
+
+.star-rating span {
+	background-position: left bottom;
+	line-height: 0;
+	vertical-align: top;
+}
+
+/* 페이징 처리 */
+.pagination {	
+	display: inline-block;
+	width: 270px;
+	margin-left: 400px;
+	margin-top: -100px;
+	margin-bottom: 100px;
+		
+}
+
+.pagination_chd {
+	margin: 0 auto;
+	text-align: center;
+}
+
+.pagination a {
+	color: black;
+	/* float: left; */
+	padding: 8px 16px;
+	text-decoration: none;	
+}
+
+.pagination a.active {
+	background-color: #4CAF50;
+	color: white;
+	border-radius: 5px;
+}
+
+.pagination a:hover:not (.active ) {
+	background-color: #ddd;
+	border-radius: 5px;
+}
+
