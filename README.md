@@ -32,6 +32,8 @@ groupProject-Ratatouille
 - 이미지를 클릭하면 내가 작성한 레시피가 수정 가능 하고 추가로 댓글을 작성할 수 있는 공간을 만들어서 
 내가 작성한 레시피 목록 말고도 상대방이 작성한 레시피에 대한 나의 생각을 작성할수 있게 작업하였습니다.
 
+<iframe width="708" height="398" src="https://www.youtube.com/embed/7wkH7P1ZbGk" title="레시피 글쓰기 수정 삭제 + 쇼핑몰 목록 디테일" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+
 <br>
 
 4. 맛집
