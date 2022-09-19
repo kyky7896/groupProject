@@ -1,7 +1,3 @@
-# groupProject
-groupProject-Ratatouille
-
-
 ## 프로젝트 라따뚜이 : 레시피 & 맛집 프로젝트 
 
 ### 주요 기능 소개
