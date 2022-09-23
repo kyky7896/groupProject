@@ -1,5 +1,13 @@
 ## 프로젝트 라따뚜이 : 레시피 & 맛집 프로젝트 
 
+
+## ERD : <br>
+
+![image](https://user-images.githubusercontent.com/77670592/191951966-2ee1fcef-277e-48cc-8583-d985cfe3eee1.png)  
+
+![image](https://user-images.githubusercontent.com/77670592/191952066-6fbbd086-9b66-42f9-a141-b760753e63f1.png)
+
+
 ### 주요 기능 소개
 회원가입 전에는 전체적인 내용은 확인 가능 하지만 작성은 회원으로 로그인하여 작성되게 제어하고 있습니다 
 레시피 맛집 쇼핑 내역을 보여주며 작성시 로그인 하라고 경고창 발생되거나 작성 버튼이 안보입니다.
